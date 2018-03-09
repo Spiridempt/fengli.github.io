@@ -14,9 +14,9 @@ from imp import reload
 
 thislanguage = 'Ruby'
 
-commitfilepath = 'E:\\CrawlData\\checkcheckzz-python-github-projects\\cn.edu.pku.EOSCN.crawler.GitCommitsCrawler'
-resultspath = 'E:\\CrawlData\\checkcheckzz-python-github-projects\\cn.edu.pku.EOSCN.crawler.GitCommitsCrawler\\results\\'
-writepath = 'E:\\CrawlData\\checkcheckzz-python-github-projects\\cn.edu.pku.EOSCN.crawler.GitCommitsCrawler\\results\\result.txt'
+#commitfilepath = 'E:\\CrawlData\\checkcheckzz-python-github-projects\\cn.edu.pku.EOSCN.crawler.GitCommitsCrawler'
+#resultspath = 'E:\\CrawlData\\checkcheckzz-python-github-projects\\cn.edu.pku.EOSCN.crawler.GitCommitsCrawler\\results\\'
+#writepath = 'E:\\CrawlData\\checkcheckzz-python-github-projects\\cn.edu.pku.EOSCN.crawler.GitCommitsCrawler\\results\\result.txt'
 
 #C:\Users\Administrator.USER01702091351\AppData\Local\Programs\Python\Python36-32
 
@@ -39,7 +39,7 @@ def get_suffix(language):
 	
 def get_stats(commitstring, fullname, language):
 	stats = []
-	thispath = "/home/seitest/PLstudy/" + thislanguage + "/" + fullname + "/commits/"+commitstring+'.json'
+	thispath = thislanguage + "/" + fullname + "/commits/"+commitstring+'.json'
 #	with open(thispath, "r", -1, 'utf-8', 'ignore') as f:
 	with open(thispath, "r") as f:
 
@@ -165,7 +165,7 @@ def get_totalcommits(fullname):
 	totalcommits = []
 	
 	i = 1
-	thisfilepath = "/home/seitest/PLstudy/" + thislanguage + "/" + fullname + "/"
+	thisfilepath = thislanguage + "/" + fullname + "/"
 
 	while 1:
 		if not (os.path.exists(thisfilepath + "commits_index" + str(i) + ".json")):
@@ -202,9 +202,8 @@ if __name__=="__main__":
 	# read_eachjsonfile('021e4dfb501a8e6e5810a4f0efe1267810d62d64','commons-lang')
 	
 	
-	file = open('/home/seitest/totalruby.txt', 'r')
+	file = open(thislanguage+'.txt', 'r')
 	dict = {}
-
 # read total 100 project names of 5 categories
 #	i = 0
 #	while(i < 250):
@@ -212,7 +211,9 @@ if __name__=="__main__":
 #		data = line.split(' ')
 #		dict[i] = [data[0], data[1], data[2].strip("\n")]
 #		i = i + 1
-
+	linesnumber = len(file.readlines())
+	file.close()
+	file = open(thislanguage+'.txt', 'r')
 	i = 0
 	while(i < 57):
 		line = file.readline()
