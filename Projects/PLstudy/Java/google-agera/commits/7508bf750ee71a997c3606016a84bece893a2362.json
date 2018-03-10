@@ -1,0 +1,149 @@
+{
+  "sha": "7508bf750ee71a997c3606016a84bece893a2362",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-05-08T09:30:05Z"
+    },
+    "committer": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-05-12T19:27:54Z"
+    },
+    "message": "Added bintray upload plugin",
+    "tree": {
+      "sha": "794e18d97e32082a5b87955bb912036b423c6101",
+      "url": "https://api.github.com/repos/google/agera/git/trees/794e18d97e32082a5b87955bb912036b423c6101"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/7508bf750ee71a997c3606016a84bece893a2362",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/7508bf750ee71a997c3606016a84bece893a2362",
+  "html_url": "https://github.com/google/agera/commit/7508bf750ee71a997c3606016a84bece893a2362",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/7508bf750ee71a997c3606016a84bece893a2362/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "30b98a19ec0c0f775489e9a03be8ff1d89ae9a77",
+      "url": "https://api.github.com/repos/google/agera/commits/30b98a19ec0c0f775489e9a03be8ff1d89ae9a77",
+      "html_url": "https://github.com/google/agera/commit/30b98a19ec0c0f775489e9a03be8ff1d89ae9a77"
+    }
+  ],
+  "stats": {
+    "total": 61,
+    "additions": 61,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "998992377053f12b3e6cdf17815824d4d4482a9b",
+      "filename": "agera/build.gradle",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/google/agera/blob/7508bf750ee71a997c3606016a84bece893a2362/agera/build.gradle",
+      "raw_url": "https://github.com/google/agera/raw/7508bf750ee71a997c3606016a84bece893a2362/agera/build.gradle",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/agera/build.gradle?ref=7508bf750ee71a997c3606016a84bece893a2362",
+      "patch": "@@ -15,8 +15,19 @@\n  */\n apply plugin: 'com.android.library'\n apply plugin: 'com.github.dcendents.android-maven'\n+apply plugin: 'com.novoda.bintray-release'\n apply plugin: 'jacoco'\n \n+publish {\n+    userOrg = gradle.bintrayUser\n+    uploadName = gradle.bintrayName\n+    repoName = gradle.bintrayRepo\n+    groupId = gradle.group\n+    artifactId = 'agera'\n+    version = gradle.versionName\n+    autoPublish = false\n+}\n+\n install {\n     repositories.mavenInstaller {\n         pom {"
+    },
+    {
+      "sha": "ce659e0a3831234ccf687950389462d7e487a96e",
+      "filename": "extensions/content/build.gradle",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/google/agera/blob/7508bf750ee71a997c3606016a84bece893a2362/extensions/content/build.gradle",
+      "raw_url": "https://github.com/google/agera/raw/7508bf750ee71a997c3606016a84bece893a2362/extensions/content/build.gradle",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/content/build.gradle?ref=7508bf750ee71a997c3606016a84bece893a2362",
+      "patch": "@@ -15,12 +15,23 @@\n  */\n apply plugin: 'com.android.library'\n apply plugin: 'com.github.dcendents.android-maven'\n+apply plugin: 'com.novoda.bintray-release'\n apply plugin: 'jacoco'\n \n dependencies {\n     compile project(':agera')\n }\n \n+publish {\n+    userOrg = gradle.bintrayUser\n+    uploadName = gradle.bintrayName\n+    repoName = gradle.bintrayRepo\n+    groupId = gradle.group\n+    artifactId = 'content'\n+    version = gradle.versionName\n+    autoPublish = false\n+}\n+\n install {\n     repositories.mavenInstaller {\n         pom {"
+    },
+    {
+      "sha": "40ca6c85b326cb0a035820c2d3d07e82bc92b22b",
+      "filename": "extensions/database/build.gradle",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/google/agera/blob/7508bf750ee71a997c3606016a84bece893a2362/extensions/database/build.gradle",
+      "raw_url": "https://github.com/google/agera/raw/7508bf750ee71a997c3606016a84bece893a2362/extensions/database/build.gradle",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/database/build.gradle?ref=7508bf750ee71a997c3606016a84bece893a2362",
+      "patch": "@@ -15,12 +15,23 @@\n  */\n apply plugin: 'com.android.library'\n apply plugin: 'com.github.dcendents.android-maven'\n+apply plugin: 'com.novoda.bintray-release'\n apply plugin: 'jacoco'\n \n dependencies {\n     compile project(':agera')\n }\n \n+publish {\n+    userOrg = gradle.bintrayUser\n+    uploadName = gradle.bintrayName\n+    repoName = gradle.bintrayRepo\n+    groupId = gradle.group\n+    artifactId = 'database'\n+    version = gradle.versionName\n+    autoPublish = false\n+}\n+\n install {\n     repositories.mavenInstaller {\n         pom {"
+    },
+    {
+      "sha": "10b6f6fed6032e89195f212c0c0bcef93dda115c",
+      "filename": "extensions/net/build.gradle",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/google/agera/blob/7508bf750ee71a997c3606016a84bece893a2362/extensions/net/build.gradle",
+      "raw_url": "https://github.com/google/agera/raw/7508bf750ee71a997c3606016a84bece893a2362/extensions/net/build.gradle",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/net/build.gradle?ref=7508bf750ee71a997c3606016a84bece893a2362",
+      "patch": "@@ -15,12 +15,23 @@\n  */\n apply plugin: 'com.android.library'\n apply plugin: 'com.github.dcendents.android-maven'\n+apply plugin: 'com.novoda.bintray-release'\n apply plugin: 'jacoco'\n \n dependencies {\n     compile project(':agera')\n }\n \n+publish {\n+    userOrg = gradle.bintrayUser\n+    uploadName = gradle.bintrayName\n+    repoName = gradle.bintrayRepo\n+    groupId = gradle.group\n+    artifactId = 'net'\n+    version = gradle.versionName\n+    autoPublish = false\n+}\n+\n install {\n     repositories.mavenInstaller {\n         pom {"
+    },
+    {
+      "sha": "baf007fc57158cb70cb448973b287f0fd2e1522d",
+      "filename": "extensions/rvadapter/build.gradle",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/google/agera/blob/7508bf750ee71a997c3606016a84bece893a2362/extensions/rvadapter/build.gradle",
+      "raw_url": "https://github.com/google/agera/raw/7508bf750ee71a997c3606016a84bece893a2362/extensions/rvadapter/build.gradle",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvadapter/build.gradle?ref=7508bf750ee71a997c3606016a84bece893a2362",
+      "patch": "@@ -15,13 +15,24 @@\n  */\n apply plugin: 'com.android.library'\n apply plugin: 'com.github.dcendents.android-maven'\n+apply plugin: 'com.novoda.bintray-release'\n apply plugin: 'jacoco'\n \n dependencies {\n     compile project(':agera')\n     compile \"com.android.support:recyclerview-v7:$gradle.supportLibraryVersion\"\n }\n \n+publish {\n+    userOrg = gradle.bintrayUser\n+    uploadName = gradle.bintrayName\n+    repoName = gradle.bintrayRepo\n+    groupId = gradle.group\n+    artifactId = 'rvadapter'\n+    version = gradle.versionName\n+    autoPublish = false\n+}\n+\n install {\n     repositories.mavenInstaller {\n         pom {"
+    },
+    {
+      "sha": "c897c451c27e7a8e0f4ca13c6308dbb0ea50ba4c",
+      "filename": "settings.gradle",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/google/agera/blob/7508bf750ee71a997c3606016a84bece893a2362/settings.gradle",
+      "raw_url": "https://github.com/google/agera/raw/7508bf750ee71a997c3606016a84bece893a2362/settings.gradle",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/settings.gradle?ref=7508bf750ee71a997c3606016a84bece893a2362",
+      "patch": "@@ -23,6 +23,11 @@ include ':testapp'\n gradle.ext.versionCode = 10100\n gradle.ext.versionName = '1.1.0-SNAPSHOT'\n \n+gradle.ext.bintrayRepo = 'Agera'\n+gradle.ext.bintrayName = 'Agera'\n+gradle.ext.bintrayUser = 'ernstsson'\n+\n+gradle.ext.description = 'Reactive Programming for Android'\n gradle.ext.group = 'com.google.android.agera'\n gradle.ext.url = 'https://github.com/google/agera'\n gradle.ext.gitUrl = 'https://github.com/google/agera.git'\n@@ -44,6 +49,7 @@ gradle.allprojects {\n             classpath 'com.android.tools.build:gradle:2.1.0'\n             classpath 'com.github.dcendents:android-maven-gradle-plugin:1.3'\n             classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.3.1'\n+            classpath 'com.novoda:bintray-release:0.3.4'\n         }\n     }\n     repositories {"
+    }
+  ]
+}

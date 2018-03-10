@@ -1,0 +1,89 @@
+{
+  "sha": "8eb666c8e946bbb3c90b1f6ed539e69ba9d76924",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-05-31T15:20:25Z"
+    },
+    "committer": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-05-31T15:20:25Z"
+    },
+    "message": "Removed unnecessary pendingUpdate update in BaseObservable (#68)",
+    "tree": {
+      "sha": "1ee8671936d246af5e0dbe433ed3103abb4bc0d6",
+      "url": "https://api.github.com/repos/google/agera/git/trees/1ee8671936d246af5e0dbe433ed3103abb4bc0d6"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/8eb666c8e946bbb3c90b1f6ed539e69ba9d76924",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/8eb666c8e946bbb3c90b1f6ed539e69ba9d76924",
+  "html_url": "https://github.com/google/agera/commit/8eb666c8e946bbb3c90b1f6ed539e69ba9d76924",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/8eb666c8e946bbb3c90b1f6ed539e69ba9d76924/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "dd28d5528b6a72003134aae024bac3e45248b9aa",
+      "url": "https://api.github.com/repos/google/agera/commits/dd28d5528b6a72003134aae024bac3e45248b9aa",
+      "html_url": "https://github.com/google/agera/commit/dd28d5528b6a72003134aae024bac3e45248b9aa"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 0,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "be1f9cb4edcf41076a3412be4fdeef62c2dbf542",
+      "filename": "agera/src/main/java/com/google/android/agera/BaseObservable.java",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/google/agera/blob/8eb666c8e946bbb3c90b1f6ed539e69ba9d76924/agera/src/main/java/com/google/android/agera/BaseObservable.java",
+      "raw_url": "https://github.com/google/agera/raw/8eb666c8e946bbb3c90b1f6ed539e69ba9d76924/agera/src/main/java/com/google/android/agera/BaseObservable.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/agera/src/main/java/com/google/android/agera/BaseObservable.java?ref=8eb666c8e946bbb3c90b1f6ed539e69ba9d76924",
+      "patch": "@@ -151,7 +151,6 @@ void sendUpdate() {\n         if (timeFromLastUpdate  < shortestUpdateWindowMillis) {\n           handler.sendMessageDelayed(handler.obtainMessage(WorkerHandler.MSG_UPDATE, this),\n               shortestUpdateWindowMillis - timeFromLastUpdate);\n-          pendingUpdate = true;\n           return;\n         }\n         lastUpdateTimestamp = elapsedRealtimeMillis;"
+    }
+  ]
+}

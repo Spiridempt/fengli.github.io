@@ -1,0 +1,89 @@
+{
+  "sha": "12c651ddf9e84d2f6ca9ea864f611e037445955f",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-06-04T13:54:02Z"
+    },
+    "committer": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-06-04T13:54:02Z"
+    },
+    "message": "Removed storing of nonsense stack-trace in Result default failures (#79)",
+    "tree": {
+      "sha": "d439ded323a1f8bf7ff731f774ce94df2090712b",
+      "url": "https://api.github.com/repos/google/agera/git/trees/d439ded323a1f8bf7ff731f774ce94df2090712b"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/12c651ddf9e84d2f6ca9ea864f611e037445955f",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/12c651ddf9e84d2f6ca9ea864f611e037445955f",
+  "html_url": "https://github.com/google/agera/commit/12c651ddf9e84d2f6ca9ea864f611e037445955f",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/12c651ddf9e84d2f6ca9ea864f611e037445955f/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "eb8999e834ffec432bcad54bfeaaa77d080c2fc5",
+      "url": "https://api.github.com/repos/google/agera/commits/eb8999e834ffec432bcad54bfeaaa77d080c2fc5",
+      "html_url": "https://github.com/google/agera/commit/eb8999e834ffec432bcad54bfeaaa77d080c2fc5"
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "additions": 12,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "36c3a41c0dfe78819931e63474740b29a01e4486",
+      "filename": "agera/src/main/java/com/google/android/agera/Result.java",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 5,
+      "changes": 17,
+      "blob_url": "https://github.com/google/agera/blob/12c651ddf9e84d2f6ca9ea864f611e037445955f/agera/src/main/java/com/google/android/agera/Result.java",
+      "raw_url": "https://github.com/google/agera/raw/12c651ddf9e84d2f6ca9ea864f611e037445955f/agera/src/main/java/com/google/android/agera/Result.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/agera/src/main/java/com/google/android/agera/Result.java?ref=12c651ddf9e84d2f6ca9ea864f611e037445955f",
+      "patch": "@@ -37,13 +37,20 @@\n  */\n public final class Result<T> {\n   @NonNull\n-  private static final Result<Object> FAILURE =\n-      new Result<>(null, new Throwable(\"Attempt failed\"));\n-  @SuppressWarnings(\"ThrowableInstanceNeverThrown\")\n+  private static final Result<Object> ABSENT;\n   @NonNull\n-  private static final Throwable ABSENT_THROWABLE = new NullPointerException(\"Value is absent\");\n+  private static final Result<Object> FAILURE;\n   @NonNull\n-  private static final Result<Object> ABSENT = new Result<>(null, ABSENT_THROWABLE);\n+  private static final Throwable ABSENT_THROWABLE;\n+\n+  static {\n+    final Throwable failureThrowable = new Throwable(\"Attempt failed\");\n+    failureThrowable.setStackTrace(new StackTraceElement[0]);\n+    FAILURE = new Result<>(null, failureThrowable);\n+    ABSENT_THROWABLE = new NullPointerException(\"Value is absent\");\n+    ABSENT_THROWABLE.setStackTrace(new StackTraceElement[0]);\n+    ABSENT = new Result<>(null, ABSENT_THROWABLE);\n+  }\n \n   @Nullable\n   private final T value;"
+    }
+  ]
+}

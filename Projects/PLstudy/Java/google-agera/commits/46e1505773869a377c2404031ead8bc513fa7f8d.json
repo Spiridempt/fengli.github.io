@@ -1,0 +1,89 @@
+{
+  "sha": "46e1505773869a377c2404031ead8bc513fa7f8d",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-04-30T16:03:27Z"
+    },
+    "committer": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-04-30T18:00:40Z"
+    },
+    "message": "Changed BaseObservable to survive rotation\n\nIf LAST_REMOVED is sent when FIRST_ADDED is queued, both are instead\nremoved. Re-activating a repository within the same loop have no value\nand in this way a global repository can survive device rotation.",
+    "tree": {
+      "sha": "37aed31ba0098e22defa313abac7a1c4bb92a9b8",
+      "url": "https://api.github.com/repos/google/agera/git/trees/37aed31ba0098e22defa313abac7a1c4bb92a9b8"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/46e1505773869a377c2404031ead8bc513fa7f8d",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/46e1505773869a377c2404031ead8bc513fa7f8d",
+  "html_url": "https://github.com/google/agera/commit/46e1505773869a377c2404031ead8bc513fa7f8d",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/46e1505773869a377c2404031ead8bc513fa7f8d/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "92bdae9cee540c6ca151c558515eec07c1bdcb62",
+      "url": "https://api.github.com/repos/google/agera/commits/92bdae9cee540c6ca151c558515eec07c1bdcb62",
+      "html_url": "https://github.com/google/agera/commit/92bdae9cee540c6ca151c558515eec07c1bdcb62"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 5,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "4938fd1b07ce98d2ecb1d2ad67e5307c13609c2c",
+      "filename": "agera/src/main/java/com/google/android/agera/BaseObservable.java",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/google/agera/blob/46e1505773869a377c2404031ead8bc513fa7f8d/agera/src/main/java/com/google/android/agera/BaseObservable.java",
+      "raw_url": "https://github.com/google/agera/raw/46e1505773869a377c2404031ead8bc513fa7f8d/agera/src/main/java/com/google/android/agera/BaseObservable.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/agera/src/main/java/com/google/android/agera/BaseObservable.java?ref=46e1505773869a377c2404031ead8bc513fa7f8d",
+      "patch": "@@ -105,7 +105,11 @@ protected void observableDeactivated() {}\n     synchronized void addUpdatable(@NonNull final Updatable updatable) {\n       add(updatable, workerHandler());\n       if (size == 1) {\n-        handler.obtainMessage(WorkerHandler.MSG_FIRST_ADDED, this).sendToTarget();\n+        if (handler.hasMessages(MSG_LAST_REMOVED, this)) {\n+          handler.removeMessages(MSG_LAST_REMOVED, this);\n+        } else {\n+          handler.obtainMessage(WorkerHandler.MSG_FIRST_ADDED, this).sendToTarget();\n+        }\n       }\n     }\n "
+    }
+  ]
+}

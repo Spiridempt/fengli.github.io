@@ -1,0 +1,101 @@
+{
+  "sha": "a8b1523fb1584c1ce31e594181f84d5e01ce7f8d",
+  "commit": {
+    "author": {
+      "name": "chthai64",
+      "email": "chthai64@gmail.com",
+      "date": "2016-05-06T17:44:03Z"
+    },
+    "committer": {
+      "name": "chthai64",
+      "email": "chthai64@gmail.com",
+      "date": "2016-05-06T17:44:03Z"
+    },
+    "message": "update gradle version from 2.1.0-rc1 to 2.1.0",
+    "tree": {
+      "sha": "1b6244cabfc0d4303ff29f0824439767c7f8ddab",
+      "url": "https://api.github.com/repos/google/agera/git/trees/1b6244cabfc0d4303ff29f0824439767c7f8ddab"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/a8b1523fb1584c1ce31e594181f84d5e01ce7f8d",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/a8b1523fb1584c1ce31e594181f84d5e01ce7f8d",
+  "html_url": "https://github.com/google/agera/commit/a8b1523fb1584c1ce31e594181f84d5e01ce7f8d",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/a8b1523fb1584c1ce31e594181f84d5e01ce7f8d/comments",
+  "author": {
+    "login": "chthai64",
+    "id": 16104207,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/16104207?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chthai64",
+    "html_url": "https://github.com/chthai64",
+    "followers_url": "https://api.github.com/users/chthai64/followers",
+    "following_url": "https://api.github.com/users/chthai64/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chthai64/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chthai64/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chthai64/subscriptions",
+    "organizations_url": "https://api.github.com/users/chthai64/orgs",
+    "repos_url": "https://api.github.com/users/chthai64/repos",
+    "events_url": "https://api.github.com/users/chthai64/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chthai64/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "chthai64",
+    "id": 16104207,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/16104207?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chthai64",
+    "html_url": "https://github.com/chthai64",
+    "followers_url": "https://api.github.com/users/chthai64/followers",
+    "following_url": "https://api.github.com/users/chthai64/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chthai64/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chthai64/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chthai64/subscriptions",
+    "organizations_url": "https://api.github.com/users/chthai64/orgs",
+    "repos_url": "https://api.github.com/users/chthai64/repos",
+    "events_url": "https://api.github.com/users/chthai64/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chthai64/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a0a8d2193f82ead3d47c705c1505e50aeece56d9",
+      "url": "https://api.github.com/repos/google/agera/commits/a0a8d2193f82ead3d47c705c1505e50aeece56d9",
+      "html_url": "https://github.com/google/agera/commit/a0a8d2193f82ead3d47c705c1505e50aeece56d9"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "4840d9c7ef5565391a11b03d2ca60cbcec4f0f1c",
+      "filename": "samples/BasicSample/build.gradle",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/google/agera/blob/a8b1523fb1584c1ce31e594181f84d5e01ce7f8d/samples/BasicSample/build.gradle",
+      "raw_url": "https://github.com/google/agera/raw/a8b1523fb1584c1ce31e594181f84d5e01ce7f8d/samples/BasicSample/build.gradle",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/samples/BasicSample/build.gradle?ref=a8b1523fb1584c1ce31e594181f84d5e01ce7f8d",
+      "patch": "@@ -22,7 +22,7 @@ buildscript {\n         jcenter()\n     }\n     dependencies {\n-        classpath 'com.android.tools.build:gradle:2.1.0-rc1'\n+        classpath 'com.android.tools.build:gradle:2.1.0'\n     }\n }\n "
+    },
+    {
+      "sha": "4840d9c7ef5565391a11b03d2ca60cbcec4f0f1c",
+      "filename": "samples/BasicSampleWithoutCallbacks/build.gradle",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/google/agera/blob/a8b1523fb1584c1ce31e594181f84d5e01ce7f8d/samples/BasicSampleWithoutCallbacks/build.gradle",
+      "raw_url": "https://github.com/google/agera/raw/a8b1523fb1584c1ce31e594181f84d5e01ce7f8d/samples/BasicSampleWithoutCallbacks/build.gradle",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/samples/BasicSampleWithoutCallbacks/build.gradle?ref=a8b1523fb1584c1ce31e594181f84d5e01ce7f8d",
+      "patch": "@@ -22,7 +22,7 @@ buildscript {\n         jcenter()\n     }\n     dependencies {\n-        classpath 'com.android.tools.build:gradle:2.1.0-rc1'\n+        classpath 'com.android.tools.build:gradle:2.1.0'\n     }\n }\n "
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "sha": "4036f9880f34e80ca7d6feb2439ebfdb7fed43da",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-08-14T13:52:30Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2016-08-14T13:52:30Z"
+    },
+    "message": "Added support for more sql content values (#99)\n\nFixes #97",
+    "tree": {
+      "sha": "8e7b4bbfed32ccd3f708ed0f01664243504deea4",
+      "url": "https://api.github.com/repos/google/agera/git/trees/8e7b4bbfed32ccd3f708ed0f01664243504deea4"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/4036f9880f34e80ca7d6feb2439ebfdb7fed43da",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/4036f9880f34e80ca7d6feb2439ebfdb7fed43da",
+  "html_url": "https://github.com/google/agera/commit/4036f9880f34e80ca7d6feb2439ebfdb7fed43da",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/4036f9880f34e80ca7d6feb2439ebfdb7fed43da/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "avatar_url": "https://avatars0.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "98337c8823737776c15172a655eaa1449672e34b",
+      "url": "https://api.github.com/repos/google/agera/commits/98337c8823737776c15172a655eaa1449672e34b",
+      "html_url": "https://github.com/google/agera/commit/98337c8823737776c15172a655eaa1449672e34b"
+    }
+  ],
+  "stats": {
+    "total": 205,
+    "additions": 204,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "2a68b442b24f1c8e5dc55543c7f63b678a7ef49b",
+      "filename": "extensions/database/src/main/java/com/google/android/agera/database/SqlRequestCompiler.java",
+      "status": "modified",
+      "additions": 64,
+      "deletions": 0,
+      "changes": 64,
+      "blob_url": "https://github.com/google/agera/blob/4036f9880f34e80ca7d6feb2439ebfdb7fed43da/extensions/database/src/main/java/com/google/android/agera/database/SqlRequestCompiler.java",
+      "raw_url": "https://github.com/google/agera/raw/4036f9880f34e80ca7d6feb2439ebfdb7fed43da/extensions/database/src/main/java/com/google/android/agera/database/SqlRequestCompiler.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/database/src/main/java/com/google/android/agera/database/SqlRequestCompiler.java?ref=4036f9880f34e80ca7d6feb2439ebfdb7fed43da",
+      "patch": "@@ -98,6 +98,70 @@ public Object column(@NonNull final String column, @NonNull final String value)\n \n   @NonNull\n   @Override\n+  public Object column(@NonNull final String column, @NonNull final Byte value) {\n+    checkState(!compiled, ERROR_MESSAGE);\n+    contentValues.put(checkNotNull(column), checkNotNull(value));\n+    return this;\n+  }\n+\n+  @NonNull\n+  @Override\n+  public Object column(@NonNull final String column, @NonNull final Short value) {\n+    checkState(!compiled, ERROR_MESSAGE);\n+    contentValues.put(checkNotNull(column), checkNotNull(value));\n+    return this;\n+  }\n+\n+  @NonNull\n+  @Override\n+  public Object column(@NonNull final String column, @NonNull final Integer value) {\n+    checkState(!compiled, ERROR_MESSAGE);\n+    contentValues.put(checkNotNull(column), checkNotNull(value));\n+    return this;\n+  }\n+\n+  @NonNull\n+  @Override\n+  public Object column(@NonNull final String column, @NonNull final Long value) {\n+    checkState(!compiled, ERROR_MESSAGE);\n+    contentValues.put(checkNotNull(column), checkNotNull(value));\n+    return this;\n+  }\n+\n+  @NonNull\n+  @Override\n+  public Object column(@NonNull final String column, @NonNull final Float value) {\n+    checkState(!compiled, ERROR_MESSAGE);\n+    contentValues.put(checkNotNull(column), checkNotNull(value));\n+    return this;\n+  }\n+\n+  @NonNull\n+  @Override\n+  public Object column(@NonNull final String column, @NonNull final Double value) {\n+    checkState(!compiled, ERROR_MESSAGE);\n+    contentValues.put(checkNotNull(column), checkNotNull(value));\n+    return this;\n+  }\n+\n+  @NonNull\n+  @Override\n+  public Object column(@NonNull final String column, @NonNull final Boolean value) {\n+    checkState(!compiled, ERROR_MESSAGE);\n+    contentValues.put(checkNotNull(column), checkNotNull(value));\n+    return this;\n+  }\n+\n+  @NonNull\n+  @Override\n+  public Object column(@NonNull final String column, @NonNull final byte[] value) {\n+    checkState(!compiled, ERROR_MESSAGE);\n+    contentValues.put(checkNotNull(column), checkNotNull(value));\n+    return this;\n+  }\n+\n+  @NonNull\n+  @Override\n   public Object emptyColumn(@NonNull final String column) {\n     checkState(!compiled, ERROR_MESSAGE);\n     contentValues.putNull(checkNotNull(column));"
+    },
+    {
+      "sha": "16bb2fc8c8b97d84ab495737738a35387f0b2c61",
+      "filename": "extensions/database/src/main/java/com/google/android/agera/database/SqlRequestCompilerStates.java",
+      "status": "modified",
+      "additions": 49,
+      "deletions": 1,
+      "changes": 50,
+      "blob_url": "https://github.com/google/agera/blob/4036f9880f34e80ca7d6feb2439ebfdb7fed43da/extensions/database/src/main/java/com/google/android/agera/database/SqlRequestCompilerStates.java",
+      "raw_url": "https://github.com/google/agera/raw/4036f9880f34e80ca7d6feb2439ebfdb7fed43da/extensions/database/src/main/java/com/google/android/agera/database/SqlRequestCompilerStates.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/database/src/main/java/com/google/android/agera/database/SqlRequestCompilerStates.java?ref=4036f9880f34e80ca7d6feb2439ebfdb7fed43da",
+      "patch": "@@ -72,12 +72,60 @@\n   interface DBColumn<T> {\n \n     /**\n-     * Adds a {@code column} with a {@code value}.\n+     * Adds a {@code column} with a {@link String} {@code value}.\n      */\n     @NonNull\n     T column(@NonNull String column, @NonNull String value);\n \n     /**\n+     * Adds a {@code column} with a {@link Byte} {@code value}.\n+     */\n+    @NonNull\n+    T column(@NonNull String column, @NonNull Byte value);\n+\n+    /**\n+     * Adds a {@code column} with a {@link Short} {@code value}.\n+     */\n+    @NonNull\n+    T column(@NonNull String column, @NonNull Short value);\n+\n+    /**\n+     * Adds a {@code column} with a {@link Integer} {@code value}.\n+     */\n+    @NonNull\n+    T column(@NonNull String column, @NonNull Integer value);\n+\n+    /**\n+     * Adds a {@code column} with a {@link Long} {@code value}.\n+     */\n+    @NonNull\n+    T column(@NonNull String column, @NonNull Long value);\n+\n+    /**\n+     * Adds a {@code column} with a {@link Float} {@code value}.\n+     */\n+    @NonNull\n+    T column(@NonNull String column, @NonNull Float value);\n+\n+    /**\n+     * Adds a {@code column} with a {@link Double} {@code value}.\n+     */\n+    @NonNull\n+    T column(@NonNull String column, @NonNull Double value);\n+\n+    /**\n+     * Adds a {@code column} with a {@link Boolean} {@code value}.\n+     */\n+    @NonNull\n+    T column(@NonNull String column, @NonNull Boolean value);\n+\n+    /**\n+     * Adds a {@code column} with a {@code byte} array {@code value}.\n+     */\n+    @NonNull\n+    T column(@NonNull String column, @NonNull byte[] value);\n+\n+    /**\n      * Adds an empty {@code column}.\n      */\n     @NonNull"
+    },
+    {
+      "sha": "baf5477d3dee3a3e91c3f910389001b54fcfecc2",
+      "filename": "extensions/database/src/test/java/com/google/android/agera/database/SqlDatabaseFunctionsTest.java",
+      "status": "modified",
+      "additions": 91,
+      "deletions": 0,
+      "changes": 91,
+      "blob_url": "https://github.com/google/agera/blob/4036f9880f34e80ca7d6feb2439ebfdb7fed43da/extensions/database/src/test/java/com/google/android/agera/database/SqlDatabaseFunctionsTest.java",
+      "raw_url": "https://github.com/google/agera/raw/4036f9880f34e80ca7d6feb2439ebfdb7fed43da/extensions/database/src/test/java/com/google/android/agera/database/SqlDatabaseFunctionsTest.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/database/src/test/java/com/google/android/agera/database/SqlDatabaseFunctionsTest.java?ref=4036f9880f34e80ca7d6feb2439ebfdb7fed43da",
+      "patch": "@@ -68,6 +68,7 @@\n   private static final Supplier<Result<SQLiteDatabase>> FAILURE =\n       staticSupplier(Result.<SQLiteDatabase>failure(new Exception()));\n   private static final CursorStringFunction CURSOR_STRING_FUNCTION = new CursorStringFunction();\n+  public static final String COLUMN = \"column\";\n \n   private SQLiteDatabase database;\n   private Supplier<Result<SQLiteDatabase>> databaseSupplier;\n@@ -336,6 +337,96 @@ public void shouldReturnErrorForFailedDatabaseCreationInInsert() throws Throwabl\n   }\n \n   @Test\n+  public void shouldAddBooleanColumnForInsert() {\n+    final boolean value = true;\n+    assertThat(sqlInsertRequest()\n+            .table(TABLE)\n+            .column(COLUMN, value)\n+            .compile().contentValues.getAsBoolean(COLUMN),\n+        is(value));\n+  }\n+\n+  @Test\n+  public void shouldAddStringColumnForInsert() {\n+    final String value = \"string\";\n+    assertThat(sqlInsertRequest()\n+            .table(TABLE)\n+            .column(COLUMN, value)\n+            .compile().contentValues.getAsString(COLUMN),\n+        is(value));\n+  }\n+\n+  @Test\n+  public void shouldAddByteColumnForInsert() {\n+    final byte value = 2;\n+    assertThat(sqlInsertRequest()\n+            .table(TABLE)\n+            .column(COLUMN, value)\n+            .compile().contentValues.getAsByte(COLUMN),\n+        is(value));\n+  }\n+\n+  @Test\n+  public void shouldAddIntegerColumnForInsert() {\n+    final int value = 2;\n+    assertThat(sqlInsertRequest()\n+            .table(TABLE)\n+            .column(COLUMN, value)\n+            .compile().contentValues.getAsInteger(COLUMN),\n+        is(value));\n+  }\n+\n+  @Test\n+  public void shouldAddShortColumnForInsert() {\n+    final short value = 2;\n+    assertThat(sqlInsertRequest()\n+            .table(TABLE)\n+            .column(COLUMN, value)\n+            .compile().contentValues.getAsShort(COLUMN),\n+        is(value));\n+  }\n+\n+  @Test\n+  public void shouldAddDoubleColumnForInsert() {\n+    final double value = 2;\n+    assertThat(sqlInsertRequest()\n+            .table(TABLE)\n+            .column(COLUMN, value)\n+            .compile().contentValues.getAsDouble(COLUMN),\n+        is(value));\n+  }\n+\n+  @Test\n+  public void shouldAddFloatColumnForInsert() {\n+    final float value = 2;\n+    assertThat(sqlInsertRequest()\n+            .table(TABLE)\n+            .column(COLUMN, value)\n+            .compile().contentValues.getAsFloat(COLUMN),\n+        is(value));\n+  }\n+\n+  @Test\n+  public void shouldAddLongColumnForInsert() {\n+    final long value = 2;\n+    assertThat(sqlInsertRequest()\n+            .table(TABLE)\n+            .column(COLUMN, value)\n+            .compile().contentValues.getAsLong(COLUMN),\n+        is(value));\n+  }\n+\n+  @Test\n+  public void shouldAddByteArrayColumnForInsert() {\n+    final byte[] value = \"value\".getBytes();\n+    assertThat(sqlInsertRequest()\n+            .table(TABLE)\n+            .column(COLUMN, value)\n+            .compile().contentValues.getAsByteArray(COLUMN),\n+        is(value));\n+  }\n+\n+  @Test\n   public void shouldHavePrivateConstructor() {\n     assertThat(SqlDatabaseFunctions.class, hasPrivateConstructor());\n   }"
+    }
+  ]
+}

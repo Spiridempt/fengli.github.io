@@ -1,0 +1,137 @@
+{
+  "sha": "d870cef353ce3577438e5c72bc3b91b47a4de75b",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2017-03-07T13:26:31Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2017-03-07T13:26:31Z"
+    },
+    "message": "Added forItem to RepositoryPresenter(s) (#145)",
+    "tree": {
+      "sha": "1fdc458f1ec50ccb2258f5cffb75da53f61447b1",
+      "url": "https://api.github.com/repos/google/agera/git/trees/1fdc458f1ec50ccb2258f5cffb75da53f61447b1"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/d870cef353ce3577438e5c72bc3b91b47a4de75b",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/d870cef353ce3577438e5c72bc3b91b47a4de75b",
+  "html_url": "https://github.com/google/agera/commit/d870cef353ce3577438e5c72bc3b91b47a4de75b",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/d870cef353ce3577438e5c72bc3b91b47a4de75b/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "avatar_url": "https://avatars0.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8c34694a2a4b051201e631e128b9902a77c8797d",
+      "url": "https://api.github.com/repos/google/agera/commits/8c34694a2a4b051201e631e128b9902a77c8797d",
+      "html_url": "https://github.com/google/agera/commit/8c34694a2a4b051201e631e128b9902a77c8797d"
+    }
+  ],
+  "stats": {
+    "total": 67,
+    "additions": 67,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "315991ff1e1447d6d837a5a39a8dae0266a10f09",
+      "filename": "extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryPresenterCompiler.java",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 0,
+      "changes": 28,
+      "blob_url": "https://github.com/google/agera/blob/d870cef353ce3577438e5c72bc3b91b47a4de75b/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryPresenterCompiler.java",
+      "raw_url": "https://github.com/google/agera/raw/d870cef353ce3577438e5c72bc3b91b47a4de75b/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryPresenterCompiler.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryPresenterCompiler.java?ref=d870cef353ce3577438e5c72bc3b91b47a4de75b",
+      "patch": "@@ -44,6 +44,12 @@\n \n   @NonNull\n   @Override\n+  public RepositoryPresenter forItem() {\n+    return new ItemBasicRepositoryPresenter<>(layoutForItem, binder, recycler, stableIdForItem);\n+  }\n+\n+  @NonNull\n+  @Override\n   public RepositoryPresenter<List> forList() {\n     return new ListBasicRepositoryPresenter(layoutForItem, binder, recycler, stableIdForItem);\n   }\n@@ -151,6 +157,28 @@ public void recycle(@NonNull final RecyclerView.ViewHolder holder) {\n     }\n   }\n \n+  private static final class ItemBasicRepositoryPresenter<T>\n+      extends BasicRepositoryPresenter<T, T> {\n+\n+    public ItemBasicRepositoryPresenter(@NonNull final Function<Object, Integer> layoutId,\n+        @NonNull final Binder<T, View> binder,\n+        @NonNull final Receiver<View> recycler,\n+        @NonNull final Function<T, Long> stableIdForItem) {\n+      super(layoutId, binder, recycler, stableIdForItem);\n+    }\n+\n+    @Override\n+    public int getItemCount(@NonNull final T data) {\n+      return 1;\n+    }\n+\n+    @NonNull\n+    @Override\n+    protected T getValue(@NonNull final T data, final int index) {\n+      return data;\n+    }\n+  }\n+\n   private static final class ListBasicRepositoryPresenter<T>\n       extends BasicRepositoryPresenter<T, List<T>> {\n "
+    },
+    {
+      "sha": "acb5761710d0a3225184e19779b2849babd561e3",
+      "filename": "extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryPresenterCompilerStates.java",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/google/agera/blob/d870cef353ce3577438e5c72bc3b91b47a4de75b/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryPresenterCompilerStates.java",
+      "raw_url": "https://github.com/google/agera/raw/d870cef353ce3577438e5c72bc3b91b47a4de75b/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryPresenterCompilerStates.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryPresenterCompilerStates.java?ref=d870cef353ce3577438e5c72bc3b91b47a4de75b",
+      "patch": "@@ -103,6 +103,13 @@\n   interface RPCompile<TVal> {\n \n     /**\n+     * Creates a {@link RepositoryPresenter} for a @{link Repository} of a single item that will be\n+     * bound to the {@link RecyclerView}.\n+     */\n+    @NonNull\n+    RepositoryPresenter<TVal> forItem();\n+\n+    /**\n      * Creates a {@link RepositoryPresenter} for a @{link Repository} of a {@link List} where each\n      * item in the {@link List} will be bound to the {@link RecyclerView}.\n      */"
+    },
+    {
+      "sha": "02016e7cba8983286e03f90781e8c82e88298d7b",
+      "filename": "extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryPresentersTest.java",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/google/agera/blob/d870cef353ce3577438e5c72bc3b91b47a4de75b/extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryPresentersTest.java",
+      "raw_url": "https://github.com/google/agera/raw/d870cef353ce3577438e5c72bc3b91b47a4de75b/extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryPresentersTest.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryPresentersTest.java?ref=d870cef353ce3577438e5c72bc3b91b47a4de75b",
+      "patch": "@@ -89,6 +89,17 @@ public void shouldBindRepositoryPresenterOfResultList() {\n   }\n \n   @Test\n+  public void shouldBindRepositoryPresenterOfItem() {\n+    final RepositoryPresenter<String> itemRepositoryPresenter =\n+        repositoryPresenterOf(String.class)\n+            .layout(LAYOUT_ID)\n+            .bindWith(binder)\n+            .forItem();\n+    itemRepositoryPresenter.bind(STRING, 0, viewHolder);\n+    verify(binder).bind(STRING, view);\n+  }\n+\n+  @Test\n   public void shouldBindRepositoryPresenterOfList() {\n     final RepositoryPresenter<List<String>> listRepositoryPresenter =\n         repositoryPresenterOf(String.class)"
+    },
+    {
+      "sha": "20ae82ef45b0a59f383371808388eedd8fbe018e",
+      "filename": "extensions/rvdatabinding/src/main/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresenterCompiler.java",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/google/agera/blob/d870cef353ce3577438e5c72bc3b91b47a4de75b/extensions/rvdatabinding/src/main/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresenterCompiler.java",
+      "raw_url": "https://github.com/google/agera/raw/d870cef353ce3577438e5c72bc3b91b47a4de75b/extensions/rvdatabinding/src/main/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresenterCompiler.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvdatabinding/src/main/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresenterCompiler.java?ref=d870cef353ce3577438e5c72bc3b91b47a4de75b",
+      "patch": "@@ -72,6 +72,17 @@ public Object itemIdForItem(@NonNull final Function itemIdForItem) {\n     return this;\n   }\n \n+\n+  @NonNull\n+  @Override\n+  public RepositoryPresenter forItem() {\n+    return repositoryPresenterOf(null)\n+        .layoutForItem(layoutFactory)\n+        .stableIdForItem(stableIdForItem)\n+        .bindWith(new ViewBinder(itemId, new ArrayList<>(handlers)))\n+        .forItem();\n+  }\n+\n   @NonNull\n   @Override\n   public RepositoryPresenter<List<Object>> forList() {"
+    },
+    {
+      "sha": "68b82aa93a0d29b96a999dcb805b631ad659dfd5",
+      "filename": "extensions/rvdatabinding/src/test/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresentersTest.java",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/google/agera/blob/d870cef353ce3577438e5c72bc3b91b47a4de75b/extensions/rvdatabinding/src/test/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresentersTest.java",
+      "raw_url": "https://github.com/google/agera/raw/d870cef353ce3577438e5c72bc3b91b47a4de75b/extensions/rvdatabinding/src/test/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresentersTest.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvdatabinding/src/test/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresentersTest.java?ref=d870cef353ce3577438e5c72bc3b91b47a4de75b",
+      "patch": "@@ -105,6 +105,16 @@ public void shouldBindRepositoryPresenterOfResultList() {\n   }\n \n   @Test\n+  public void shouldBindRepositoryPresenterOfItem() {\n+    final RepositoryPresenter<String> itemRepositoryPresenter =\n+        dataBindingRepositoryPresenterOf(String.class)\n+            .layout(LAYOUT_ID)\n+            .itemId(ITEM_ID)\n+            .forItem();\n+    itemRepositoryPresenter.bind(STRING, 0, viewHolder);\n+  }\n+\n+  @Test\n   public void shouldBindRepositoryPresenterOfList() {\n     final RepositoryPresenter<List<String>> listRepositoryPresenter =\n         dataBindingRepositoryPresenterOf(String.class)"
+    }
+  ]
+}

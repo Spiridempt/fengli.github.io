@@ -1,0 +1,125 @@
+{
+  "sha": "0ce8ba2e606daea348688c5eb95aa90e9ee1b821",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-05-14T14:32:23Z"
+    },
+    "committer": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-05-14T14:46:34Z"
+    },
+    "message": "Added unit testing of rvadapter",
+    "tree": {
+      "sha": "404d9a32b6c503248748454df953e53573a51880",
+      "url": "https://api.github.com/repos/google/agera/git/trees/404d9a32b6c503248748454df953e53573a51880"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/0ce8ba2e606daea348688c5eb95aa90e9ee1b821",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/0ce8ba2e606daea348688c5eb95aa90e9ee1b821",
+  "html_url": "https://github.com/google/agera/commit/0ce8ba2e606daea348688c5eb95aa90e9ee1b821",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/0ce8ba2e606daea348688c5eb95aa90e9ee1b821/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f134b039084356195c1bb81bac433daa85fb9ae5",
+      "url": "https://api.github.com/repos/google/agera/commits/f134b039084356195c1bb81bac433daa85fb9ae5",
+      "html_url": "https://github.com/google/agera/commit/f134b039084356195c1bb81bac433daa85fb9ae5"
+    }
+  ],
+  "stats": {
+    "total": 242,
+    "additions": 227,
+    "deletions": 15
+  },
+  "files": [
+    {
+      "sha": "eada5ae613c0d91b39d07630b144b3a8da20e231",
+      "filename": "extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryAdapter.java",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 6,
+      "changes": 10,
+      "blob_url": "https://github.com/google/agera/blob/0ce8ba2e606daea348688c5eb95aa90e9ee1b821/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryAdapter.java",
+      "raw_url": "https://github.com/google/agera/raw/0ce8ba2e606daea348688c5eb95aa90e9ee1b821/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryAdapter.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryAdapter.java?ref=0ce8ba2e606daea348688c5eb95aa90e9ee1b821",
+      "patch": "@@ -57,6 +57,7 @@\n   /**\n    * Builds a {@link RepositoryAdapter}.\n    */\n+  @NonNull\n   public static Builder repositoryAdapter() {\n     return new Builder();\n   }\n@@ -84,6 +85,7 @@ public static Builder repositoryAdapter() {\n      *     position.\n      * @return This instance, for chaining.\n      */\n+    @NonNull\n     public <T> Builder add(@NonNull final Repository<T> repository,\n         @NonNull final RepositoryPresenter<T> presenter) {\n       @SuppressWarnings(\"unchecked\")\n@@ -108,6 +110,7 @@ public static Builder repositoryAdapter() {\n      *     {@link #add}; they will be observed automatically.\n      * @return This instance, for chaining.\n      */\n+    @NonNull\n     public Builder addAdditionalObservable(@NonNull final Observable observable) {\n       observables.add(checkNotNull(observable));\n       return this;\n@@ -120,6 +123,7 @@ public Builder addAdditionalObservable(@NonNull final Observable observable) {\n      * a new instance of the subclass, passing this builder to the base constructor\n      * {@link RepositoryAdapter#RepositoryAdapter(Builder)}.\n      */\n+    @NonNull\n     public RepositoryAdapter build() {\n       return new RepositoryAdapter(this);\n     }\n@@ -248,12 +252,6 @@ public final void onBindViewHolder(final RecyclerView.ViewHolder holder, final i\n         data[resolvedRepositoryIndex], resolvedItemIndex, holder);\n   }\n \n-  @Override\n-  public void onViewRecycled(RecyclerView.ViewHolder holder) {\n-    super.onViewRecycled(holder);\n-    presenters[resolvedRepositoryIndex].recycled(holder);\n-  }\n-\n   /**\n    * Converts the given overall adapter {@code position} into {@link #resolvedRepositoryIndex}\n    * and {@link #resolvedItemIndex}."
+    },
+    {
+      "sha": "59b37c6492ac0f247a218abb20f9714c8281679d",
+      "filename": "extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryPresenter.java",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 9,
+      "changes": 9,
+      "blob_url": "https://github.com/google/agera/blob/0ce8ba2e606daea348688c5eb95aa90e9ee1b821/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryPresenter.java",
+      "raw_url": "https://github.com/google/agera/raw/0ce8ba2e606daea348688c5eb95aa90e9ee1b821/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryPresenter.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryPresenter.java?ref=0ce8ba2e606daea348688c5eb95aa90e9ee1b821",
+      "patch": "@@ -66,13 +66,4 @@ public long getItemId(@NonNull final T data, final int index) {\n    *     object will be of that custom type.\n    */\n   public abstract void bind(@NonNull T data, int index, @NonNull RecyclerView.ViewHolder holder);\n-\n-  /**\n-   * Called when the given {@code holder} is recycled.\n-   *\n-   * @param holder The view holder that holds the view. If a subclass of {@link RepositoryAdapter}\n-   *     is used, which returns a custom view holder for this item's layout resource ID, then this\n-   *     object will be of that custom type.\n-   */\n-  public void recycled(@NonNull final RecyclerView.ViewHolder holder) {}\n }"
+    },
+    {
+      "sha": "4ada397e43e23d886e28494ba20ba30056b3d650",
+      "filename": "extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryAdapterTest.java",
+      "status": "added",
+      "additions": 171,
+      "deletions": 0,
+      "changes": 171,
+      "blob_url": "https://github.com/google/agera/blob/0ce8ba2e606daea348688c5eb95aa90e9ee1b821/extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryAdapterTest.java",
+      "raw_url": "https://github.com/google/agera/raw/0ce8ba2e606daea348688c5eb95aa90e9ee1b821/extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryAdapterTest.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryAdapterTest.java?ref=0ce8ba2e606daea348688c5eb95aa90e9ee1b821",
+      "patch": "@@ -0,0 +1,171 @@\n+/*\n+ * Copyright 2016 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+package com.google.android.agera.rvadapter;\n+\n+import static com.google.android.agera.Observables.updateDispatcher;\n+import static com.google.android.agera.Repositories.mutableRepository;\n+import static com.google.android.agera.Repositories.repository;\n+import static com.google.android.agera.rvadapter.RepositoryAdapter.repositoryAdapter;\n+import static java.util.Arrays.asList;\n+import static org.hamcrest.MatcherAssert.assertThat;\n+import static org.hamcrest.Matchers.is;\n+import static org.mockito.Matchers.any;\n+import static org.mockito.Matchers.anyInt;\n+import static org.mockito.Mockito.never;\n+import static org.mockito.Mockito.verify;\n+import static org.mockito.Mockito.when;\n+import static org.mockito.MockitoAnnotations.initMocks;\n+import static org.robolectric.annotation.Config.NONE;\n+import static org.robolectric.shadows.ShadowLooper.runUiThreadTasksIncludingDelayedTasks;\n+\n+import com.google.android.agera.MutableRepository;\n+import com.google.android.agera.Repository;\n+import com.google.android.agera.UpdateDispatcher;\n+\n+import android.content.Context;\n+import android.support.v7.widget.RecyclerView;\n+import android.view.LayoutInflater;\n+import android.view.View;\n+import android.view.ViewGroup;\n+import org.junit.Before;\n+import org.junit.Test;\n+import org.junit.runner.RunWith;\n+import org.mockito.Mock;\n+import org.robolectric.RobolectricTestRunner;\n+import org.robolectric.annotation.Config;\n+\n+import java.util.List;\n+\n+@RunWith(RobolectricTestRunner.class)\n+@Config(manifest = NONE)\n+public final class RepositoryAdapterTest {\n+  private static final List<String> REPOSITORY_LIST = asList(\"a\", \"b\", \"c\");\n+  private static final String REPOSITORY_ITEM = \"d\";\n+  private static final String ALTERNATIVE_REPOSITORY_ITEM = \"e\";\n+  public static final int LAYOUT_ID = 3;\n+  @Mock\n+  private RepositoryPresenter repositoryPresenter;\n+  @Mock\n+  private RepositoryPresenter secondRepositoryPresenter;\n+  @Mock\n+  private RecyclerView.ViewHolder viewHolder;\n+  @Mock\n+  private ViewGroup viewGroup;\n+  @Mock\n+  private Context context;\n+  @Mock\n+  private LayoutInflater layoutInflater;\n+  @Mock\n+  private View view;\n+  private UpdateDispatcher updateDispatcher;\n+  private MutableRepository repository;\n+  private Repository secondRepository;\n+  private RepositoryAdapter repositoryAdapter;\n+\n+  @Before\n+  public void setUp() {\n+    initMocks(this);\n+    updateDispatcher = updateDispatcher();\n+    repository = mutableRepository(REPOSITORY_ITEM);\n+    secondRepository = repository(REPOSITORY_LIST);\n+\n+    when(viewGroup.getContext()).thenReturn(context);\n+    when(context.getSystemService(Context.LAYOUT_INFLATER_SERVICE)).thenReturn(layoutInflater);\n+    when(layoutInflater.inflate(LAYOUT_ID, viewGroup, false)).thenReturn(view);\n+    when(repositoryPresenter.getItemCount(REPOSITORY_ITEM)).thenReturn(1);\n+    when(secondRepositoryPresenter.getItemCount(REPOSITORY_LIST)).thenReturn(3);\n+\n+    repositoryAdapter = repositoryAdapter()\n+        .add(repository, repositoryPresenter)\n+        .add(secondRepository, secondRepositoryPresenter)\n+        .addAdditionalObservable(updateDispatcher)\n+        .build();\n+  }\n+\n+  @Test\n+  public void shouldReturnItemCountFromPresenters() {\n+    assertThat(repositoryAdapter.getItemCount(), is(4));\n+  }\n+\n+  @Test\n+  public void shouldReturnItemIdFromFirstPresenter() {\n+    when(repositoryPresenter.getItemId(REPOSITORY_ITEM, 0)).thenReturn(1L);\n+    assertThat(repositoryAdapter.getItemId(0), is(1L));\n+\n+    verify(secondRepositoryPresenter, never()).getItemId(any(), anyInt());\n+  }\n+\n+  @Test\n+  public void shouldReturnItemIdFromSecondPresenter() {\n+    when(secondRepositoryPresenter.getItemId(REPOSITORY_LIST, 0)).thenReturn(2L);\n+    assertThat(repositoryAdapter.getItemId(1), is(2L));\n+\n+    verify(repositoryPresenter, never()).getItemId(any(), anyInt());\n+  }\n+\n+  @Test(expected = IndexOutOfBoundsException.class)\n+  public void shouldThrowExceptionForOutOfBoundsIndex() {\n+    repositoryAdapter.getItemId(4);\n+  }\n+\n+  @Test\n+  public void shouldReturnItemViewTypeFromFirstPresenter() {\n+    when(repositoryPresenter.getLayoutResId(REPOSITORY_ITEM, 0)).thenReturn(1);\n+    assertThat(repositoryAdapter.getItemViewType(0), is(1));\n+\n+    verify(secondRepositoryPresenter, never()).getItemId(any(), anyInt());\n+  }\n+\n+  @Test\n+  public void shouldReturnItemViewTypeFromSecondPresenter() {\n+    when(secondRepositoryPresenter.getLayoutResId(REPOSITORY_LIST, 0)).thenReturn(2);\n+    assertThat(repositoryAdapter.getItemViewType(1), is(2));\n+\n+    verify(repositoryPresenter, never()).getItemId(any(), anyInt());\n+  }\n+\n+  @Test\n+  public void shouldCreateViewHolder() {\n+    assertThat(repositoryAdapter.onCreateViewHolder(viewGroup, LAYOUT_ID).itemView, is(view));\n+  }\n+\n+  @Test\n+  public void shouldUpdateOnChangingRepositoryWhenObserving() {\n+    when(repositoryPresenter.getItemCount(ALTERNATIVE_REPOSITORY_ITEM)).thenReturn(1);\n+    repositoryAdapter.getItemCount(); //Trigger a refresh\n+\n+    repositoryAdapter.startObserving();\n+    repository.accept(ALTERNATIVE_REPOSITORY_ITEM);\n+    runUiThreadTasksIncludingDelayedTasks();\n+    repositoryAdapter.stopObserving();\n+\n+    repositoryAdapter.onBindViewHolder(viewHolder, 0);\n+\n+    verify(repositoryPresenter).bind(ALTERNATIVE_REPOSITORY_ITEM, 0, viewHolder);\n+  }\n+\n+  @Test\n+  public void shouldNotUpdateOnChangingRepositoryWhenNotObserving() {\n+    repositoryAdapter.getItemCount(); //Trigger a refresh\n+\n+    repository.accept(ALTERNATIVE_REPOSITORY_ITEM);\n+    runUiThreadTasksIncludingDelayedTasks();\n+\n+    repositoryAdapter.onBindViewHolder(viewHolder, 0);\n+\n+    verify(repositoryPresenter).bind(REPOSITORY_ITEM, 0, viewHolder);\n+  }\n+}\n\\ No newline at end of file"
+    },
+    {
+      "sha": "70882214d8149622bde1a4619acf6d5384835ae1",
+      "filename": "extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryPresenterTest.java",
+      "status": "added",
+      "additions": 52,
+      "deletions": 0,
+      "changes": 52,
+      "blob_url": "https://github.com/google/agera/blob/0ce8ba2e606daea348688c5eb95aa90e9ee1b821/extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryPresenterTest.java",
+      "raw_url": "https://github.com/google/agera/raw/0ce8ba2e606daea348688c5eb95aa90e9ee1b821/extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryPresenterTest.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryPresenterTest.java?ref=0ce8ba2e606daea348688c5eb95aa90e9ee1b821",
+      "patch": "@@ -0,0 +1,52 @@\n+/*\n+ * Copyright 2016 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+package com.google.android.agera.rvadapter;\n+\n+import static org.hamcrest.Matchers.is;\n+import static org.junit.Assert.assertThat;\n+\n+import android.support.annotation.NonNull;\n+import android.support.v7.widget.RecyclerView;\n+import org.junit.Test;\n+import org.junit.runner.RunWith;\n+import org.robolectric.RobolectricTestRunner;\n+import org.robolectric.annotation.Config;\n+\n+@RunWith(RobolectricTestRunner.class)\n+@Config(manifest = Config.NONE)\n+public final class RepositoryPresenterTest {\n+\n+  @Test\n+  public void shouldReturnDefaultItemId() throws Exception {\n+    assertThat(new TestRepositoryPresenter().getItemId(new Object(), 0), is(RecyclerView.NO_ID));\n+  }\n+\n+  private static final class TestRepositoryPresenter extends RepositoryPresenter<Object> {\n+    @Override\n+    public int getItemCount(@NonNull final Object data) {\n+      return 0;\n+    }\n+\n+    @Override\n+    public int getLayoutResId(@NonNull final Object data, final int index) {\n+      return 0;\n+    }\n+\n+    @Override\n+    public void bind(@NonNull final Object data, final int index,\n+        @NonNull final RecyclerView.ViewHolder holder) {}\n+  }\n+}\n\\ No newline at end of file"
+    }
+  ]
+}

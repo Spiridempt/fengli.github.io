@@ -1,0 +1,101 @@
+{
+  "sha": "72dc235d47ca5889d7722eb90f0e4b7211b70382",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2017-01-05T10:09:08Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2017-01-05T10:09:08Z"
+    },
+    "message": "Extracted pool from test app row handler (#138)",
+    "tree": {
+      "sha": "b4358ec49406cb57a0426072eaa91aa5d8d413ed",
+      "url": "https://api.github.com/repos/google/agera/git/trees/b4358ec49406cb57a0426072eaa91aa5d8d413ed"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/72dc235d47ca5889d7722eb90f0e4b7211b70382",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/72dc235d47ca5889d7722eb90f0e4b7211b70382",
+  "html_url": "https://github.com/google/agera/commit/72dc235d47ca5889d7722eb90f0e4b7211b70382",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/72dc235d47ca5889d7722eb90f0e4b7211b70382/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "avatar_url": "https://avatars0.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "836adaf713b681d2484bc9b53aa3a2ff3e0e5cdf",
+      "url": "https://api.github.com/repos/google/agera/commits/836adaf713b681d2484bc9b53aa3a2ff3e0e5cdf",
+      "html_url": "https://github.com/google/agera/commit/836adaf713b681d2484bc9b53aa3a2ff3e0e5cdf"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 10,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "ec674478cc477ddbb0d9b6c8c1b5fc36bce57c87",
+      "filename": "testapp/src/main/java/com/google/android/agera/testapp/NotesFragment.java",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/google/agera/blob/72dc235d47ca5889d7722eb90f0e4b7211b70382/testapp/src/main/java/com/google/android/agera/testapp/NotesFragment.java",
+      "raw_url": "https://github.com/google/agera/raw/72dc235d47ca5889d7722eb90f0e4b7211b70382/testapp/src/main/java/com/google/android/agera/testapp/NotesFragment.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/java/com/google/android/agera/testapp/NotesFragment.java?ref=72dc235d47ca5889d7722eb90f0e4b7211b70382",
+      "patch": "@@ -36,6 +36,7 @@\n import android.support.v4.app.Fragment;\n import android.support.v7.widget.LinearLayoutManager;\n import android.support.v7.widget.RecyclerView;\n+import android.support.v7.widget.RecyclerView.RecycledViewPool;\n import android.util.DisplayMetrics;\n import android.view.LayoutInflater;\n import android.view.View;\n@@ -59,14 +60,16 @@\n   private RepositoryAdapter adapter;\n   private NotesStore notesStore;\n   private RecyclerView recyclerView;\n+  private RecycledViewPool pool;\n \n   @Override\n   public void onCreate(@Nullable final Bundle savedInstanceState) {\n     super.onCreate(savedInstanceState);\n     setRetainInstance(true);\n     notesStore = notesStore(getContext().getApplicationContext());\n \n-    final RowHandler<NoteGroup, List<Note>> rowHandler = rowBinder(\n+    pool = new RecycledViewPool();\n+    final RowHandler<NoteGroup, List<Note>> rowHandler = rowBinder(pool,\n         (r) -> new LinearLayoutManager(getContext(), HORIZONTAL, false),\n         NoteGroup::getId, NoteGroup::getNotes, (r) ->\n             dataBindingRepositoryPresenterOf(Note.class)\n@@ -169,5 +172,6 @@ public void onDestroyView() {\n     super.onDestroyView();\n     recyclerView.setAdapter(null);\n     recyclerView = null;\n+    pool.clear();\n   }\n }"
+    },
+    {
+      "sha": "e96149feef6e96718442d534e3761a432e3fc409",
+      "filename": "testapp/src/main/java/com/google/android/agera/testapp/RowHandler.java",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 3,
+      "changes": 8,
+      "blob_url": "https://github.com/google/agera/blob/72dc235d47ca5889d7722eb90f0e4b7211b70382/testapp/src/main/java/com/google/android/agera/testapp/RowHandler.java",
+      "raw_url": "https://github.com/google/agera/raw/72dc235d47ca5889d7722eb90f0e4b7211b70382/testapp/src/main/java/com/google/android/agera/testapp/RowHandler.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/java/com/google/android/agera/testapp/RowHandler.java?ref=72dc235d47ca5889d7722eb90f0e4b7211b70382",
+      "patch": "@@ -59,7 +59,8 @@\n   @NonNull\n   private final RecycledViewPool pool;\n \n-  private RowHandler(@NonNull final Function<TRow, TRowItems> data,\n+  private RowHandler(@NonNull final RecycledViewPool pool,\n+      @NonNull final Function<TRow, TRowItems> data,\n       @NonNull final Function<TRow, Long> stableId,\n       @NonNull final Function<TRow, RepositoryPresenter<TRowItems>> presenter,\n       @NonNull final Function<TRow, LayoutManager> layoutManager) {\n@@ -71,16 +72,17 @@ private RowHandler(@NonNull final Function<TRow, TRowItems> data,\n     this.previousStableIds = new IdentityHashMap<>();\n     this.adapterRepositories = new IdentityHashMap<>();\n     this.startedAdapters = new HashSet<>();\n-    this.pool = new RecycledViewPool();\n+    this.pool = pool;\n   }\n \n   @NonNull\n   static <TRow, TRowItems> RowHandler<TRow, TRowItems> rowBinder(\n+      @NonNull final RecycledViewPool pool,\n       @NonNull final Function<TRow, LayoutManager> layoutManager,\n       @NonNull final Function<TRow, Long> stableIdFunction,\n       @NonNull final Function<TRow, TRowItems> dataFunction,\n       @NonNull final Function<TRow, RepositoryPresenter<TRowItems>> presenterFromView) {\n-    return new RowHandler<>(dataFunction, stableIdFunction, presenterFromView, layoutManager);\n+    return new RowHandler<>(pool, dataFunction, stableIdFunction, presenterFromView, layoutManager);\n   }\n \n   @Override"
+    }
+  ]
+}

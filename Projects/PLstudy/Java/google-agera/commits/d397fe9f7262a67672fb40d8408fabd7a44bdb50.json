@@ -1,0 +1,113 @@
+{
+  "sha": "d397fe9f7262a67672fb40d8408fabd7a44bdb50",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-05-31T16:00:35Z"
+    },
+    "committer": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-05-31T16:00:35Z"
+    },
+    "message": "Added whileVisible/whileActive to RepositoryAdapter (#67)",
+    "tree": {
+      "sha": "0060f0ab6bcbb4f43248c63a8ee754d5bac7ec88",
+      "url": "https://api.github.com/repos/google/agera/git/trees/0060f0ab6bcbb4f43248c63a8ee754d5bac7ec88"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/d397fe9f7262a67672fb40d8408fabd7a44bdb50",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/d397fe9f7262a67672fb40d8408fabd7a44bdb50",
+  "html_url": "https://github.com/google/agera/commit/d397fe9f7262a67672fb40d8408fabd7a44bdb50",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/d397fe9f7262a67672fb40d8408fabd7a44bdb50/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "bde24d67de273bad85488f12a6802952f7fc7b0b",
+      "url": "https://api.github.com/repos/google/agera/commits/bde24d67de273bad85488f12a6802952f7fc7b0b",
+      "html_url": "https://github.com/google/agera/commit/bde24d67de273bad85488f12a6802952f7fc7b0b"
+    }
+  ],
+  "stats": {
+    "total": 280,
+    "additions": 266,
+    "deletions": 14
+  },
+  "files": [
+    {
+      "sha": "2d164b15c4bc31e0d39ca7b228133b50c3b8d66c",
+      "filename": "extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryAdapter.java",
+      "status": "modified",
+      "additions": 131,
+      "deletions": 4,
+      "changes": 135,
+      "blob_url": "https://github.com/google/agera/blob/d397fe9f7262a67672fb40d8408fabd7a44bdb50/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryAdapter.java",
+      "raw_url": "https://github.com/google/agera/raw/d397fe9f7262a67672fb40d8408fabd7a44bdb50/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryAdapter.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryAdapter.java?ref=d397fe9f7262a67672fb40d8408fabd7a44bdb50",
+      "patch": "@@ -23,9 +23,14 @@\n import com.google.android.agera.Repository;\n import com.google.android.agera.Updatable;\n \n+import android.annotation.TargetApi;\n import android.app.Activity;\n+import android.app.Application.ActivityLifecycleCallbacks;\n+import android.os.Bundle;\n import android.support.annotation.NonNull;\n import android.support.v7.widget.RecyclerView;\n+import android.support.v7.widget.RecyclerView.Adapter;\n+import android.support.v7.widget.RecyclerView.ViewHolder;\n import android.view.LayoutInflater;\n import android.view.ViewGroup;\n \n@@ -51,7 +56,7 @@\n  * <p>This adapter can be subclassed to handle special requirements, such as creating custom view\n  * holders, handling item view lifecycle events, and implementing additional interfaces.\n  */\n-public class RepositoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>\n+public class RepositoryAdapter extends RecyclerView.Adapter<ViewHolder>\n     implements Updatable {\n \n   /**\n@@ -128,7 +133,129 @@ public RepositoryAdapter build() {\n       return new RepositoryAdapter(this);\n     }\n \n+    /**\n+     * Builds the {@link RepositoryAdapter} that presents the provided repositories in order and\n+     * observes the repositories as well as any additional observables while the provided\n+     * {@link Activity} is resumed (between {@link Activity#onResume()} and\n+     * {@link Activity#onPause()}).\n+     */\n+    @TargetApi(14)\n+    @NonNull\n+    public Adapter<ViewHolder> whileResumed(@NonNull final Activity activity) {\n+      final RepositoryAdapter repositoryAdapter = new RepositoryAdapter(this);\n+      activity.getApplication().registerActivityLifecycleCallbacks(\n+          new WhileResumedActivityLifecycleCallbacks(activity, repositoryAdapter));\n+      return repositoryAdapter;\n+    }\n+\n+    /**\n+     * Builds the {@link RepositoryAdapter} that presents the provided repositories in order and\n+     * observes the repositories as well as any additional observables while the provided\n+     * {@link Activity} is started (between (between {@link Activity#onStart()} and\n+     * {@link Activity#onStop()}).\n+     */\n+    @TargetApi(14)\n+    @NonNull\n+    public Adapter<ViewHolder> whileStarted(@NonNull final Activity activity) {\n+      final RepositoryAdapter repositoryAdapter = new RepositoryAdapter(this);\n+      activity.getApplication().registerActivityLifecycleCallbacks(\n+          new WhileStartedActivityLifecycleCallbacks(activity, repositoryAdapter));\n+      return repositoryAdapter;\n+    }\n+\n     private Builder() {}\n+\n+    @TargetApi(14)\n+    private static abstract class AdapterActivityLifecycleCallbacks\n+        implements ActivityLifecycleCallbacks {\n+      @NonNull\n+      private final Activity activity;\n+\n+      protected AdapterActivityLifecycleCallbacks(@NonNull final Activity activity) {\n+        this.activity = checkNotNull(activity);\n+      }\n+\n+      @Override\n+      public final void onActivityCreated(final Activity activity,\n+          final Bundle savedInstanceState) {}\n+\n+      @Override\n+      public void onActivityStarted(final Activity activity) {}\n+\n+      @Override\n+      public void onActivityResumed(final Activity activity) {}\n+\n+      @Override\n+      public void onActivityPaused(final Activity activity) {}\n+\n+      @Override\n+      public void onActivityStopped(final Activity activity) {}\n+\n+      @Override\n+      public final void onActivitySaveInstanceState(final Activity activity,\n+          final Bundle outState) {}\n+\n+      @Override\n+      public final void onActivityDestroyed(final Activity anyActivity) {\n+        if (activity == anyActivity) {\n+          activity.getApplication().unregisterActivityLifecycleCallbacks(this);\n+        }\n+      }\n+    }\n+\n+    private static class WhileStartedActivityLifecycleCallbacks\n+        extends AdapterActivityLifecycleCallbacks {\n+      private final Activity activity;\n+      private final RepositoryAdapter repositoryAdapter;\n+\n+      public WhileStartedActivityLifecycleCallbacks(final Activity activity,\n+          final RepositoryAdapter repositoryAdapter) {\n+        super(activity);\n+        this.activity = activity;\n+        this.repositoryAdapter = repositoryAdapter;\n+      }\n+\n+      @Override\n+      public void onActivityStarted(final Activity anyActivity) {\n+        if (anyActivity == activity) {\n+          repositoryAdapter.startObserving();\n+        }\n+      }\n+\n+      @Override\n+      public void onActivityStopped(final Activity anyActivity) {\n+          if (anyActivity == activity) {\n+            repositoryAdapter.stopObserving();\n+          }\n+      }\n+    }\n+\n+    private static class WhileResumedActivityLifecycleCallbacks\n+        extends AdapterActivityLifecycleCallbacks {\n+      private final Activity activity;\n+      private final RepositoryAdapter repositoryAdapter;\n+\n+      public WhileResumedActivityLifecycleCallbacks(final Activity activity,\n+          final RepositoryAdapter repositoryAdapter) {\n+        super(activity);\n+        this.activity = activity;\n+        this.repositoryAdapter = repositoryAdapter;\n+      }\n+\n+      @Override\n+      public void onActivityResumed(final Activity anyActivity) {\n+        if (anyActivity == activity) {\n+          repositoryAdapter.startObserving();\n+        }\n+      }\n+\n+      @Override\n+      public void onActivityPaused(final Activity anyActivity) {\n+        if (anyActivity == activity) {\n+          repositoryAdapter.stopObserving();\n+        }\n+      }\n+    }\n   }\n \n   private final int repositoryCount;\n@@ -233,18 +360,18 @@ public final long getItemId(final int position) {\n   /**\n    * Creates a new view holder holding the view inflated from the provided {@code layoutResourceId}.\n    * This implementation inflates the view using the {@code parent}'s context and creates a holder\n-   * that adds no value to the base class {@link RecyclerView.ViewHolder}. Override this method for\n+   * that adds no value to the base class {@link ViewHolder}. Override this method for\n    * any special requirements.\n    */\n   @Override\n-  public RecyclerView.ViewHolder onCreateViewHolder(final ViewGroup parent,\n+  public ViewHolder onCreateViewHolder(final ViewGroup parent,\n       final int layoutResourceId) {\n     return new RecyclerView.ViewHolder(\n         LayoutInflater.from(parent.getContext()).inflate(layoutResourceId, parent, false)) {};\n   }\n \n   @Override\n-  public final void onBindViewHolder(final RecyclerView.ViewHolder holder, final int position) {\n+  public final void onBindViewHolder(final ViewHolder holder, final int position) {\n     resolveIndices(position);\n     int resolvedRepositoryIndex = this.resolvedRepositoryIndex;\n     int resolvedItemIndex = this.resolvedItemIndex;"
+    },
+    {
+      "sha": "c114fbda0d92c134892c7f3de4dc7d7e84550311",
+      "filename": "extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryAdapterTest.java",
+      "status": "modified",
+      "additions": 131,
+      "deletions": 0,
+      "changes": 131,
+      "blob_url": "https://github.com/google/agera/blob/d397fe9f7262a67672fb40d8408fabd7a44bdb50/extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryAdapterTest.java",
+      "raw_url": "https://github.com/google/agera/raw/d397fe9f7262a67672fb40d8408fabd7a44bdb50/extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryAdapterTest.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryAdapterTest.java?ref=d397fe9f7262a67672fb40d8408fabd7a44bdb50",
+      "patch": "@@ -22,6 +22,7 @@\n import static java.util.Arrays.asList;\n import static org.hamcrest.MatcherAssert.assertThat;\n import static org.hamcrest.Matchers.is;\n+import static org.mockito.ArgumentCaptor.forClass;\n import static org.mockito.Matchers.any;\n import static org.mockito.Matchers.anyInt;\n import static org.mockito.Mockito.never;\n@@ -36,16 +37,21 @@\n import com.google.android.agera.Repository;\n import com.google.android.agera.UpdateDispatcher;\n \n+import android.app.Activity;\n+import android.app.Application;\n+import android.app.Application.ActivityLifecycleCallbacks;\n import android.content.Context;\n import android.support.annotation.LayoutRes;\n import android.support.v7.widget.RecyclerView;\n+import android.support.v7.widget.RecyclerView.Adapter;\n import android.support.v7.widget.RecyclerView.AdapterDataObserver;\n import android.view.LayoutInflater;\n import android.view.View;\n import android.view.ViewGroup;\n import org.junit.Before;\n import org.junit.Test;\n import org.junit.runner.RunWith;\n+import org.mockito.ArgumentCaptor;\n import org.mockito.Mock;\n import org.robolectric.RobolectricTestRunner;\n import org.robolectric.annotation.Config;\n@@ -75,11 +81,17 @@\n   @Mock\n   private View view;\n   @Mock\n+  private Activity activity;\n+  @Mock\n+  private Application application;\n+  @Mock\n   private AdapterDataObserver observer;\n   private UpdateDispatcher updateDispatcher;\n   private MutableRepository repository;\n   private Repository secondRepository;\n   private RepositoryAdapter repositoryAdapter;\n+  private Adapter repositoryAdapterWhileResumed;\n+  private Adapter repositoryAdapterWhileStarted;\n \n   @Before\n   public void setUp() {\n@@ -88,6 +100,7 @@ public void setUp() {\n     repository = mutableRepository(REPOSITORY_ITEM);\n     secondRepository = repository(REPOSITORY_LIST);\n \n+    when(activity.getApplication()).thenReturn(application);\n     when(viewGroup.getContext()).thenReturn(context);\n     when(context.getSystemService(Context.LAYOUT_INFLATER_SERVICE)).thenReturn(layoutInflater);\n     when(layoutInflater.inflate(LAYOUT_ID, viewGroup, false)).thenReturn(view);\n@@ -199,4 +212,122 @@ public void shouldNotUpdateOnChangingRepositoryWhenNotObserving() {\n \n     verify(repositoryPresenter).bind(REPOSITORY_ITEM, 0, viewHolder);\n   }\n+\n+  @Test\n+  public void shouldUpdateOnChangingRepositoryWhenStarted() {\n+    repositoryAdapterWhileStarted = repositoryAdapter()\n+        .add(repository, repositoryPresenter)\n+        .add(secondRepository, secondRepositoryPresenter)\n+        .addAdditionalObservable(updateDispatcher)\n+        .whileStarted(activity);\n+    when(repositoryPresenter.getItemCount(ALTERNATIVE_REPOSITORY_ITEM)).thenReturn(1);\n+    repositoryAdapterWhileStarted.getItemCount(); //Trigger a refresh\n+\n+    setActivityToVisible();\n+    repository.accept(ALTERNATIVE_REPOSITORY_ITEM);\n+    runUiThreadTasksIncludingDelayedTasks();\n+    setActivityToInvisible();\n+\n+    repositoryAdapterWhileStarted.onBindViewHolder(viewHolder, 0);\n+\n+    verify(repositoryPresenter).bind(ALTERNATIVE_REPOSITORY_ITEM, 0, viewHolder);\n+  }\n+\n+  @Test\n+  public void shouldNotUpdateOnChangingRepositoryWhenNotStarted() {\n+    repositoryAdapterWhileStarted = repositoryAdapter()\n+        .add(repository, repositoryPresenter)\n+        .add(secondRepository, secondRepositoryPresenter)\n+        .addAdditionalObservable(updateDispatcher)\n+        .whileStarted(activity);\n+    repositoryAdapterWhileStarted.getItemCount(); //Trigger a refresh\n+\n+    repository.accept(ALTERNATIVE_REPOSITORY_ITEM);\n+    runUiThreadTasksIncludingDelayedTasks();\n+\n+    repositoryAdapterWhileStarted.onBindViewHolder(viewHolder, 0);\n+\n+    verify(repositoryPresenter).bind(REPOSITORY_ITEM, 0, viewHolder);\n+  }\n+\n+  @Test\n+  public void shouldUpdateOnChangingRepositoryWhenResumed() {\n+    repositoryAdapterWhileResumed = repositoryAdapter()\n+        .add(repository, repositoryPresenter)\n+        .add(secondRepository, secondRepositoryPresenter)\n+        .addAdditionalObservable(updateDispatcher)\n+        .whileResumed(activity);\n+    when(repositoryPresenter.getItemCount(ALTERNATIVE_REPOSITORY_ITEM)).thenReturn(1);\n+    repositoryAdapterWhileResumed.getItemCount(); //Trigger a refresh\n+\n+    setActivityToActive();\n+    repository.accept(ALTERNATIVE_REPOSITORY_ITEM);\n+    runUiThreadTasksIncludingDelayedTasks();\n+    setActivityToInactive();\n+\n+    repositoryAdapterWhileResumed.onBindViewHolder(viewHolder, 0);\n+\n+    verify(repositoryPresenter).bind(ALTERNATIVE_REPOSITORY_ITEM, 0, viewHolder);\n+  }\n+\n+  @Test\n+  public void shouldNotUpdateOnChangingRepositoryWhenNotResumed() {\n+    repositoryAdapterWhileResumed = repositoryAdapter()\n+        .add(repository, repositoryPresenter)\n+        .add(secondRepository, secondRepositoryPresenter)\n+        .addAdditionalObservable(updateDispatcher)\n+        .whileResumed(activity);\n+    repositoryAdapterWhileResumed.getItemCount(); //Trigger a refresh\n+\n+    repository.accept(ALTERNATIVE_REPOSITORY_ITEM);\n+    runUiThreadTasksIncludingDelayedTasks();\n+\n+    repositoryAdapterWhileResumed.onBindViewHolder(viewHolder, 0);\n+\n+    verify(repositoryPresenter).bind(REPOSITORY_ITEM, 0, viewHolder);\n+  }\n+\n+    private void setActivityToActive() {\n+      final ArgumentCaptor<ActivityLifecycleCallbacks> captor =\n+          forClass(ActivityLifecycleCallbacks.class);\n+\n+     verify(application).registerActivityLifecycleCallbacks(captor.capture());\n+\n+    final ActivityLifecycleCallbacks callbacks = captor.getValue();\n+\n+    callbacks.onActivityResumed(activity);\n+  }\n+\n+  private void setActivityToInactive() {\n+    final ArgumentCaptor<ActivityLifecycleCallbacks> captor =\n+        forClass(ActivityLifecycleCallbacks.class);\n+\n+    verify(application).registerActivityLifecycleCallbacks(captor.capture());\n+\n+    final ActivityLifecycleCallbacks callbacks = captor.getValue();\n+\n+    callbacks.onActivityPaused(activity);\n+  }\n+\n+  private void setActivityToVisible() {\n+    final ArgumentCaptor<ActivityLifecycleCallbacks> captor =\n+        forClass(ActivityLifecycleCallbacks.class);\n+\n+    verify(application).registerActivityLifecycleCallbacks(captor.capture());\n+\n+    final ActivityLifecycleCallbacks callbacks = captor.getValue();\n+\n+    callbacks.onActivityStarted(activity);\n+  }\n+\n+  private void setActivityToInvisible() {\n+    final ArgumentCaptor<ActivityLifecycleCallbacks> captor =\n+        forClass(ActivityLifecycleCallbacks.class);\n+\n+    verify(application).registerActivityLifecycleCallbacks(captor.capture());\n+\n+    final ActivityLifecycleCallbacks callbacks = captor.getValue();\n+\n+    callbacks.onActivityStopped(activity);\n+  }\n }"
+    },
+    {
+      "sha": "a8b6ba92994bc99026bd5e86fdf6730be938365e",
+      "filename": "testapp/src/main/java/com/google/android/agera/testapp/NotesActivity.java",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 10,
+      "changes": 14,
+      "blob_url": "https://github.com/google/agera/blob/d397fe9f7262a67672fb40d8408fabd7a44bdb50/testapp/src/main/java/com/google/android/agera/testapp/NotesActivity.java",
+      "raw_url": "https://github.com/google/agera/raw/d397fe9f7262a67672fb40d8408fabd7a44bdb50/testapp/src/main/java/com/google/android/agera/testapp/NotesActivity.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/java/com/google/android/agera/testapp/NotesActivity.java?ref=d397fe9f7262a67672fb40d8408fabd7a44bdb50",
+      "patch": "@@ -35,16 +35,15 @@\n import com.google.android.agera.Repository;\n import com.google.android.agera.Result;\n import com.google.android.agera.Updatable;\n-import com.google.android.agera.rvadapter.RepositoryAdapter;\n \n import android.app.Activity;\n import android.app.AlertDialog;\n-import android.content.Context;\n import android.graphics.Bitmap;\n import android.os.Bundle;\n-import android.support.annotation.NonNull;\n import android.support.v7.widget.LinearLayoutManager;\n import android.support.v7.widget.RecyclerView;\n+import android.support.v7.widget.RecyclerView.Adapter;\n+import android.support.v7.widget.RecyclerView.ViewHolder;\n import android.util.DisplayMetrics;\n import android.widget.EditText;\n import android.widget.ImageView;\n@@ -55,7 +54,6 @@\n   private static final Executor networkExecutor = newSingleThreadExecutor();\n   private static final Executor calculationExecutor = newSingleThreadExecutor();\n \n-  private RepositoryAdapter adapter;\n   private Repository<Result<Bitmap>> backgroundRepository;\n   private Updatable updatable;\n \n@@ -88,7 +86,7 @@ protected void onCreate(final Bundle savedInstanceState) {\n           .create().show();\n     });\n \n-    adapter = repositoryAdapter()\n+    final Adapter<ViewHolder> adapter = repositoryAdapter()\n         .add(notesStore.getNotesRepository(), dataBindingRepositoryPresenterOf(Note.class)\n             .layout(R.layout.text_layout)\n             .itemId(com.google.android.agera.testapp.BR.note)\n@@ -107,7 +105,7 @@ protected void onCreate(final Bundle savedInstanceState) {\n             .handler(com.google.android.agera.testapp.BR.longClick,\n                 (Predicate<Note>) notesStore::deleteNote)\n             .forList())\n-        .build();\n+        .whileStarted(this);\n \n     // Setup the recycler view using the repository adapter\n     final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.result);\n@@ -140,16 +138,12 @@ protected void onCreate(final Bundle savedInstanceState) {\n   @Override\n   protected void onResume() {\n     super.onResume();\n-    // The adapter is dormant before start observing is called\n-    adapter.startObserving();\n     backgroundRepository.addUpdatable(updatable);\n   }\n \n   @Override\n   protected void onPause() {\n     super.onPause();\n-    // Start observing needs to be paired with stop observing\n-    adapter.stopObserving();\n     backgroundRepository.removeUpdatable(updatable);\n   }\n }\n\\ No newline at end of file"
+    }
+  ]
+}

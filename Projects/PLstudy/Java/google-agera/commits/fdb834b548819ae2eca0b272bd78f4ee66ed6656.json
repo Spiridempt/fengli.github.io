@@ -1,0 +1,89 @@
+{
+  "sha": "fdb834b548819ae2eca0b272bd78f4ee66ed6656",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-06-03T08:03:03Z"
+    },
+    "committer": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-06-03T08:03:17Z"
+    },
+    "message": "Added clarifying comment in CompiledRepository maybeStartFlow",
+    "tree": {
+      "sha": "3f49eb42fc03d7b0e925da9ea7fecb59ad0fd125",
+      "url": "https://api.github.com/repos/google/agera/git/trees/3f49eb42fc03d7b0e925da9ea7fecb59ad0fd125"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/fdb834b548819ae2eca0b272bd78f4ee66ed6656",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/fdb834b548819ae2eca0b272bd78f4ee66ed6656",
+  "html_url": "https://github.com/google/agera/commit/fdb834b548819ae2eca0b272bd78f4ee66ed6656",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/fdb834b548819ae2eca0b272bd78f4ee66ed6656/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "08b65cb7f935410b60760d7eccaf4ea01f77d77d",
+      "url": "https://api.github.com/repos/google/agera/commits/08b65cb7f935410b60760d7eccaf4ea01f77d77d",
+      "html_url": "https://github.com/google/agera/commit/08b65cb7f935410b60760d7eccaf4ea01f77d77d"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 3,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "cf867235a51fc8e59bfb3c20a120d1bde206aa34",
+      "filename": "agera/src/main/java/com/google/android/agera/CompiledRepository.java",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/google/agera/blob/fdb834b548819ae2eca0b272bd78f4ee66ed6656/agera/src/main/java/com/google/android/agera/CompiledRepository.java",
+      "raw_url": "https://github.com/google/agera/raw/fdb834b548819ae2eca0b272bd78f4ee66ed6656/agera/src/main/java/com/google/android/agera/CompiledRepository.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/agera/src/main/java/com/google/android/agera/CompiledRepository.java?ref=fdb834b548819ae2eca0b272bd78f4ee66ed6656",
+      "patch": "@@ -156,9 +156,11 @@ void maybeStartFlow() {\n         restartNeeded = false;\n       } else {\n         if (runState == CANCEL_REQUESTED) {\n+          // flow may still be processing the previous deactivation;\n+          // make sure to restart\n           restartNeeded = true;\n         }\n-        return; // flow already running, do not continue.\n+        return; // flow already running or scheduled to restart, do not continue\n       }\n     }\n     intermediateValue = currentValue;"
+    }
+  ]
+}

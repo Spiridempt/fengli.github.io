@@ -1,0 +1,89 @@
+{
+  "sha": "5f7a7f3822553446f54bfd22f95feaab19a64cf0",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-05-29T08:32:11Z"
+    },
+    "committer": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-05-29T08:32:11Z"
+    },
+    "message": "Improved performance on SimpleRepository (#57)\n\nExcluded the update from the lock around reference",
+    "tree": {
+      "sha": "b7561383bb5c95bf590f44739f1f8091520e2524",
+      "url": "https://api.github.com/repos/google/agera/git/trees/b7561383bb5c95bf590f44739f1f8091520e2524"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/5f7a7f3822553446f54bfd22f95feaab19a64cf0",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/5f7a7f3822553446f54bfd22f95feaab19a64cf0",
+  "html_url": "https://github.com/google/agera/commit/5f7a7f3822553446f54bfd22f95feaab19a64cf0",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/5f7a7f3822553446f54bfd22f95feaab19a64cf0/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "bf6f1e26e452022a28ef0ce293b8db330f109c03",
+      "url": "https://api.github.com/repos/google/agera/commits/bf6f1e26e452022a28ef0ce293b8db330f109c03",
+      "html_url": "https://github.com/google/agera/commit/bf6f1e26e452022a28ef0ce293b8db330f109c03"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 7,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "629cf417a0cae487f2bd1ea710469bc5f9b8d890",
+      "filename": "agera/src/main/java/com/google/android/agera/Repositories.java",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 5,
+      "changes": 12,
+      "blob_url": "https://github.com/google/agera/blob/5f7a7f3822553446f54bfd22f95feaab19a64cf0/agera/src/main/java/com/google/android/agera/Repositories.java",
+      "raw_url": "https://github.com/google/agera/raw/5f7a7f3822553446f54bfd22f95feaab19a64cf0/agera/src/main/java/com/google/android/agera/Repositories.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/agera/src/main/java/com/google/android/agera/Repositories.java?ref=5f7a7f3822553446f54bfd22f95feaab19a64cf0",
+      "patch": "@@ -73,12 +73,14 @@ public synchronized T get() {\n     }\n \n     @Override\n-    public synchronized void accept(@NonNull final T reference) {\n-      if (reference.equals(this.reference)) {\n-        // Keep the old reference to have a slight performance edge if GC is generational.\n-        return;\n+    public void accept(@NonNull final T reference) {\n+      synchronized (this) {\n+        if (reference.equals(this.reference)) {\n+          // Keep the old reference to have a slight performance edge if GC is generational.\n+          return;\n+        }\n+        this.reference = reference;\n       }\n-      this.reference = reference;\n       updateDispatcher.update();\n     }\n "
+    }
+  ]
+}

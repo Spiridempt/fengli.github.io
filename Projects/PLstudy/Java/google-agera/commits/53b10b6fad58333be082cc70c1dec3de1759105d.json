@@ -1,0 +1,89 @@
+{
+  "sha": "53b10b6fad58333be082cc70c1dec3de1759105d",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2017-01-16T10:14:40Z"
+    },
+    "committer": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2017-01-22T18:29:01Z"
+    },
+    "message": "Tagged 1.3.0-alpha2",
+    "tree": {
+      "sha": "b97562e8fb1659d7876efbb4cdf5e543c89a48df",
+      "url": "https://api.github.com/repos/google/agera/git/trees/b97562e8fb1659d7876efbb4cdf5e543c89a48df"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/53b10b6fad58333be082cc70c1dec3de1759105d",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/53b10b6fad58333be082cc70c1dec3de1759105d",
+  "html_url": "https://github.com/google/agera/commit/53b10b6fad58333be082cc70c1dec3de1759105d",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/53b10b6fad58333be082cc70c1dec3de1759105d/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "38fd71f2c8360a22e740421ecded9f6cd815af35",
+      "url": "https://api.github.com/repos/google/agera/commits/38fd71f2c8360a22e740421ecded9f6cd815af35",
+      "html_url": "https://github.com/google/agera/commit/38fd71f2c8360a22e740421ecded9f6cd815af35"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "e6eea1c778e75c3d424ecd3c602c90191db2b916",
+      "filename": "settings.gradle",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/google/agera/blob/53b10b6fad58333be082cc70c1dec3de1759105d/settings.gradle",
+      "raw_url": "https://github.com/google/agera/raw/53b10b6fad58333be082cc70c1dec3de1759105d/settings.gradle",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/settings.gradle?ref=53b10b6fad58333be082cc70c1dec3de1759105d",
+      "patch": "@@ -22,7 +22,7 @@ include ':extensions:net'\n include ':testapp'\n \n gradle.ext.versionCode = 10300\n-gradle.ext.versionName = '1.3.0-SNAPSHOT'\n+gradle.ext.versionName = '1.3.0-alpha2'\n \n gradle.ext.bintrayRepo = 'Agera'\n gradle.ext.bintrayName = 'agera'"
+    }
+  ]
+}

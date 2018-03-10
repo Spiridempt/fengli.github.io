@@ -1,0 +1,245 @@
+{
+  "sha": "45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-05-26T07:25:00Z"
+    },
+    "committer": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-05-26T07:25:00Z"
+    },
+    "message": "Added databinding extension library (#50)",
+    "tree": {
+      "sha": "f5095bf0d257d6d370338e93d30b3bcf3135a9a4",
+      "url": "https://api.github.com/repos/google/agera/git/trees/f5095bf0d257d6d370338e93d30b3bcf3135a9a4"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+  "html_url": "https://github.com/google/agera/commit/45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/45df37bbf4dbc7fa1a4f673da47e283ce2979183/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "45b1c1bb19fbf65f744f5ee1c36028ae83adcf87",
+      "url": "https://api.github.com/repos/google/agera/commits/45b1c1bb19fbf65f744f5ee1c36028ae83adcf87",
+      "html_url": "https://github.com/google/agera/commit/45b1c1bb19fbf65f744f5ee1c36028ae83adcf87"
+    }
+  ],
+  "stats": {
+    "total": 696,
+    "additions": 656,
+    "deletions": 40
+  },
+  "files": [
+    {
+      "sha": "4498ef28914534d878f5120b87aeaee7bc712400",
+      "filename": "extensions/rvdatabinding/build.gradle",
+      "status": "added",
+      "additions": 50,
+      "deletions": 0,
+      "changes": 50,
+      "blob_url": "https://github.com/google/agera/blob/45df37bbf4dbc7fa1a4f673da47e283ce2979183/extensions/rvdatabinding/build.gradle",
+      "raw_url": "https://github.com/google/agera/raw/45df37bbf4dbc7fa1a4f673da47e283ce2979183/extensions/rvdatabinding/build.gradle",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvdatabinding/build.gradle?ref=45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+      "patch": "@@ -0,0 +1,50 @@\n+/*\n+ * Copyright 2016 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+apply plugin: 'com.android.library'\n+apply plugin: 'com.github.dcendents.android-maven'\n+apply plugin: 'jacoco'\n+\n+dependencies {\n+    compile project(':agera')\n+    compile project(':extensions:rvadapter')\n+    compile \"com.android.support:recyclerview-v7:$gradle.supportLibraryVersion\"\n+}\n+android {\n+    dataBinding {\n+        enabled = true\n+    }\n+}\n+install {\n+    repositories.mavenInstaller {\n+        pom {\n+            project {\n+                packaging 'aar'\n+                name 'Agera RecyclerView Data Binding'\n+                url gradle.url\n+                licenses {\n+                    license {\n+                        name gradle.licenseName\n+                        url gradle.licenseUrl\n+                    }\n+                }\n+                scm {\n+                    url gradle.url\n+                    connection gradle.gitUrl\n+                }\n+            }\n+        }\n+    }\n+}"
+    },
+    {
+      "sha": "a171b0208f7bd2d3e9f85ee94749c2d46edb181e",
+      "filename": "extensions/rvdatabinding/src/main/AndroidManifest.xml",
+      "status": "added",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/google/agera/blob/45df37bbf4dbc7fa1a4f673da47e283ce2979183/extensions/rvdatabinding/src/main/AndroidManifest.xml",
+      "raw_url": "https://github.com/google/agera/raw/45df37bbf4dbc7fa1a4f673da47e283ce2979183/extensions/rvdatabinding/src/main/AndroidManifest.xml",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvdatabinding/src/main/AndroidManifest.xml?ref=45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+      "patch": "@@ -0,0 +1,17 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<!--\n+  ~ Copyright 2016 Google Inc. All Rights Reserved.\n+  ~\n+  ~ Licensed under the Apache License, Version 2.0 (the \"License\");\n+  ~ you may not use this file except in compliance with the License.\n+  ~ You may obtain a copy of the License at\n+  ~\n+  ~     http://www.apache.org/licenses/LICENSE-2.0\n+  ~\n+  ~ Unless required by applicable law or agreed to in writing, software\n+  ~ distributed under the License is distributed on an \"AS IS\" BASIS,\n+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+  ~ See the License for the specific language governing permissions and\n+  ~ limitations under the License.\n+  -->\n+<manifest package=\"com.google.android.agera.rvdatabinding\"/>"
+    },
+    {
+      "sha": "ee2174a6e66c88e4350576c7c4b095f37082a1ef",
+      "filename": "extensions/rvdatabinding/src/main/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresenterCompiler.java",
+      "status": "added",
+      "additions": 137,
+      "deletions": 0,
+      "changes": 137,
+      "blob_url": "https://github.com/google/agera/blob/45df37bbf4dbc7fa1a4f673da47e283ce2979183/extensions/rvdatabinding/src/main/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresenterCompiler.java",
+      "raw_url": "https://github.com/google/agera/raw/45df37bbf4dbc7fa1a4f673da47e283ce2979183/extensions/rvdatabinding/src/main/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresenterCompiler.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvdatabinding/src/main/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresenterCompiler.java?ref=45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+      "patch": "@@ -0,0 +1,137 @@\n+/*\n+ * Copyright 2016 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+package com.google.android.agera.rvdatabinding;\n+\n+import static android.support.v4.util.Pair.create;\n+import static com.google.android.agera.Functions.staticFunction;\n+import static com.google.android.agera.Preconditions.checkNotNull;\n+import static com.google.android.agera.rvadapter.RepositoryPresenters.repositoryPresenterOf;\n+import static com.google.android.agera.rvdatabinding.DataBindingRepositoryPresenterCompilerStates.DBRPHandlerBindingCompile;\n+\n+import com.google.android.agera.Binder;\n+import com.google.android.agera.Function;\n+import com.google.android.agera.Result;\n+import com.google.android.agera.rvadapter.RepositoryPresenter;\n+import com.google.android.agera.rvadapter.RepositoryPresenterCompilerStates.RPLayout;\n+import com.google.android.agera.rvdatabinding.DataBindingRepositoryPresenterCompilerStates.DBRPItemBinding;\n+\n+import android.databinding.DataBindingUtil;\n+import android.databinding.ViewDataBinding;\n+import android.support.annotation.LayoutRes;\n+import android.support.annotation.NonNull;\n+import android.support.annotation.VisibleForTesting;\n+import android.support.v4.util.Pair;\n+import android.view.View;\n+\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+@SuppressWarnings(\"unchecked\")\n+final class DataBindingRepositoryPresenterCompiler\n+    implements DBRPItemBinding, DBRPHandlerBindingCompile, RPLayout {\n+  @NonNull\n+  private final List<Pair<Integer, Object>> handlers;\n+  private Function<Object, Integer> layoutFactory;\n+  private Function itemId;\n+\n+  DataBindingRepositoryPresenterCompiler() {\n+    this.handlers = new ArrayList<>();\n+  }\n+\n+  @NonNull\n+  @Override\n+  public Object handler(@LayoutRes final int handlerId, @NonNull final Object handler) {\n+    handlers.add(create(handlerId, handler));\n+    return this;\n+  }\n+\n+  @NonNull\n+  @Override\n+  public Object itemId(@LayoutRes final int itemId) {\n+    this.itemId = staticFunction(itemId);\n+    return this;\n+  }\n+\n+  @NonNull\n+  @Override\n+  public Object itemIdForItem(@NonNull final Function itemIdForItem) {\n+    this.itemId = checkNotNull(itemIdForItem);\n+    return this;\n+  }\n+\n+  @NonNull\n+  @Override\n+  public RepositoryPresenter<List<Object>> forList() {\n+    return repositoryPresenterOf(null)\n+        .layoutForItem(layoutFactory)\n+        .bindWith(new ViewBinder(itemId, new ArrayList<>(handlers)))\n+        .forList();\n+  }\n+\n+  @NonNull\n+  @Override\n+  public RepositoryPresenter<Result<Object>> forResult() {\n+    return repositoryPresenterOf(Object.class)\n+        .layoutForItem(layoutFactory)\n+        .bindWith(new ViewBinder(itemId, new ArrayList<>(handlers)))\n+        .forResult();\n+  }\n+\n+  @NonNull\n+  @Override\n+  public RepositoryPresenter<Result<List<Object>>> forResultList() {\n+    return repositoryPresenterOf(null)\n+        .layoutForItem(layoutFactory)\n+        .bindWith(new ViewBinder(itemId, new ArrayList<>(handlers)))\n+        .forResultList();\n+  }\n+\n+  @NonNull\n+  @Override\n+  public Object layout(@LayoutRes int layoutId) {\n+    this.layoutFactory = staticFunction(layoutId);\n+    return this;\n+  }\n+\n+  @NonNull\n+  @Override\n+  public Object layoutForItem(@NonNull Function layoutForItem) {\n+    this.layoutFactory = checkNotNull(layoutForItem);\n+    return this;\n+  }\n+\n+  private static final class ViewBinder implements Binder<Object, View> {\n+    private final Function<Object, Integer> itemId;\n+    @NonNull\n+    private final List<Pair<Integer, Object>> handlers;\n+\n+    ViewBinder(@NonNull final Function<Object, Integer> itemId,\n+        @NonNull final List<Pair<Integer, Object>> handlers) {\n+      this.itemId = itemId;\n+      this.handlers = checkNotNull(handlers);\n+    }\n+\n+    @Override\n+    public void bind(@NonNull final Object item, @NonNull final View view) {\n+      final ViewDataBinding viewDataBinding = DataBindingUtil.bind(view);\n+      viewDataBinding.setVariable(itemId.apply(item), item);\n+      for (final Pair<Integer, Object> handler : handlers) {\n+        viewDataBinding.setVariable(handler.first, handler.second);\n+      }\n+      viewDataBinding.executePendingBindings();\n+    }\n+  }\n+}"
+    },
+    {
+      "sha": "3778d4aefa31f8774ea347ed157a7abc91d380f6",
+      "filename": "extensions/rvdatabinding/src/main/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresenterCompilerStates.java",
+      "status": "added",
+      "additions": 40,
+      "deletions": 0,
+      "changes": 40,
+      "blob_url": "https://github.com/google/agera/blob/45df37bbf4dbc7fa1a4f673da47e283ce2979183/extensions/rvdatabinding/src/main/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresenterCompilerStates.java",
+      "raw_url": "https://github.com/google/agera/raw/45df37bbf4dbc7fa1a4f673da47e283ce2979183/extensions/rvdatabinding/src/main/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresenterCompilerStates.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvdatabinding/src/main/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresenterCompilerStates.java?ref=45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+      "patch": "@@ -0,0 +1,40 @@\n+/*\n+ * Copyright 2016 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+package com.google.android.agera.rvdatabinding;\n+\n+import com.google.android.agera.Function;\n+import com.google.android.agera.rvadapter.RepositoryPresenterCompilerStates.RPCompile;\n+\n+import android.support.annotation.LayoutRes;\n+import android.support.annotation.NonNull;\n+\n+public interface DataBindingRepositoryPresenterCompilerStates {\n+  interface DBRPItemBinding<TVal, TRet> {\n+    @NonNull\n+    TRet itemId(@LayoutRes int itemId);\n+\n+    @NonNull\n+    TRet itemIdForItem(@NonNull Function<TVal, Integer> itemIdForItem);\n+  }\n+\n+  interface DBRPHandlerBinding<TRet> {\n+    @NonNull\n+    TRet handler(@LayoutRes int handlerId, @NonNull Object handler);\n+  }\n+\n+  interface DBRPHandlerBindingCompile<TVal>\n+      extends RPCompile<TVal>, DBRPHandlerBinding<DBRPHandlerBindingCompile<TVal>> {}\n+}"
+    },
+    {
+      "sha": "7e10ad292a9e977e9af9dc69fdb509ae427041fd",
+      "filename": "extensions/rvdatabinding/src/main/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresenters.java",
+      "status": "added",
+      "additions": 85,
+      "deletions": 0,
+      "changes": 85,
+      "blob_url": "https://github.com/google/agera/blob/45df37bbf4dbc7fa1a4f673da47e283ce2979183/extensions/rvdatabinding/src/main/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresenters.java",
+      "raw_url": "https://github.com/google/agera/raw/45df37bbf4dbc7fa1a4f673da47e283ce2979183/extensions/rvdatabinding/src/main/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresenters.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvdatabinding/src/main/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresenters.java?ref=45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+      "patch": "@@ -0,0 +1,85 @@\n+/*\n+ * Copyright 2016 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+package com.google.android.agera.rvdatabinding;\n+\n+import com.google.android.agera.Repository;\n+import com.google.android.agera.rvadapter.RepositoryPresenter;\n+import com.google.android.agera.rvadapter.RepositoryPresenterCompilerStates.RPLayout;\n+import com.google.android.agera.rvdatabinding.DataBindingRepositoryPresenterCompilerStates.DBRPHandlerBindingCompile;\n+import com.google.android.agera.rvdatabinding.DataBindingRepositoryPresenterCompilerStates.DBRPItemBinding;\n+\n+import android.support.annotation.NonNull;\n+import android.support.annotation.Nullable;\n+\n+/**\n+ * Contains concrete implementations of {@link RepositoryPresenter} to present the content of a\n+ * {@link Repository} using the Android data binding library.\n+ * <p>\n+ * The Android data binding library allows for binding a view model to a view in layout xml. The\n+ * implementation below takes a {@code layoutId} referring to the layout xml resource, an\n+ * itemId referring to the item or items in the associated {@link Repository} and a set of handlers\n+ * associated with handler ids.\n+ * <p>\n+ * The following layout from the data binding documentation refers to both an item and a handler\n+ * <pre>\n+ * {@code\n+ * <!--item_layout.xml-->\n+ * <?xml version=\"1.0\" encoding=\"utf-8\"?>\n+ * <layout xmlns:android=\"http://schemas.android.com/apk/res/android\">\n+ *   <data>\n+ *     <variable name=\"handlers\" type=\"com.example.Handlers\"/>\n+ *     <variable name=\"user\" type=\"com.example.User\"/>\n+ *   </data>\n+ *   <LinearLayout\n+ *     android:orientation=\"vertical\"\n+ *     android:layout_width=\"match_parent\"\n+ *     android:layout_height=\"match_parent\">\n+ *   <TextView android:layout_width=\"wrap_content\"\n+ *     android:layout_height=\"wrap_content\"\n+ *     android:text=\"@{user.firstName}\"\n+ *     android:onClick=\"@{user.isFriend ? handlers.onClickFriend : handlers.onClickEnemy}\"/>\n+ *   <TextView android:layout_width=\"wrap_content\"\n+ *     android:layout_height=\"wrap_content\"\n+ *     android:text=\"@{user.lastName}\"\n+ *     android:onClick=\"@{user.isFriend ? handlers.onClickFriend : handlers.onClickEnemy}\"/>\n+ *   </LinearLayout>\n+ * </layout>\n+ * }\n+ * </pre>\n+ * The following call would bind {@code user} to each item in the list and {@code handlers} to the\n+ * provided parameter.\n+ * <pre>\n+ * {@code\n+ * DataBindingRepositoryPresenters.dataBindingRepositoryPresenterOf(User.class)\n+ *   .layout(R.layout.item_layout)\n+ *   .itemId(BR.user)\n+ *   .handler(BR.handlers, new Handlers())\n+ *   .compileList();\n+ * }\n+ * </pre>\n+ * <p> See the data binding library documentation for details.\n+ */\n+public final class DataBindingRepositoryPresenters {\n+\n+  @SuppressWarnings(\"unchecked\")\n+  @NonNull\n+  public static <T> RPLayout<T, DBRPItemBinding<T, DBRPHandlerBindingCompile<T>>>\n+  dataBindingRepositoryPresenterOf(@Nullable final Class<T> type) {\n+    return new DataBindingRepositoryPresenterCompiler();\n+  }\n+\n+  private DataBindingRepositoryPresenters() {}\n+}"
+    },
+    {
+      "sha": "3bfd67f4e3201aa5021740f491ff12064b6b99d8",
+      "filename": "extensions/rvdatabinding/src/test/java/android/databinding/DataBinderMapper.java",
+      "status": "added",
+      "additions": 28,
+      "deletions": 0,
+      "changes": 28,
+      "blob_url": "https://github.com/google/agera/blob/45df37bbf4dbc7fa1a4f673da47e283ce2979183/extensions/rvdatabinding/src/test/java/android/databinding/DataBinderMapper.java",
+      "raw_url": "https://github.com/google/agera/raw/45df37bbf4dbc7fa1a4f673da47e283ce2979183/extensions/rvdatabinding/src/test/java/android/databinding/DataBinderMapper.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvdatabinding/src/test/java/android/databinding/DataBinderMapper.java?ref=45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+      "patch": "@@ -0,0 +1,28 @@\n+package android.databinding;\n+\n+import com.google.android.agera.rvdatabinding.BuildConfig;\n+\n+import android.os.Build;\n+import android.view.View;\n+\n+import java.util.HashMap;\n+import java.util.Map;\n+\n+//TODO remove this hack when moving to robolectric 3.1\n+public final class DataBinderMapper {\n+  private static Map<Integer, ViewDataBinding> bindings = new HashMap<>();\n+  public static final int TARGET_MIN_SDK = 14;\n+\n+  public int getLayoutId(String string) {\n+    return 1;\n+  }\n+\n+  public static void setDataBinding(ViewDataBinding dataBinding, int layoutId) {\n+    bindings.put(layoutId, dataBinding);\n+  }\n+\n+  public ViewDataBinding getDataBinder(\n+      android.databinding.DataBindingComponent component, View view, int layoutId) {\n+    return bindings.get(layoutId);\n+  }\n+}"
+    },
+    {
+      "sha": "3933775f9aa7ebe7e003df5a2ac46f8eb600ba14",
+      "filename": "extensions/rvdatabinding/src/test/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresentersTest.java",
+      "status": "added",
+      "additions": 195,
+      "deletions": 0,
+      "changes": 195,
+      "blob_url": "https://github.com/google/agera/blob/45df37bbf4dbc7fa1a4f673da47e283ce2979183/extensions/rvdatabinding/src/test/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresentersTest.java",
+      "raw_url": "https://github.com/google/agera/raw/45df37bbf4dbc7fa1a4f673da47e283ce2979183/extensions/rvdatabinding/src/test/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresentersTest.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvdatabinding/src/test/java/com/google/android/agera/rvdatabinding/DataBindingRepositoryPresentersTest.java?ref=45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+      "patch": "@@ -0,0 +1,195 @@\n+package com.google.android.agera.rvdatabinding;\n+\n+import static android.databinding.DataBinderMapper.setDataBinding;\n+import static com.google.android.agera.Result.present;\n+import static com.google.android.agera.Result.success;\n+import static com.google.android.agera.rvadapter.test.matchers.HasPrivateConstructor.hasPrivateConstructor;\n+import static com.google.android.agera.rvdatabinding.DataBindingRepositoryPresenters.dataBindingRepositoryPresenterOf;\n+import static java.util.Arrays.asList;\n+import static org.hamcrest.MatcherAssert.assertThat;\n+import static org.hamcrest.Matchers.is;\n+import static org.mockito.Mockito.when;\n+import static org.mockito.MockitoAnnotations.initMocks;\n+\n+import com.google.android.agera.Binder;\n+import com.google.android.agera.Function;\n+import com.google.android.agera.Result;\n+import com.google.android.agera.rvadapter.RepositoryPresenter;\n+\n+import android.databinding.ViewDataBinding;\n+import android.support.v7.widget.RecyclerView;\n+import android.view.View;\n+import org.junit.Before;\n+import org.junit.Test;\n+import org.junit.runner.RunWith;\n+import org.mockito.Mock;\n+import org.robolectric.RobolectricTestRunner;\n+import org.robolectric.annotation.Config;\n+\n+import java.util.List;\n+\n+@RunWith(RobolectricTestRunner.class)\n+@Config(manifest = Config.NONE)\n+public class DataBindingRepositoryPresentersTest {\n+  private static final String STRING = \"string\";\n+  private static final String SECOND_STRING = \"string2\";\n+  private static final Result<String> STRING_RESULT = present(STRING);\n+  private static final List<String> STRING_LIST = asList(STRING, SECOND_STRING);\n+  private static final Result<List<String>> STRING_LIST_RESULT = success(STRING_LIST);\n+  private static final Result<String> FAILURE = Result.<String>failure();\n+  private static final Result<List<String>> LIST_FAILURE = Result.<List<String>>failure();\n+  private static final Object HANDLER = new Object();\n+  private static final Object SECOND_HANDLER = new Object();\n+  private static final int LAYOUT_ID = 1;\n+  private static final int DYNAMIC_LAYOUT_ID = 2;\n+  private static final int ITEM_ID = 3;\n+  private static final int DYNAMIC_ITEM_ID = 4;\n+  private static final int HANDLER_ID = 5;\n+  private static final int SECOND_HANDLER_ID = 6;\n+  @Mock\n+  private Binder<String, View> binder;\n+  @Mock\n+  private Function<String, Integer> layoutForItem;\n+  @Mock\n+  private Function<String, Integer> itemIdForItem;\n+  @Mock\n+  private ViewDataBinding viewDataBinding;\n+  @Mock\n+  private View view;\n+  private RecyclerView.ViewHolder viewHolder;\n+\n+  @Before\n+  public void setUp() {\n+    initMocks(this);\n+    viewHolder = new RecyclerView.ViewHolder(view){};\n+    setDataBinding(viewDataBinding, LAYOUT_ID);\n+    setDataBinding(viewDataBinding, DYNAMIC_LAYOUT_ID);\n+    when(view.getTag()).thenReturn(\"string\");\n+    when(layoutForItem.apply(SECOND_STRING)).thenReturn(DYNAMIC_LAYOUT_ID);\n+    when(itemIdForItem.apply(SECOND_STRING)).thenReturn(ITEM_ID);\n+  }\n+\n+  @Test\n+  public void shouldBindRepositoryPresenterOfResult() {\n+    final RepositoryPresenter<Result<String>> resultRepositoryPresenter =\n+        dataBindingRepositoryPresenterOf(String.class)\n+            .layout(LAYOUT_ID)\n+            .itemId(ITEM_ID)\n+            .handler(HANDLER_ID, HANDLER)\n+            .handler(SECOND_HANDLER_ID, SECOND_HANDLER)\n+            .forResult();\n+    resultRepositoryPresenter.bind(STRING_RESULT, 0, viewHolder);\n+  }\n+\n+  @Test\n+  public void shouldBindRepositoryPresenterOfResultWithoutBinder() {\n+    final RepositoryPresenter<Result<String>> resultRepositoryPresenter =\n+        dataBindingRepositoryPresenterOf(String.class)\n+            .layout(LAYOUT_ID)\n+            .itemId(ITEM_ID)\n+            .handler(HANDLER_ID, HANDLER)\n+            .handler(SECOND_HANDLER_ID, SECOND_HANDLER)\n+            .forResult();\n+    resultRepositoryPresenter.bind(STRING_RESULT, 0, viewHolder);\n+  }\n+\n+  @Test\n+  public void shouldBindRepositoryPresenterOfResultList() {\n+    final RepositoryPresenter<Result<List<String>>> resultListRepositoryPresenter =\n+        dataBindingRepositoryPresenterOf(String.class)\n+            .layout(LAYOUT_ID)\n+            .itemId(ITEM_ID)\n+            .handler(HANDLER_ID, HANDLER)\n+            .forResultList();\n+    resultListRepositoryPresenter.bind(STRING_LIST_RESULT, 1, viewHolder);\n+  }\n+\n+  @Test\n+  public void shouldBindRepositoryPresenterOfList() {\n+    final RepositoryPresenter<List<String>> listRepositoryPresenter =\n+        dataBindingRepositoryPresenterOf(String.class)\n+            .layout(LAYOUT_ID)\n+            .itemId(ITEM_ID)\n+            .forList();\n+    listRepositoryPresenter.bind(STRING_LIST, 1, viewHolder);\n+  }\n+\n+  @Test\n+  public void shouldReturnZeroForCountOfRepositoryPresenterOfFailedResult() {\n+    final RepositoryPresenter<Result<String>> resultRepositoryPresenter =\n+        dataBindingRepositoryPresenterOf(String.class)\n+            .layout(LAYOUT_ID)\n+            .itemId(ITEM_ID)\n+            .handler(HANDLER_ID, HANDLER)\n+            .forResult();\n+    assertThat(resultRepositoryPresenter.getItemCount(FAILURE), is(0));\n+  }\n+\n+  @Test\n+  public void shouldReturnOneForCountOfRepositoryPresenterOfSuccessfulResult() {\n+    final RepositoryPresenter<Result<String>> resultRepositoryPresenter =\n+        dataBindingRepositoryPresenterOf(String.class)\n+            .layout(LAYOUT_ID)\n+            .itemId(ITEM_ID)\n+            .forResult();\n+    assertThat(resultRepositoryPresenter.getItemCount(STRING_RESULT), is(1));\n+  }\n+\n+  @Test\n+  public void shouldReturnListSizeForCountOfRepositoryPresenterOfList() {\n+    final RepositoryPresenter<List<String>> listRepositoryPresenter =\n+        dataBindingRepositoryPresenterOf(String.class)\n+            .layout(LAYOUT_ID)\n+            .itemId(ITEM_ID)\n+            .forList();\n+    assertThat(listRepositoryPresenter.getItemCount(STRING_LIST), is(STRING_LIST.size()));\n+  }\n+\n+  @Test\n+  public void shouldReturnZeroForCountOfRepositoryPresenterOfFailedResultList() {\n+    final RepositoryPresenter<Result<List<String>>> resultListRepositoryPresenter =\n+        dataBindingRepositoryPresenterOf(String.class)\n+            .layout(LAYOUT_ID)\n+            .itemId(ITEM_ID)\n+            .forResultList();\n+    assertThat(resultListRepositoryPresenter.getItemCount(LIST_FAILURE), is(0));\n+  }\n+\n+  @Test\n+  public void shouldReturnListSizeForCountOfRepositoryPresenterOfSuccessfulResultList() {\n+    final RepositoryPresenter<Result<List<String>>> resultListRepositoryPresenter =\n+        dataBindingRepositoryPresenterOf(String.class)\n+            .layout(LAYOUT_ID)\n+            .itemId(ITEM_ID)\n+            .forResultList();\n+    assertThat(resultListRepositoryPresenter.getItemCount(STRING_LIST_RESULT),\n+        is(STRING_LIST.size()));\n+  }\n+\n+  @Test\n+  public void shouldGenerateLayoutForItemOfRepositoryPresenterOfResultList() {\n+    final RepositoryPresenter<Result<List<String>>> resultListRepositoryPresenter =\n+        dataBindingRepositoryPresenterOf(String.class)\n+            .layoutForItem(layoutForItem)\n+            .itemId(ITEM_ID)\n+            .forResultList();\n+    assertThat(resultListRepositoryPresenter.getLayoutResId(STRING_LIST_RESULT, 1),\n+        is(DYNAMIC_LAYOUT_ID));\n+  }\n+\n+\n+  @Test\n+  public void shouldGenerateItemIdForItemOfRepositoryPresenterOfResultList() {\n+    final RepositoryPresenter<Result<List<String>>> resultListRepositoryPresenter =\n+        dataBindingRepositoryPresenterOf(String.class)\n+            .layout(LAYOUT_ID)\n+            .itemIdForItem(itemIdForItem)\n+            .forResultList();\n+    resultListRepositoryPresenter.bind(STRING_LIST_RESULT, 1, viewHolder);\n+  }\n+\n+  @Test\n+  public void shouldHavePrivateConstructor() {\n+    assertThat(DataBindingRepositoryPresenters.class, hasPrivateConstructor());\n+  }\n+}\n\\ No newline at end of file"
+    },
+    {
+      "sha": "a8a1b110830975dbac2dabbc1f36cc636e1fdf1e",
+      "filename": "extensions/rvdatabinding/src/test/java/com/google/android/agera/rvdatabinding/test/matchers/HasPrivateConstructor.java",
+      "status": "added",
+      "additions": 54,
+      "deletions": 0,
+      "changes": 54,
+      "blob_url": "https://github.com/google/agera/blob/45df37bbf4dbc7fa1a4f673da47e283ce2979183/extensions/rvdatabinding/src/test/java/com/google/android/agera/rvdatabinding/test/matchers/HasPrivateConstructor.java",
+      "raw_url": "https://github.com/google/agera/raw/45df37bbf4dbc7fa1a4f673da47e283ce2979183/extensions/rvdatabinding/src/test/java/com/google/android/agera/rvdatabinding/test/matchers/HasPrivateConstructor.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvdatabinding/src/test/java/com/google/android/agera/rvdatabinding/test/matchers/HasPrivateConstructor.java?ref=45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+      "patch": "@@ -0,0 +1,54 @@\n+/*\n+ * Copyright 2015 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+package com.google.android.agera.rvadapter.test.matchers;\n+\n+import android.support.annotation.NonNull;\n+import org.hamcrest.Description;\n+import org.hamcrest.Factory;\n+import org.hamcrest.Matcher;\n+import org.hamcrest.TypeSafeMatcher;\n+\n+import java.lang.reflect.Constructor;\n+import java.lang.reflect.Modifier;\n+\n+public final class HasPrivateConstructor extends TypeSafeMatcher<Class<?>> {\n+  private static final HasPrivateConstructor INSTANCE = new HasPrivateConstructor();\n+\n+  private HasPrivateConstructor() {}\n+\n+  @Override\n+  protected boolean matchesSafely(final Class<?> clazz) {\n+    try {\n+      Constructor<?> constructor = clazz.getDeclaredConstructor();\n+      constructor.setAccessible(true);\n+      constructor.newInstance();\n+      return Modifier.isPrivate(constructor.getModifiers());\n+    } catch (final Exception ignored) {\n+    }\n+    return false;\n+  }\n+\n+  @Override\n+  public void describeTo(final Description description) {\n+    description.appendText(\"should have private constructor\");\n+  }\n+\n+  @NonNull\n+  @Factory\n+  public static Matcher<Class<?>> hasPrivateConstructor() {\n+    return INSTANCE;\n+  }\n+}"
+    },
+    {
+      "sha": "2e840636e4a9d96b1c31db688fbdd92b0084634a",
+      "filename": "settings.gradle",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/google/agera/blob/45df37bbf4dbc7fa1a4f673da47e283ce2979183/settings.gradle",
+      "raw_url": "https://github.com/google/agera/raw/45df37bbf4dbc7fa1a4f673da47e283ce2979183/settings.gradle",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/settings.gradle?ref=45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+      "patch": "@@ -16,6 +16,7 @@\n include ':agera'\n include ':extensions:content'\n include ':extensions:rvadapter'\n+include ':extensions:rvdatabinding'\n include ':extensions:database'\n include ':extensions:net'\n include ':testapp'\n@@ -109,9 +110,8 @@ gradle.allprojects {\n                 task jacocoTestReport(type:JacocoReport, dependsOn: \"testDebugUnitTest\") {\n                     group = \"Reporting\"\n                     description = \"Generate Jacoco coverage reports\"\n-                    def fileFilter = ['**/R.class', '**/R$*.class',\n-                                      '**/BuildConfig.*', '**/Manifest*.*',\n-                                      'android/**/*.*']\n+                    def fileFilter = ['**/R.class', '**/R$*.class', '**/BR.class',\n+                                      '**/BuildConfig.*', '**/Manifest*.*', 'android/**/*.*']\n                     def debugTree = fileTree(dir:\n                             \"${project.buildDir}/intermediates/classes/debug\",\n                             excludes: fileFilter)"
+    },
+    {
+      "sha": "8cbbc8cf0d5570fa10b669ce96de5df07eef1dec",
+      "filename": "testapp/build.gradle",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/google/agera/blob/45df37bbf4dbc7fa1a4f673da47e283ce2979183/testapp/build.gradle",
+      "raw_url": "https://github.com/google/agera/raw/45df37bbf4dbc7fa1a4f673da47e283ce2979183/testapp/build.gradle",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/build.gradle?ref=45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+      "patch": "@@ -20,6 +20,9 @@ apply plugin: 'me.tatarka.retrolambda'\n android {\n     compileSdkVersion gradle.ext.compileSdkVersion\n     buildToolsVersion gradle.ext.buildToolsVersion\n+    dataBinding {\n+        enabled = true\n+    }\n     defaultConfig {\n         applicationId \"com.google.android.agera.testapp\"\n         testInstrumentationRunner \"android.support.test.runner.AndroidJUnitRunner\"\n@@ -49,6 +52,7 @@ dependencies {\n     compile project(':extensions:database')\n     compile project(':extensions:net')\n     compile project(':extensions:rvadapter')\n+    compile project(':extensions:rvdatabinding')\n     compile \"com.android.support:recyclerview-v7:$gradle.supportLibraryVersion\"\n     testCompile \"org.hamcrest:hamcrest-library:1.3\"\n     testCompile 'junit:junit:4.12'"
+    },
+    {
+      "sha": "74db92ad2b64ae0992d93e4c950957a417dd9fca",
+      "filename": "testapp/src/main/java/com/google/android/agera/testapp/Note.java",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/google/agera/blob/45df37bbf4dbc7fa1a4f673da47e283ce2979183/testapp/src/main/java/com/google/android/agera/testapp/Note.java",
+      "raw_url": "https://github.com/google/agera/raw/45df37bbf4dbc7fa1a4f673da47e283ce2979183/testapp/src/main/java/com/google/android/agera/testapp/Note.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/java/com/google/android/agera/testapp/Note.java?ref=45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+      "patch": "@@ -17,7 +17,7 @@\n \n import android.support.annotation.NonNull;\n \n-final class Note {\n+public final class Note {\n   private final int id;\n   @NonNull\n   private final String note;"
+    },
+    {
+      "sha": "a553038af69fb7da81b9cf3f4b5b688ebda95fec",
+      "filename": "testapp/src/main/java/com/google/android/agera/testapp/NotesActivity.java",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 25,
+      "changes": 45,
+      "blob_url": "https://github.com/google/agera/blob/45df37bbf4dbc7fa1a4f673da47e283ce2979183/testapp/src/main/java/com/google/android/agera/testapp/NotesActivity.java",
+      "raw_url": "https://github.com/google/agera/raw/45df37bbf4dbc7fa1a4f673da47e283ce2979183/testapp/src/main/java/com/google/android/agera/testapp/NotesActivity.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/java/com/google/android/agera/testapp/NotesActivity.java?ref=45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+      "patch": "@@ -26,28 +26,28 @@\n import static com.google.android.agera.net.HttpFunctions.httpFunction;\n import static com.google.android.agera.net.HttpRequests.httpGetRequest;\n import static com.google.android.agera.rvadapter.RepositoryAdapter.repositoryAdapter;\n-import static com.google.android.agera.rvadapter.RepositoryPresenters.repositoryPresenterOf;\n+import static com.google.android.agera.rvdatabinding.DataBindingRepositoryPresenters.dataBindingRepositoryPresenterOf;\n import static com.google.android.agera.testapp.NotesStore.notesStore;\n import static java.util.concurrent.Executors.newSingleThreadExecutor;\n \n-import com.google.android.agera.Binder;\n+import com.google.android.agera.Predicate;\n+import com.google.android.agera.Receiver;\n import com.google.android.agera.Repository;\n import com.google.android.agera.Result;\n import com.google.android.agera.Updatable;\n import com.google.android.agera.rvadapter.RepositoryAdapter;\n \n import android.app.Activity;\n import android.app.AlertDialog;\n+import android.content.Context;\n import android.graphics.Bitmap;\n import android.os.Bundle;\n import android.support.annotation.NonNull;\n import android.support.v7.widget.LinearLayoutManager;\n import android.support.v7.widget.RecyclerView;\n import android.util.DisplayMetrics;\n-import android.view.View;\n import android.widget.EditText;\n import android.widget.ImageView;\n-import android.widget.TextView;\n \n import java.util.concurrent.Executor;\n \n@@ -88,29 +88,24 @@ protected void onCreate(final Bundle savedInstanceState) {\n           .create().show();\n     });\n \n-    // Create a repository adapter, wiring up the notes repository from the store with a presenter\n     adapter = repositoryAdapter()\n-        .add(notesStore.getNotesRepository(), repositoryPresenterOf(Note.class)\n+        .add(notesStore.getNotesRepository(), dataBindingRepositoryPresenterOf(Note.class)\n             .layout(R.layout.text_layout)\n-            .bindWith((note, view) -> {\n-              final TextView textView = (TextView) view;\n-              textView.setText(note.getNote());\n-              view.setOnClickListener(v -> {\n-                final EditText editText = new EditText(v.getContext());\n-                editText.setId(R.id.edit);\n-                editText.setText(note.getNote());\n-                new AlertDialog.Builder(v.getContext())\n-                    .setTitle(R.string.edit_note)\n-                    .setView(editText)\n-                    .setPositiveButton(R.string.edit,\n-                        (d, i) -> notesStore.updateNote(note, editText.getText().toString()))\n-                    .create().show();\n-              });\n-              view.setOnLongClickListener(v -> {\n-                notesStore.deleteNote(note);\n-                return true;\n-              });\n-            })\n+            .itemId(com.google.android.agera.testapp.BR.note)\n+            .handler(com.google.android.agera.testapp.BR.click,\n+                (Receiver<Note>) note -> {\n+                  final EditText editText = new EditText(this);\n+                  editText.setId(R.id.edit);\n+                  editText.setText(note.getNote());\n+                  new AlertDialog.Builder(this)\n+                      .setTitle(R.string.edit_note)\n+                      .setView(editText)\n+                      .setPositiveButton(R.string.edit,\n+                          (d, i) -> notesStore.updateNote(note, editText.getText().toString()))\n+                      .create().show();\n+                })\n+            .handler(com.google.android.agera.testapp.BR.longClick,\n+                (Predicate<Note>) notesStore::deleteNote)\n             .forList())\n         .build();\n "
+    },
+    {
+      "sha": "da316342427a82eafa9dba92ead9faed2bc9ad07",
+      "filename": "testapp/src/main/java/com/google/android/agera/testapp/NotesStore.java",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/google/agera/blob/45df37bbf4dbc7fa1a4f673da47e283ce2979183/testapp/src/main/java/com/google/android/agera/testapp/NotesStore.java",
+      "raw_url": "https://github.com/google/agera/raw/45df37bbf4dbc7fa1a4f673da47e283ce2979183/testapp/src/main/java/com/google/android/agera/testapp/NotesStore.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/java/com/google/android/agera/testapp/NotesStore.java?ref=45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+      "patch": "@@ -168,12 +168,13 @@ public void insertNoteFromText(@NonNull final String noteText) {\n         .compile());\n   }\n \n-  public void deleteNote(@NonNull final Note note) {\n+  public boolean deleteNote(@NonNull final Note note) {\n     writeRequestReceiver.accept(sqlDeleteRequest()\n         .table(NOTES_TABLE)\n         .where(MODIFY_NOTE_WHERE)\n         .arguments(String.valueOf(note.getId()))\n         .compile());\n+    return true;\n   }\n \n   public void updateNote(@NonNull final Note note, @NonNull final String noteText) {"
+    },
+    {
+      "sha": "a0782f9bd7715c6563f5be7df8471ee1f90e8522",
+      "filename": "testapp/src/main/res/layout/text_layout.xml",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 10,
+      "changes": 30,
+      "blob_url": "https://github.com/google/agera/blob/45df37bbf4dbc7fa1a4f673da47e283ce2979183/testapp/src/main/res/layout/text_layout.xml",
+      "raw_url": "https://github.com/google/agera/raw/45df37bbf4dbc7fa1a4f673da47e283ce2979183/testapp/src/main/res/layout/text_layout.xml",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/res/layout/text_layout.xml?ref=45df37bbf4dbc7fa1a4f673da47e283ce2979183",
+      "patch": "@@ -14,13 +14,23 @@\n   ~ See the License for the specific language governing permissions and\n   ~ limitations under the License.\n   -->\n-<TextView xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    android:layout_width=\"match_parent\"\n-    android:layout_height=\"wrap_content\"\n-    android:layout_marginLeft=\"10dp\"\n-    android:layout_marginRight=\"10dp\"\n-    android:layout_marginTop=\"10dp\"\n-    android:padding=\"8dp\"\n-    android:background=\"#F7E4EE\"\n-    android:elevation=\"2dp\"\n-    android:textSize=\"20sp\"/>\n+<layout xmlns:android=\"http://schemas.android.com/apk/res/android\">\n+  <data>\n+    <variable name=\"note\" type=\"com.google.android.agera.testapp.Note\"/>\n+    <variable name=\"click\" type=\"com.google.android.agera.Receiver\"/>\n+    <variable name=\"longClick\" type=\"com.google.android.agera.Predicate\"/>\n+  </data>\n+  <TextView\n+      android:layout_width=\"match_parent\"\n+      android:layout_height=\"wrap_content\"\n+      android:layout_marginLeft=\"10dp\"\n+      android:layout_marginRight=\"10dp\"\n+      android:layout_marginTop=\"10dp\"\n+      android:background=\"#F7E4EE\"\n+      android:elevation=\"2dp\"\n+      android:onClick=\"@{(view) -> click.accept(note)}\"\n+      android:onLongClick=\"@{(view) -> longClick.apply(note)}\"\n+      android:padding=\"8dp\"\n+      android:text=\"@{note.note}\"\n+      android:textSize=\"20sp\"/>\n+</layout>"
+    }
+  ]
+}

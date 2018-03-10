@@ -1,0 +1,89 @@
+{
+  "sha": "0a315456685a4a45e55dfa345799d76c27a0048d",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-04-30T06:27:43Z"
+    },
+    "committer": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-04-30T06:27:43Z"
+    },
+    "message": "Changed version to 1.1.0-SNAPSHOT\n\nMaster will be used for 1.1.0 features\n1.0.0 fixes (including the pending 1.0.0) to be done on the 1.0.x branch\n\nVersioning scheme as follows;\nMajor version for compatibility break (prey we never need it)\nMinor version for new features\nIncremental version for bug fixes",
+    "tree": {
+      "sha": "d116c9c713a4df83c0d8d10c0b7f7d9d355d7ddc",
+      "url": "https://api.github.com/repos/google/agera/git/trees/d116c9c713a4df83c0d8d10c0b7f7d9d355d7ddc"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/0a315456685a4a45e55dfa345799d76c27a0048d",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/0a315456685a4a45e55dfa345799d76c27a0048d",
+  "html_url": "https://github.com/google/agera/commit/0a315456685a4a45e55dfa345799d76c27a0048d",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/0a315456685a4a45e55dfa345799d76c27a0048d/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f351f42c42eb2a16b6f0b27632b15515b49aef4f",
+      "url": "https://api.github.com/repos/google/agera/commits/f351f42c42eb2a16b6f0b27632b15515b49aef4f",
+      "html_url": "https://github.com/google/agera/commit/f351f42c42eb2a16b6f0b27632b15515b49aef4f"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "2098a3823e10e16716bb5d62df10621428325b56",
+      "filename": "settings.gradle",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/google/agera/blob/0a315456685a4a45e55dfa345799d76c27a0048d/settings.gradle",
+      "raw_url": "https://github.com/google/agera/raw/0a315456685a4a45e55dfa345799d76c27a0048d/settings.gradle",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/settings.gradle?ref=0a315456685a4a45e55dfa345799d76c27a0048d",
+      "patch": "@@ -20,8 +20,8 @@ include ':extensions:database'\n include ':extensions:net'\n include ':testapp'\n \n-gradle.ext.versionCode = 10000\n-gradle.ext.versionName = '1.0.0-SNAPSHOT'\n+gradle.ext.versionCode = 10100\n+gradle.ext.versionName = '1.1.0-SNAPSHOT'\n \n gradle.ext.group = 'com.google.android.agera'\n gradle.ext.url = 'https://github.com/google/agera'"
+    }
+  ]
+}

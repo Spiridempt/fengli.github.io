@@ -1,0 +1,197 @@
+{
+  "sha": "b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-05-08T16:07:30Z"
+    },
+    "committer": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-05-08T16:07:30Z"
+    },
+    "message": "Added headers missing from extracted inner classes",
+    "tree": {
+      "sha": "6731ed3eb503afb345c2f03e0c1e0af83a22f8ac",
+      "url": "https://api.github.com/repos/google/agera/git/trees/6731ed3eb503afb345c2f03e0c1e0af83a22f8ac"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+  "html_url": "https://github.com/google/agera/commit/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4711c2fff23254389b8486cb81c60dfb918f6d2c",
+      "url": "https://api.github.com/repos/google/agera/commits/4711c2fff23254389b8486cb81c60dfb918f6d2c",
+      "html_url": "https://github.com/google/agera/commit/4711c2fff23254389b8486cb81c60dfb918f6d2c"
+    }
+  ],
+  "stats": {
+    "total": 151,
+    "additions": 150,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "51cafe257b089960ac17cddd461ed03accf4003e",
+      "filename": "testapp/src/main/java/com/google/android/agera/testapp/AddOnClickListener.java",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/google/agera/blob/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/AddOnClickListener.java",
+      "raw_url": "https://github.com/google/agera/raw/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/AddOnClickListener.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/java/com/google/android/agera/testapp/AddOnClickListener.java?ref=b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+      "patch": "@@ -1,3 +1,18 @@\n+/*\n+ * Copyright 2016 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n package com.google.android.agera.testapp;\n \n import static com.google.android.agera.Preconditions.checkNotNull;"
+    },
+    {
+      "sha": "beb48dbeb6a47d783e6858167c466b0e7a0d7cbf",
+      "filename": "testapp/src/main/java/com/google/android/agera/testapp/AddedOnClickListener.java",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/google/agera/blob/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/AddedOnClickListener.java",
+      "raw_url": "https://github.com/google/agera/raw/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/AddedOnClickListener.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/java/com/google/android/agera/testapp/AddedOnClickListener.java?ref=b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+      "patch": "@@ -1,3 +1,18 @@\n+/*\n+ * Copyright 2016 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n package com.google.android.agera.testapp;\n \n import static com.google.android.agera.Preconditions.checkNotNull;"
+    },
+    {
+      "sha": "6945ea79d3860b94bb6e7e41d12b44753b98c21f",
+      "filename": "testapp/src/main/java/com/google/android/agera/testapp/ClearOnClickListener.java",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/google/agera/blob/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/ClearOnClickListener.java",
+      "raw_url": "https://github.com/google/agera/raw/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/ClearOnClickListener.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/java/com/google/android/agera/testapp/ClearOnClickListener.java?ref=b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+      "patch": "@@ -1,3 +1,18 @@\n+/*\n+ * Copyright 2016 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n package com.google.android.agera.testapp;\n \n import static com.google.android.agera.Preconditions.checkNotNull;"
+    },
+    {
+      "sha": "013f3bfb638649e8251698c846284d227385ebd7",
+      "filename": "testapp/src/main/java/com/google/android/agera/testapp/DeleteOnLongClickListener.java",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/google/agera/blob/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/DeleteOnLongClickListener.java",
+      "raw_url": "https://github.com/google/agera/raw/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/DeleteOnLongClickListener.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/java/com/google/android/agera/testapp/DeleteOnLongClickListener.java?ref=b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+      "patch": "@@ -1,3 +1,18 @@\n+/*\n+ * Copyright 2016 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n package com.google.android.agera.testapp;\n \n import static com.google.android.agera.Preconditions.checkNotNull;"
+    },
+    {
+      "sha": "bb9cf8aba751241fd4da067cbc970979fddb092b",
+      "filename": "testapp/src/main/java/com/google/android/agera/testapp/EditOnClickListener.java",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/google/agera/blob/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/EditOnClickListener.java",
+      "raw_url": "https://github.com/google/agera/raw/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/EditOnClickListener.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/java/com/google/android/agera/testapp/EditOnClickListener.java?ref=b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+      "patch": "@@ -1,3 +1,18 @@\n+/*\n+ * Copyright 2016 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n package com.google.android.agera.testapp;\n \n import static com.google.android.agera.Preconditions.checkNotNull;"
+    },
+    {
+      "sha": "d85da0584b0f4e12bea5d595ab3a06786f282465",
+      "filename": "testapp/src/main/java/com/google/android/agera/testapp/EditedOnClickListener.java",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/google/agera/blob/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/EditedOnClickListener.java",
+      "raw_url": "https://github.com/google/agera/raw/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/EditedOnClickListener.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/java/com/google/android/agera/testapp/EditedOnClickListener.java?ref=b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+      "patch": "@@ -1,3 +1,18 @@\n+/*\n+ * Copyright 2016 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n package com.google.android.agera.testapp;\n \n import static com.google.android.agera.Preconditions.checkNotNull;"
+    },
+    {
+      "sha": "25febfd0d280e433f21439fd55432b568f38f1e2",
+      "filename": "testapp/src/main/java/com/google/android/agera/testapp/HttpResponseToBitmap.java",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/google/agera/blob/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/HttpResponseToBitmap.java",
+      "raw_url": "https://github.com/google/agera/raw/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/HttpResponseToBitmap.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/java/com/google/android/agera/testapp/HttpResponseToBitmap.java?ref=b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+      "patch": "@@ -1,3 +1,18 @@\n+/*\n+ * Copyright 2016 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n package com.google.android.agera.testapp;\n \n import static android.graphics.BitmapFactory.decodeByteArray;"
+    },
+    {
+      "sha": "70d8e71b4a79aa949b1a1718e66dc0cc4627485a",
+      "filename": "testapp/src/main/java/com/google/android/agera/testapp/ImageViewBitmapReceiver.java",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/google/agera/blob/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/ImageViewBitmapReceiver.java",
+      "raw_url": "https://github.com/google/agera/raw/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/ImageViewBitmapReceiver.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/java/com/google/android/agera/testapp/ImageViewBitmapReceiver.java?ref=b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+      "patch": "@@ -1,3 +1,18 @@\n+/*\n+ * Copyright 2016 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n package com.google.android.agera.testapp;\n \n import static com.google.android.agera.Preconditions.checkNotNull;"
+    },
+    {
+      "sha": "bc1177914f569ed21b8ee0f44d9f5900482d1cfc",
+      "filename": "testapp/src/main/java/com/google/android/agera/testapp/NotePresenter.java",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 1,
+      "changes": 16,
+      "blob_url": "https://github.com/google/agera/blob/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/NotePresenter.java",
+      "raw_url": "https://github.com/google/agera/raw/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/NotePresenter.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/java/com/google/android/agera/testapp/NotePresenter.java?ref=b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+      "patch": "@@ -1,3 +1,18 @@\n+/*\n+ * Copyright 2016 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n package com.google.android.agera.testapp;\n \n import static com.google.android.agera.Preconditions.checkNotNull;\n@@ -10,7 +25,6 @@\n \n import java.util.List;\n \n-// Presents each note in the repository as a text view in the recycler view\n final class NotePresenter extends RepositoryPresenter<List<Note>> {\n   @NonNull\n   private final NotesStore notesStore;"
+    },
+    {
+      "sha": "9231fe7df66c3979975430737236aa2920991b05",
+      "filename": "testapp/src/main/java/com/google/android/agera/testapp/UrlToHttpRequest.java",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/google/agera/blob/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/UrlToHttpRequest.java",
+      "raw_url": "https://github.com/google/agera/raw/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/testapp/src/main/java/com/google/android/agera/testapp/UrlToHttpRequest.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/main/java/com/google/android/agera/testapp/UrlToHttpRequest.java?ref=b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+      "patch": "@@ -1,3 +1,18 @@\n+/*\n+ * Copyright 2016 Google Inc. All Rights Reserved.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n package com.google.android.agera.testapp;\n \n import static com.google.android.agera.net.HttpRequests.httpGetRequest;"
+    }
+  ]
+}

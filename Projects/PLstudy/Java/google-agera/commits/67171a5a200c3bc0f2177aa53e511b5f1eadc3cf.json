@@ -1,0 +1,101 @@
+{
+  "sha": "67171a5a200c3bc0f2177aa53e511b5f1eadc3cf",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-11-28T09:28:38Z"
+    },
+    "committer": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-11-28T09:28:38Z"
+    },
+    "message": "Tagged 1.2.0",
+    "tree": {
+      "sha": "2d41dc7417af953a05ffeab3888f0453572d70d4",
+      "url": "https://api.github.com/repos/google/agera/git/trees/2d41dc7417af953a05ffeab3888f0453572d70d4"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/67171a5a200c3bc0f2177aa53e511b5f1eadc3cf",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/67171a5a200c3bc0f2177aa53e511b5f1eadc3cf",
+  "html_url": "https://github.com/google/agera/commit/67171a5a200c3bc0f2177aa53e511b5f1eadc3cf",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/67171a5a200c3bc0f2177aa53e511b5f1eadc3cf/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d816f6d632ae1c9688c9779f9a7a4ff04dd74d32",
+      "url": "https://api.github.com/repos/google/agera/commits/d816f6d632ae1c9688c9779f9a7a4ff04dd74d32",
+      "html_url": "https://github.com/google/agera/commit/d816f6d632ae1c9688c9779f9a7a4ff04dd74d32"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 7,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "63b447fa8ed2ef802d7a08b1a14f13eb8abe3746",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 6,
+      "changes": 12,
+      "blob_url": "https://github.com/google/agera/blob/67171a5a200c3bc0f2177aa53e511b5f1eadc3cf/README.md",
+      "raw_url": "https://github.com/google/agera/raw/67171a5a200c3bc0f2177aa53e511b5f1eadc3cf/README.md",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/README.md?ref=67171a5a200c3bc0f2177aa53e511b5f1eadc3cf",
+      "patch": "@@ -16,7 +16,7 @@ Usage\n To add a dependency using Gradle:\n \n ```\n-  compile 'com.google.android.agera:agera:1.2.0-beta3'\n+  compile 'com.google.android.agera:agera:1.2.0'\n ```\n \n Learn about Agera\n@@ -39,11 +39,11 @@ A few experimental sample extension libraries for Agera are also provided. These\n To add dependencies to these using Gradle:\n \n ```\n-  compile 'com.google.android.agera:content:1.2.0-beta3'\n-  compile 'com.google.android.agera:database:1.2.0-beta3'\n-  compile 'com.google.android.agera:net:1.2.0-beta3'\n-  compile 'com.google.android.agera:rvadapter:1.2.0-beta3'\n-  compile 'com.google.android.agera:rvdatabinding:1.2.0-beta3'\n+  compile 'com.google.android.agera:content:1.2.0'\n+  compile 'com.google.android.agera:database:1.2.0'\n+  compile 'com.google.android.agera:net:1.2.0'\n+  compile 'com.google.android.agera:rvadapter:1.2.0'\n+  compile 'com.google.android.agera:rvdatabinding:1.2.0'\n ```\n \n FAQ: What's the relation with RxJava?"
+    },
+    {
+      "sha": "d25ec4633fa6451b945a38566e119fbfac1a299b",
+      "filename": "settings.gradle",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/google/agera/blob/67171a5a200c3bc0f2177aa53e511b5f1eadc3cf/settings.gradle",
+      "raw_url": "https://github.com/google/agera/raw/67171a5a200c3bc0f2177aa53e511b5f1eadc3cf/settings.gradle",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/settings.gradle?ref=67171a5a200c3bc0f2177aa53e511b5f1eadc3cf",
+      "patch": "@@ -22,7 +22,7 @@ include ':extensions:net'\n include ':testapp'\n \n gradle.ext.versionCode = 10200\n-gradle.ext.versionName = '1.2.0-beta3'\n+gradle.ext.versionName = '1.2.0'\n \n gradle.ext.bintrayRepo = 'Agera'\n gradle.ext.bintrayName = 'agera'"
+    }
+  ]
+}

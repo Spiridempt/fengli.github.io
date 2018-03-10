@@ -1,0 +1,89 @@
+{
+  "sha": "71f70169b9d700aa8c90dbe096769b0d21e50c71",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-11-04T07:52:22Z"
+    },
+    "committer": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-11-04T07:52:22Z"
+    },
+    "message": "Removed flaky part of UI test caused by RV animation",
+    "tree": {
+      "sha": "400e9494a13361ae9a39564632f96a5483f59836",
+      "url": "https://api.github.com/repos/google/agera/git/trees/400e9494a13361ae9a39564632f96a5483f59836"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/71f70169b9d700aa8c90dbe096769b0d21e50c71",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/71f70169b9d700aa8c90dbe096769b0d21e50c71",
+  "html_url": "https://github.com/google/agera/commit/71f70169b9d700aa8c90dbe096769b0d21e50c71",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/71f70169b9d700aa8c90dbe096769b0d21e50c71/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d38c1385057a629c28304668cc9683663ae80b73",
+      "url": "https://api.github.com/repos/google/agera/commits/d38c1385057a629c28304668cc9683663ae80b73",
+      "html_url": "https://github.com/google/agera/commit/d38c1385057a629c28304668cc9683663ae80b73"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 0,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "ba0db34169a67a21f0aac0452900d14f323f085f",
+      "filename": "testapp/src/androidTest/java/com/google/android/agera/testapp/NotesActivityTest.java",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/google/agera/blob/71f70169b9d700aa8c90dbe096769b0d21e50c71/testapp/src/androidTest/java/com/google/android/agera/testapp/NotesActivityTest.java",
+      "raw_url": "https://github.com/google/agera/raw/71f70169b9d700aa8c90dbe096769b0d21e50c71/testapp/src/androidTest/java/com/google/android/agera/testapp/NotesActivityTest.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/testapp/src/androidTest/java/com/google/android/agera/testapp/NotesActivityTest.java?ref=71f70169b9d700aa8c90dbe096769b0d21e50c71",
+      "patch": "@@ -52,7 +52,6 @@ public void sanityTest() {\n     onView(withId(R.id.edit)).perform(clearText(), typeText(THIRD_TEXT));\n     onView(withText(R.string.edit)).inRoot(isDialog()).perform(click());\n     onView(withText(SECOND_TEXT)).perform(longClick());\n-    onView(withText(THIRD_TEXT)).perform(longClick());\n     onView(withId(R.id.clear)).perform(click());\n   }\n }\n\\ No newline at end of file"
+    }
+  ]
+}

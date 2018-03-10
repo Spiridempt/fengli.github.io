@@ -1,0 +1,101 @@
+{
+  "sha": "10378eee44ec1ee55cc5abdfb6777e351c613f68",
+  "commit": {
+    "author": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-11-28T11:14:04Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2016-11-28T11:14:04Z"
+    },
+    "message": "Changed stableIdForItem function to allow for any super type (#117)",
+    "tree": {
+      "sha": "115300999a5c824e95f600b5bc62ab6ae80eceff",
+      "url": "https://api.github.com/repos/google/agera/git/trees/115300999a5c824e95f600b5bc62ab6ae80eceff"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/10378eee44ec1ee55cc5abdfb6777e351c613f68",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/10378eee44ec1ee55cc5abdfb6777e351c613f68",
+  "html_url": "https://github.com/google/agera/commit/10378eee44ec1ee55cc5abdfb6777e351c613f68",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/10378eee44ec1ee55cc5abdfb6777e351c613f68/comments",
+  "author": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "avatar_url": "https://avatars0.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9098f74903eec94e823a1a84b06f4db9c4087c79",
+      "url": "https://api.github.com/repos/google/agera/commits/9098f74903eec94e823a1a84b06f4db9c4087c79",
+      "html_url": "https://github.com/google/agera/commit/9098f74903eec94e823a1a84b06f4db9c4087c79"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 9,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "1df1891e46a4dea64d0c029dc73a7a236b46e684",
+      "filename": "extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryPresenterCompilerStates.java",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/google/agera/blob/10378eee44ec1ee55cc5abdfb6777e351c613f68/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryPresenterCompilerStates.java",
+      "raw_url": "https://github.com/google/agera/raw/10378eee44ec1ee55cc5abdfb6777e351c613f68/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryPresenterCompilerStates.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvadapter/src/main/java/com/google/android/agera/rvadapter/RepositoryPresenterCompilerStates.java?ref=10378eee44ec1ee55cc5abdfb6777e351c613f68",
+      "patch": "@@ -84,7 +84,7 @@\n      * in the whole {@link RecyclerView} throughout all changes.\n      */\n     @NonNull\n-    TRet stableIdForItem(@NonNull Function<TVal, Long> stableIdForItem);\n+    TRet stableIdForItem(@NonNull Function<? super TVal, Long> stableIdForItem);\n   }\n \n   /**"
+    },
+    {
+      "sha": "6111f4f026ea5258a5c39449604247844ac3d1d4",
+      "filename": "extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryPresentersTest.java",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/google/agera/blob/10378eee44ec1ee55cc5abdfb6777e351c613f68/extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryPresentersTest.java",
+      "raw_url": "https://github.com/google/agera/raw/10378eee44ec1ee55cc5abdfb6777e351c613f68/extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryPresentersTest.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/extensions/rvadapter/src/test/java/com/google/android/agera/rvadapter/RepositoryPresentersTest.java?ref=10378eee44ec1ee55cc5abdfb6777e351c613f68",
+      "patch": "@@ -205,4 +205,12 @@ public void shouldReturnStableIdForRepositoryPresenterOfListWithBinder() {\n             .forList();\n     assertThat(resultRepositoryPresenter.getItemId(STRING_LIST, 1), is(STABLE_ID));\n   }\n+\n+  @Test\n+  public void shouldAllowStableIdMethodForAnySuperType() {\n+    repositoryPresenterOf(String.class)\n+        .layout(LAYOUT_ID)\n+        .stableIdForItem(Functions.<CharSequence, Long>staticFunction(STABLE_ID))\n+        .forResult();\n+  }\n }"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "sha": "dd28d5528b6a72003134aae024bac3e45248b9aa",
+  "commit": {
+    "author": {
+      "name": "drakeet",
+      "email": "drakeet.me@gmail.com",
+      "date": "2016-05-31T14:03:43Z"
+    },
+    "committer": {
+      "name": "Magnus Ernstsson",
+      "email": "magnus@ernstsson.net",
+      "date": "2016-05-31T14:03:43Z"
+    },
+    "message": "Added sort and thenSort directives to FunctionCompiler (#66)\n\n* Added sort and thenSort directives to FunctionCompiler\r\n\r\nAlthough can use `morph (SortList<T> new)` to achieve the same\r\nfunction, but I think sort is a very common function, should not let\r\neach person alone to achieve a SortList Function. So I added the sort\r\ndirectives to make it more convenient.\r\n\r\n* Added some @NonNull/final and  checkNotNull for the sort directives\r\n\r\n* Added final to the apply method of SortFunction",
+    "tree": {
+      "sha": "639a9c651661b3a0eb0deb543beec7ffd063a7d3",
+      "url": "https://api.github.com/repos/google/agera/git/trees/639a9c651661b3a0eb0deb543beec7ffd063a7d3"
+    },
+    "url": "https://api.github.com/repos/google/agera/git/commits/dd28d5528b6a72003134aae024bac3e45248b9aa",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/google/agera/commits/dd28d5528b6a72003134aae024bac3e45248b9aa",
+  "html_url": "https://github.com/google/agera/commit/dd28d5528b6a72003134aae024bac3e45248b9aa",
+  "comments_url": "https://api.github.com/repos/google/agera/commits/dd28d5528b6a72003134aae024bac3e45248b9aa/comments",
+  "author": {
+    "login": "drakeet",
+    "id": 5214214,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/5214214?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/drakeet",
+    "html_url": "https://github.com/drakeet",
+    "followers_url": "https://api.github.com/users/drakeet/followers",
+    "following_url": "https://api.github.com/users/drakeet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/drakeet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/drakeet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/drakeet/subscriptions",
+    "organizations_url": "https://api.github.com/users/drakeet/orgs",
+    "repos_url": "https://api.github.com/users/drakeet/repos",
+    "events_url": "https://api.github.com/users/drakeet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/drakeet/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ernstsson",
+    "id": 378389,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ernstsson",
+    "html_url": "https://github.com/ernstsson",
+    "followers_url": "https://api.github.com/users/ernstsson/followers",
+    "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+    "repos_url": "https://api.github.com/users/ernstsson/repos",
+    "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6ef1fcb88bdfd357e2f0fe19adc8daa123796703",
+      "url": "https://api.github.com/repos/google/agera/commits/6ef1fcb88bdfd357e2f0fe19adc8daa123796703",
+      "html_url": "https://github.com/google/agera/commit/6ef1fcb88bdfd357e2f0fe19adc8daa123796703"
+    }
+  ],
+  "stats": {
+    "total": 64,
+    "additions": 64,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "aa25fc24ca950cf26b0bb18e6ab9e35a6cf5b2a0",
+      "filename": "agera/src/main/java/com/google/android/agera/FunctionCompiler.java",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 0,
+      "changes": 32,
+      "blob_url": "https://github.com/google/agera/blob/dd28d5528b6a72003134aae024bac3e45248b9aa/agera/src/main/java/com/google/android/agera/FunctionCompiler.java",
+      "raw_url": "https://github.com/google/agera/raw/dd28d5528b6a72003134aae024bac3e45248b9aa/agera/src/main/java/com/google/android/agera/FunctionCompiler.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/agera/src/main/java/com/google/android/agera/FunctionCompiler.java?ref=dd28d5528b6a72003134aae024bac3e45248b9aa",
+      "patch": "@@ -23,6 +23,8 @@\n import android.support.annotation.NonNull;\n \n import java.util.ArrayList;\n+import java.util.Collections;\n+import java.util.Comparator;\n import java.util.List;\n \n @SuppressWarnings(\"unchecked\")\n@@ -94,6 +96,13 @@ private Function createFunction() {\n \n   @NonNull\n   @Override\n+  public FunctionCompilerStates.FList sort(@NonNull final Comparator comparator) {\n+    addFunction(new SortFunction(comparator));\n+    return this;\n+  }\n+\n+  @NonNull\n+  @Override\n   public FunctionCompilerStates.FList map(@NonNull final Function function) {\n     if (function != IDENTITY_FUNCTION) {\n       addFunction(new MapFunction(function));\n@@ -122,6 +131,13 @@ public Function thenLimit(final int limit) {\n     return createFunction();\n   }\n \n+  @NonNull\n+  @Override\n+  public Function thenSort(@NonNull final Comparator comparator) {\n+    sort(comparator);\n+    return createFunction();\n+  }\n+\n   private static final class LimitFunction<T> implements Function<List<T>, List<T>> {\n     private final int limit;\n \n@@ -209,4 +225,20 @@ public Object apply(@NonNull final Object input) {\n       return result;\n     }\n   }\n+\n+  private static final class SortFunction<T> implements Function<List<T>, List<T>> {\n+    @NonNull\n+    private final Comparator comparator;\n+\n+    SortFunction(@NonNull final Comparator comparator) {\n+      this.comparator = checkNotNull(comparator);\n+    }\n+\n+    @NonNull\n+    @Override\n+    public List<T> apply(@NonNull final List<T> input) {\n+      Collections.sort(input, comparator);\n+      return input;\n+    }\n+  }\n }"
+    },
+    {
+      "sha": "72942e38899d3363fc3eb0b055fd34bd8b8ce93a",
+      "filename": "agera/src/main/java/com/google/android/agera/FunctionCompilerStates.java",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/google/agera/blob/dd28d5528b6a72003134aae024bac3e45248b9aa/agera/src/main/java/com/google/android/agera/FunctionCompilerStates.java",
+      "raw_url": "https://github.com/google/agera/raw/dd28d5528b6a72003134aae024bac3e45248b9aa/agera/src/main/java/com/google/android/agera/FunctionCompilerStates.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/agera/src/main/java/com/google/android/agera/FunctionCompilerStates.java?ref=dd28d5528b6a72003134aae024bac3e45248b9aa",
+      "patch": "@@ -17,6 +17,7 @@\n \n import android.support.annotation.NonNull;\n \n+import java.util.Comparator;\n import java.util.List;\n \n /**\n@@ -113,6 +114,14 @@\n     FList<TPrev, TPrevList, TFrom> limit(int limit);\n \n     /**\n+     * Adds a {@link Comparator} to the behavior chain to sort the items.\n+     *\n+     * @param comparator the comparator to sort the items\n+     */\n+    @NonNull\n+    FList<TPrev, TPrevList, TFrom> sort(@NonNull Comparator<TPrev> comparator);\n+\n+    /**\n      * Adds a {@link Predicate} to the end of the behavior chain to filter out items.\n      *\n      * @param filter the predicate to filter by\n@@ -127,5 +136,13 @@\n      */\n     @NonNull\n     Function<TFrom, TPrevList> thenLimit(int limit);\n+\n+    /**\n+     * Adds a {@link Comparator} to the behavior chain to sort the items.\n+     *\n+     * @param comparator the comparator to sort the items\n+     */\n+    @NonNull\n+    Function<TFrom, TPrevList> thenSort(@NonNull Comparator<TPrev> comparator);\n   }\n }"
+    },
+    {
+      "sha": "0a02c86af8f573dd2a0df78438f7c46b09ad91f8",
+      "filename": "agera/src/test/java/com/google/android/agera/FunctionsTest.java",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/google/agera/blob/dd28d5528b6a72003134aae024bac3e45248b9aa/agera/src/test/java/com/google/android/agera/FunctionsTest.java",
+      "raw_url": "https://github.com/google/agera/raw/dd28d5528b6a72003134aae024bac3e45248b9aa/agera/src/test/java/com/google/android/agera/FunctionsTest.java",
+      "contents_url": "https://api.github.com/repos/google/agera/contents/agera/src/test/java/com/google/android/agera/FunctionsTest.java?ref=dd28d5528b6a72003134aae024bac3e45248b9aa",
+      "patch": "@@ -44,6 +44,7 @@\n \n import java.util.ArrayList;\n import java.util.Collections;\n+import java.util.Comparator;\n import java.util.List;\n \n public final class FunctionsTest {\n@@ -174,6 +175,20 @@ public void shouldCreateFunctionFromListToList() {\n   }\n \n   @Test\n+  public void shouldCreateFunctionFromListToSortedList() {\n+    final Function<List<String>, List<Integer>> function = functionFromListOf(String.class)\n+            .map(new StringLength())\n+            .thenSort(new Comparator<Integer>() {\n+              @Override\n+              public int compare(Integer lhs, Integer rhs) {\n+                return lhs.compareTo(rhs);\n+              }\n+            });\n+\n+    assertThat(function.apply(INPUT_LIST), contains(3, 4, 7, 7));\n+  }\n+\n+  @Test\n   public void shouldCreateFunctionFromListToListWithZeroLimit() {\n     final Function<List<String>, List<Integer>> function = functionFromListOf(String.class)\n         .limit(0)"
+    }
+  ]
+}

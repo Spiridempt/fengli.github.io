@@ -1,0 +1,2102 @@
+[
+  {
+    "sha": "7508bf750ee71a997c3606016a84bece893a2362",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-08T09:30:05Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-12T19:27:54Z"
+      },
+      "message": "Added bintray upload plugin",
+      "tree": {
+        "sha": "794e18d97e32082a5b87955bb912036b423c6101",
+        "url": "https://api.github.com/repos/google/agera/git/trees/794e18d97e32082a5b87955bb912036b423c6101"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/7508bf750ee71a997c3606016a84bece893a2362",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/7508bf750ee71a997c3606016a84bece893a2362",
+    "html_url": "https://github.com/google/agera/commit/7508bf750ee71a997c3606016a84bece893a2362",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/7508bf750ee71a997c3606016a84bece893a2362/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "30b98a19ec0c0f775489e9a03be8ff1d89ae9a77",
+        "url": "https://api.github.com/repos/google/agera/commits/30b98a19ec0c0f775489e9a03be8ff1d89ae9a77",
+        "html_url": "https://github.com/google/agera/commit/30b98a19ec0c0f775489e9a03be8ff1d89ae9a77"
+      }
+    ]
+  },
+  {
+    "sha": "30b98a19ec0c0f775489e9a03be8ff1d89ae9a77",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-12T18:54:04Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-12T18:54:04Z"
+      },
+      "message": "Added missing nonnull/finals",
+      "tree": {
+        "sha": "cedeaadc4a56d476ca7fa17e28dbe15d20a86343",
+        "url": "https://api.github.com/repos/google/agera/git/trees/cedeaadc4a56d476ca7fa17e28dbe15d20a86343"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/30b98a19ec0c0f775489e9a03be8ff1d89ae9a77",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/30b98a19ec0c0f775489e9a03be8ff1d89ae9a77",
+    "html_url": "https://github.com/google/agera/commit/30b98a19ec0c0f775489e9a03be8ff1d89ae9a77",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/30b98a19ec0c0f775489e9a03be8ff1d89ae9a77/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+        "url": "https://api.github.com/repos/google/agera/commits/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+        "html_url": "https://github.com/google/agera/commit/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261"
+      }
+    ]
+  },
+  {
+    "sha": "b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-08T16:07:30Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-08T16:07:30Z"
+      },
+      "message": "Added headers missing from extracted inner classes",
+      "tree": {
+        "sha": "6731ed3eb503afb345c2f03e0c1e0af83a22f8ac",
+        "url": "https://api.github.com/repos/google/agera/git/trees/6731ed3eb503afb345c2f03e0c1e0af83a22f8ac"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+    "html_url": "https://github.com/google/agera/commit/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/b541a376c917e4e0df7a8b9e95ea5b9cf39aa261/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4711c2fff23254389b8486cb81c60dfb918f6d2c",
+        "url": "https://api.github.com/repos/google/agera/commits/4711c2fff23254389b8486cb81c60dfb918f6d2c",
+        "html_url": "https://github.com/google/agera/commit/4711c2fff23254389b8486cb81c60dfb918f6d2c"
+      }
+    ]
+  },
+  {
+    "sha": "4711c2fff23254389b8486cb81c60dfb918f6d2c",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-08T15:39:38Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-08T15:39:38Z"
+      },
+      "message": "Extracted inner classes from test app activity",
+      "tree": {
+        "sha": "349a6b692cc3b9ddecce6e61b9f385226ea30f92",
+        "url": "https://api.github.com/repos/google/agera/git/trees/349a6b692cc3b9ddecce6e61b9f385226ea30f92"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/4711c2fff23254389b8486cb81c60dfb918f6d2c",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/4711c2fff23254389b8486cb81c60dfb918f6d2c",
+    "html_url": "https://github.com/google/agera/commit/4711c2fff23254389b8486cb81c60dfb918f6d2c",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/4711c2fff23254389b8486cb81c60dfb918f6d2c/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ae33552bd96e23f11e7595fdac79dbd121246349",
+        "url": "https://api.github.com/repos/google/agera/commits/ae33552bd96e23f11e7595fdac79dbd121246349",
+        "html_url": "https://github.com/google/agera/commit/ae33552bd96e23f11e7595fdac79dbd121246349"
+      }
+    ]
+  },
+  {
+    "sha": "ae33552bd96e23f11e7595fdac79dbd121246349",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-08T12:33:31Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-08T12:33:31Z"
+      },
+      "message": "Removed penaltyDeath from test app\n\nTo make life easier for potential Huawei users of the test app",
+      "tree": {
+        "sha": "c0b18448d174c0f30a6993a907e3cda3404ea5a5",
+        "url": "https://api.github.com/repos/google/agera/git/trees/c0b18448d174c0f30a6993a907e3cda3404ea5a5"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/ae33552bd96e23f11e7595fdac79dbd121246349",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/ae33552bd96e23f11e7595fdac79dbd121246349",
+    "html_url": "https://github.com/google/agera/commit/ae33552bd96e23f11e7595fdac79dbd121246349",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/ae33552bd96e23f11e7595fdac79dbd121246349/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "46c89215fd15681833b8c7908b691a2b48ab254f",
+        "url": "https://api.github.com/repos/google/agera/commits/46c89215fd15681833b8c7908b691a2b48ab254f",
+        "html_url": "https://github.com/google/agera/commit/46c89215fd15681833b8c7908b691a2b48ab254f"
+      }
+    ]
+  },
+  {
+    "sha": "46c89215fd15681833b8c7908b691a2b48ab254f",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-07T22:19:40Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-07T22:19:40Z"
+      },
+      "message": "Added more observable tests\n\nTesting:\nDeduping of updates within loop\nKeep observables activated on quick reactivation",
+      "tree": {
+        "sha": "c6b17ab6699788ec0eafa3dc82db9e6eb1b77c15",
+        "url": "https://api.github.com/repos/google/agera/git/trees/c6b17ab6699788ec0eafa3dc82db9e6eb1b77c15"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/46c89215fd15681833b8c7908b691a2b48ab254f",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/46c89215fd15681833b8c7908b691a2b48ab254f",
+    "html_url": "https://github.com/google/agera/commit/46c89215fd15681833b8c7908b691a2b48ab254f",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/46c89215fd15681833b8c7908b691a2b48ab254f/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1059462228c2b9701e2ff48110592bfc90db1ae0",
+        "url": "https://api.github.com/repos/google/agera/commits/1059462228c2b9701e2ff48110592bfc90db1ae0",
+        "html_url": "https://github.com/google/agera/commit/1059462228c2b9701e2ff48110592bfc90db1ae0"
+      }
+    ]
+  },
+  {
+    "sha": "1059462228c2b9701e2ff48110592bfc90db1ae0",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-07T20:23:47Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-07T20:34:42Z"
+      },
+      "message": "Tidied up unit tests",
+      "tree": {
+        "sha": "40d6716875684b0c4aca51069f86538512abc180",
+        "url": "https://api.github.com/repos/google/agera/git/trees/40d6716875684b0c4aca51069f86538512abc180"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/1059462228c2b9701e2ff48110592bfc90db1ae0",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/1059462228c2b9701e2ff48110592bfc90db1ae0",
+    "html_url": "https://github.com/google/agera/commit/1059462228c2b9701e2ff48110592bfc90db1ae0",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/1059462228c2b9701e2ff48110592bfc90db1ae0/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8d79f169f3ddd89e13106f86d5f1a19aa55256b2",
+        "url": "https://api.github.com/repos/google/agera/commits/8d79f169f3ddd89e13106f86d5f1a19aa55256b2",
+        "html_url": "https://github.com/google/agera/commit/8d79f169f3ddd89e13106f86d5f1a19aa55256b2"
+      }
+    ]
+  },
+  {
+    "sha": "8d79f169f3ddd89e13106f86d5f1a19aa55256b2",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-07T17:49:20Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-07T17:49:20Z"
+      },
+      "message": "Exposed onViewRecycled to RepositoryPresenter",
+      "tree": {
+        "sha": "8fed91cd27591cf635054c0c42b9f8090d940ffe",
+        "url": "https://api.github.com/repos/google/agera/git/trees/8fed91cd27591cf635054c0c42b9f8090d940ffe"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/8d79f169f3ddd89e13106f86d5f1a19aa55256b2",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/8d79f169f3ddd89e13106f86d5f1a19aa55256b2",
+    "html_url": "https://github.com/google/agera/commit/8d79f169f3ddd89e13106f86d5f1a19aa55256b2",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/8d79f169f3ddd89e13106f86d5f1a19aa55256b2/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ebe9c5745d49d8861d2b4160ae455b8f163c02e5",
+        "url": "https://api.github.com/repos/google/agera/commits/ebe9c5745d49d8861d2b4160ae455b8f163c02e5",
+        "html_url": "https://github.com/google/agera/commit/ebe9c5745d49d8861d2b4160ae455b8f163c02e5"
+      }
+    ]
+  },
+  {
+    "sha": "ebe9c5745d49d8861d2b4160ae455b8f163c02e5",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-02T11:03:33Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-07T17:30:21Z"
+      },
+      "message": "Tidied up RepositoryAdapter",
+      "tree": {
+        "sha": "6ce1819112c06c958495dfc8e73f35bdd49d3254",
+        "url": "https://api.github.com/repos/google/agera/git/trees/6ce1819112c06c958495dfc8e73f35bdd49d3254"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/ebe9c5745d49d8861d2b4160ae455b8f163c02e5",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/ebe9c5745d49d8861d2b4160ae455b8f163c02e5",
+    "html_url": "https://github.com/google/agera/commit/ebe9c5745d49d8861d2b4160ae455b8f163c02e5",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/ebe9c5745d49d8861d2b4160ae455b8f163c02e5/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a8b1523fb1584c1ce31e594181f84d5e01ce7f8d",
+        "url": "https://api.github.com/repos/google/agera/commits/a8b1523fb1584c1ce31e594181f84d5e01ce7f8d",
+        "html_url": "https://github.com/google/agera/commit/a8b1523fb1584c1ce31e594181f84d5e01ce7f8d"
+      }
+    ]
+  },
+  {
+    "sha": "a8b1523fb1584c1ce31e594181f84d5e01ce7f8d",
+    "commit": {
+      "author": {
+        "name": "chthai64",
+        "email": "chthai64@gmail.com",
+        "date": "2016-05-06T17:44:03Z"
+      },
+      "committer": {
+        "name": "chthai64",
+        "email": "chthai64@gmail.com",
+        "date": "2016-05-06T17:44:03Z"
+      },
+      "message": "update gradle version from 2.1.0-rc1 to 2.1.0",
+      "tree": {
+        "sha": "1b6244cabfc0d4303ff29f0824439767c7f8ddab",
+        "url": "https://api.github.com/repos/google/agera/git/trees/1b6244cabfc0d4303ff29f0824439767c7f8ddab"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/a8b1523fb1584c1ce31e594181f84d5e01ce7f8d",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/a8b1523fb1584c1ce31e594181f84d5e01ce7f8d",
+    "html_url": "https://github.com/google/agera/commit/a8b1523fb1584c1ce31e594181f84d5e01ce7f8d",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/a8b1523fb1584c1ce31e594181f84d5e01ce7f8d/comments",
+    "author": {
+      "login": "chthai64",
+      "id": 16104207,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/16104207?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chthai64",
+      "html_url": "https://github.com/chthai64",
+      "followers_url": "https://api.github.com/users/chthai64/followers",
+      "following_url": "https://api.github.com/users/chthai64/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chthai64/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chthai64/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chthai64/subscriptions",
+      "organizations_url": "https://api.github.com/users/chthai64/orgs",
+      "repos_url": "https://api.github.com/users/chthai64/repos",
+      "events_url": "https://api.github.com/users/chthai64/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chthai64/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chthai64",
+      "id": 16104207,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/16104207?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chthai64",
+      "html_url": "https://github.com/chthai64",
+      "followers_url": "https://api.github.com/users/chthai64/followers",
+      "following_url": "https://api.github.com/users/chthai64/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chthai64/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chthai64/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chthai64/subscriptions",
+      "organizations_url": "https://api.github.com/users/chthai64/orgs",
+      "repos_url": "https://api.github.com/users/chthai64/repos",
+      "events_url": "https://api.github.com/users/chthai64/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chthai64/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a0a8d2193f82ead3d47c705c1505e50aeece56d9",
+        "url": "https://api.github.com/repos/google/agera/commits/a0a8d2193f82ead3d47c705c1505e50aeece56d9",
+        "html_url": "https://github.com/google/agera/commit/a0a8d2193f82ead3d47c705c1505e50aeece56d9"
+      }
+    ]
+  },
+  {
+    "sha": "a0a8d2193f82ead3d47c705c1505e50aeece56d9",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-03T07:22:23Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-03T07:26:55Z"
+      },
+      "message": "Pulled Common.WorkerHandler to package level\n\nFixes #41",
+      "tree": {
+        "sha": "9338026cde1a8375086c7570c2e3777916740bbe",
+        "url": "https://api.github.com/repos/google/agera/git/trees/9338026cde1a8375086c7570c2e3777916740bbe"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/a0a8d2193f82ead3d47c705c1505e50aeece56d9",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/a0a8d2193f82ead3d47c705c1505e50aeece56d9",
+    "html_url": "https://github.com/google/agera/commit/a0a8d2193f82ead3d47c705c1505e50aeece56d9",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/a0a8d2193f82ead3d47c705c1505e50aeece56d9/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "78326e2de34e238bfa12ccc66f32f0555597ab29",
+        "url": "https://api.github.com/repos/google/agera/commits/78326e2de34e238bfa12ccc66f32f0555597ab29",
+        "html_url": "https://github.com/google/agera/commit/78326e2de34e238bfa12ccc66f32f0555597ab29"
+      }
+    ]
+  },
+  {
+    "sha": "78326e2de34e238bfa12ccc66f32f0555597ab29",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-01T07:40:35Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-05-01T07:58:10Z"
+      },
+      "message": "Minor gradle file restructuring",
+      "tree": {
+        "sha": "0ca6f0d36c8a567d3e9f290d792457fd94edf55e",
+        "url": "https://api.github.com/repos/google/agera/git/trees/0ca6f0d36c8a567d3e9f290d792457fd94edf55e"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/78326e2de34e238bfa12ccc66f32f0555597ab29",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/78326e2de34e238bfa12ccc66f32f0555597ab29",
+    "html_url": "https://github.com/google/agera/commit/78326e2de34e238bfa12ccc66f32f0555597ab29",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/78326e2de34e238bfa12ccc66f32f0555597ab29/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8b2798c7a17515b611977a2d5946a3e69889c51f",
+        "url": "https://api.github.com/repos/google/agera/commits/8b2798c7a17515b611977a2d5946a3e69889c51f",
+        "html_url": "https://github.com/google/agera/commit/8b2798c7a17515b611977a2d5946a3e69889c51f"
+      }
+    ]
+  },
+  {
+    "sha": "8b2798c7a17515b611977a2d5946a3e69889c51f",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-30T19:11:13Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-30T22:49:27Z"
+      },
+      "message": "Added a function that wrap a Throwable in a Result\n\nWhen ending an attemptXYZ operation with .orSkip the failure is not\nstored in the repository (as is the intention). To route the failure\nback into a repository of Result .orEnd needs to be used, and the\nThrowable needs to be wrapped in a Result. This function does exactly\nthat.",
+      "tree": {
+        "sha": "fcb615409bb490b40b54f37bb9d2a4db9f711559",
+        "url": "https://api.github.com/repos/google/agera/git/trees/fcb615409bb490b40b54f37bb9d2a4db9f711559"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/8b2798c7a17515b611977a2d5946a3e69889c51f",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/8b2798c7a17515b611977a2d5946a3e69889c51f",
+    "html_url": "https://github.com/google/agera/commit/8b2798c7a17515b611977a2d5946a3e69889c51f",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/8b2798c7a17515b611977a2d5946a3e69889c51f/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "af3729ae891ab1775b64bbc31181a9c3a760d5ca",
+        "url": "https://api.github.com/repos/google/agera/commits/af3729ae891ab1775b64bbc31181a9c3a760d5ca",
+        "html_url": "https://github.com/google/agera/commit/af3729ae891ab1775b64bbc31181a9c3a760d5ca"
+      }
+    ]
+  },
+  {
+    "sha": "af3729ae891ab1775b64bbc31181a9c3a760d5ca",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-30T22:28:59Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-30T22:28:59Z"
+      },
+      "message": "Added missing Repository bindWith unit test\n\nAlso bumped coverage of Result",
+      "tree": {
+        "sha": "e0d003301b2052bfe2d5c95f1b966bde3181abb1",
+        "url": "https://api.github.com/repos/google/agera/git/trees/e0d003301b2052bfe2d5c95f1b966bde3181abb1"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/af3729ae891ab1775b64bbc31181a9c3a760d5ca",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/af3729ae891ab1775b64bbc31181a9c3a760d5ca",
+    "html_url": "https://github.com/google/agera/commit/af3729ae891ab1775b64bbc31181a9c3a760d5ca",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/af3729ae891ab1775b64bbc31181a9c3a760d5ca/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d7214d07e0aeb5e17fd8986e107394e1f898525e",
+        "url": "https://api.github.com/repos/google/agera/commits/d7214d07e0aeb5e17fd8986e107394e1f898525e",
+        "html_url": "https://github.com/google/agera/commit/d7214d07e0aeb5e17fd8986e107394e1f898525e"
+      }
+    ]
+  },
+  {
+    "sha": "d7214d07e0aeb5e17fd8986e107394e1f898525e",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-30T21:48:14Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-30T21:50:11Z"
+      },
+      "message": "Tidied up some unused test code",
+      "tree": {
+        "sha": "37d7b5696016a197b6b45426eeb912ae2938b20d",
+        "url": "https://api.github.com/repos/google/agera/git/trees/37d7b5696016a197b6b45426eeb912ae2938b20d"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/d7214d07e0aeb5e17fd8986e107394e1f898525e",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/d7214d07e0aeb5e17fd8986e107394e1f898525e",
+    "html_url": "https://github.com/google/agera/commit/d7214d07e0aeb5e17fd8986e107394e1f898525e",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/d7214d07e0aeb5e17fd8986e107394e1f898525e/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "46e1505773869a377c2404031ead8bc513fa7f8d",
+        "url": "https://api.github.com/repos/google/agera/commits/46e1505773869a377c2404031ead8bc513fa7f8d",
+        "html_url": "https://github.com/google/agera/commit/46e1505773869a377c2404031ead8bc513fa7f8d"
+      }
+    ]
+  },
+  {
+    "sha": "46e1505773869a377c2404031ead8bc513fa7f8d",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-30T16:03:27Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-30T18:00:40Z"
+      },
+      "message": "Changed BaseObservable to survive rotation\n\nIf LAST_REMOVED is sent when FIRST_ADDED is queued, both are instead\nremoved. Re-activating a repository within the same loop have no value\nand in this way a global repository can survive device rotation.",
+      "tree": {
+        "sha": "37aed31ba0098e22defa313abac7a1c4bb92a9b8",
+        "url": "https://api.github.com/repos/google/agera/git/trees/37aed31ba0098e22defa313abac7a1c4bb92a9b8"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/46e1505773869a377c2404031ead8bc513fa7f8d",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/46e1505773869a377c2404031ead8bc513fa7f8d",
+    "html_url": "https://github.com/google/agera/commit/46e1505773869a377c2404031ead8bc513fa7f8d",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/46e1505773869a377c2404031ead8bc513fa7f8d/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "92bdae9cee540c6ca151c558515eec07c1bdcb62",
+        "url": "https://api.github.com/repos/google/agera/commits/92bdae9cee540c6ca151c558515eec07c1bdcb62",
+        "html_url": "https://github.com/google/agera/commit/92bdae9cee540c6ca151c558515eec07c1bdcb62"
+      }
+    ]
+  },
+  {
+    "sha": "92bdae9cee540c6ca151c558515eec07c1bdcb62",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-30T17:56:45Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-30T17:56:45Z"
+      },
+      "message": "Revert \"Changed WorkerHandler to make Observables survive rotation\"\n\nThis reverts commit 459cb702e686c0e013458059672048ba4c694953.",
+      "tree": {
+        "sha": "d116c9c713a4df83c0d8d10c0b7f7d9d355d7ddc",
+        "url": "https://api.github.com/repos/google/agera/git/trees/d116c9c713a4df83c0d8d10c0b7f7d9d355d7ddc"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/92bdae9cee540c6ca151c558515eec07c1bdcb62",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/92bdae9cee540c6ca151c558515eec07c1bdcb62",
+    "html_url": "https://github.com/google/agera/commit/92bdae9cee540c6ca151c558515eec07c1bdcb62",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/92bdae9cee540c6ca151c558515eec07c1bdcb62/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "459cb702e686c0e013458059672048ba4c694953",
+        "url": "https://api.github.com/repos/google/agera/commits/459cb702e686c0e013458059672048ba4c694953",
+        "html_url": "https://github.com/google/agera/commit/459cb702e686c0e013458059672048ba4c694953"
+      }
+    ]
+  },
+  {
+    "sha": "459cb702e686c0e013458059672048ba4c694953",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-30T16:03:27Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-30T17:08:58Z"
+      },
+      "message": "Changed WorkerHandler to make Observables survive rotation\n\nIf LAST_REMOVED is queued when FIRST_ADDED is processed, do nothing.\nIf FIRST_ADDED is queued when LAST_REMOVED is processed, do nothing.",
+      "tree": {
+        "sha": "88e2c79477531ff62abfe86cb518038e1747c0f1",
+        "url": "https://api.github.com/repos/google/agera/git/trees/88e2c79477531ff62abfe86cb518038e1747c0f1"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/459cb702e686c0e013458059672048ba4c694953",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/459cb702e686c0e013458059672048ba4c694953",
+    "html_url": "https://github.com/google/agera/commit/459cb702e686c0e013458059672048ba4c694953",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/459cb702e686c0e013458059672048ba4c694953/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0a315456685a4a45e55dfa345799d76c27a0048d",
+        "url": "https://api.github.com/repos/google/agera/commits/0a315456685a4a45e55dfa345799d76c27a0048d",
+        "html_url": "https://github.com/google/agera/commit/0a315456685a4a45e55dfa345799d76c27a0048d"
+      }
+    ]
+  },
+  {
+    "sha": "0a315456685a4a45e55dfa345799d76c27a0048d",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-30T06:27:43Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-30T06:27:43Z"
+      },
+      "message": "Changed version to 1.1.0-SNAPSHOT\n\nMaster will be used for 1.1.0 features\n1.0.0 fixes (including the pending 1.0.0) to be done on the 1.0.x branch\n\nVersioning scheme as follows;\nMajor version for compatibility break (prey we never need it)\nMinor version for new features\nIncremental version for bug fixes",
+      "tree": {
+        "sha": "d116c9c713a4df83c0d8d10c0b7f7d9d355d7ddc",
+        "url": "https://api.github.com/repos/google/agera/git/trees/d116c9c713a4df83c0d8d10c0b7f7d9d355d7ddc"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/0a315456685a4a45e55dfa345799d76c27a0048d",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/0a315456685a4a45e55dfa345799d76c27a0048d",
+    "html_url": "https://github.com/google/agera/commit/0a315456685a4a45e55dfa345799d76c27a0048d",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/0a315456685a4a45e55dfa345799d76c27a0048d/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f351f42c42eb2a16b6f0b27632b15515b49aef4f",
+        "url": "https://api.github.com/repos/google/agera/commits/f351f42c42eb2a16b6f0b27632b15515b49aef4f",
+        "html_url": "https://github.com/google/agera/commit/f351f42c42eb2a16b6f0b27632b15515b49aef4f"
+      }
+    ]
+  },
+  {
+    "sha": "f351f42c42eb2a16b6f0b27632b15515b49aef4f",
+    "commit": {
+      "author": {
+        "name": "bxbxbai",
+        "email": "bxbxbai@gmail.com",
+        "date": "2016-04-29T06:18:41Z"
+      },
+      "committer": {
+        "name": "bxbxbai",
+        "email": "bxbxbai@gmail.com",
+        "date": "2016-04-29T06:18:41Z"
+      },
+      "message": "update gradle plugin to 2.1.0",
+      "tree": {
+        "sha": "9b409d51275cb409a71b95476fa40e851f725d7f",
+        "url": "https://api.github.com/repos/google/agera/git/trees/9b409d51275cb409a71b95476fa40e851f725d7f"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/f351f42c42eb2a16b6f0b27632b15515b49aef4f",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/f351f42c42eb2a16b6f0b27632b15515b49aef4f",
+    "html_url": "https://github.com/google/agera/commit/f351f42c42eb2a16b6f0b27632b15515b49aef4f",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/f351f42c42eb2a16b6f0b27632b15515b49aef4f/comments",
+    "author": {
+      "login": "bxbxbai",
+      "id": 1468478,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1468478?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bxbxbai",
+      "html_url": "https://github.com/bxbxbai",
+      "followers_url": "https://api.github.com/users/bxbxbai/followers",
+      "following_url": "https://api.github.com/users/bxbxbai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bxbxbai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bxbxbai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bxbxbai/subscriptions",
+      "organizations_url": "https://api.github.com/users/bxbxbai/orgs",
+      "repos_url": "https://api.github.com/users/bxbxbai/repos",
+      "events_url": "https://api.github.com/users/bxbxbai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bxbxbai/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "bxbxbai",
+      "id": 1468478,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1468478?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bxbxbai",
+      "html_url": "https://github.com/bxbxbai",
+      "followers_url": "https://api.github.com/users/bxbxbai/followers",
+      "following_url": "https://api.github.com/users/bxbxbai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bxbxbai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bxbxbai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bxbxbai/subscriptions",
+      "organizations_url": "https://api.github.com/users/bxbxbai/orgs",
+      "repos_url": "https://api.github.com/users/bxbxbai/repos",
+      "events_url": "https://api.github.com/users/bxbxbai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bxbxbai/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "116d4aa914722fe150820b5dbc0483b417a9a2b8",
+        "url": "https://api.github.com/repos/google/agera/commits/116d4aa914722fe150820b5dbc0483b417a9a2b8",
+        "html_url": "https://github.com/google/agera/commit/116d4aa914722fe150820b5dbc0483b417a9a2b8"
+      }
+    ]
+  },
+  {
+    "sha": "116d4aa914722fe150820b5dbc0483b417a9a2b8",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-24T10:27:00Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-24T10:27:00Z"
+      },
+      "message": "Changed logo to raw content source",
+      "tree": {
+        "sha": "3b4e466f32ff9e641d7a8ecabf7aecb7cca29c6a",
+        "url": "https://api.github.com/repos/google/agera/git/trees/3b4e466f32ff9e641d7a8ecabf7aecb7cca29c6a"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/116d4aa914722fe150820b5dbc0483b417a9a2b8",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/116d4aa914722fe150820b5dbc0483b417a9a2b8",
+    "html_url": "https://github.com/google/agera/commit/116d4aa914722fe150820b5dbc0483b417a9a2b8",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/116d4aa914722fe150820b5dbc0483b417a9a2b8/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dffaace356399929aef20fa87a6b2bad91dd6c65",
+        "url": "https://api.github.com/repos/google/agera/commits/dffaace356399929aef20fa87a6b2bad91dd6c65",
+        "html_url": "https://github.com/google/agera/commit/dffaace356399929aef20fa87a6b2bad91dd6c65"
+      }
+    ]
+  },
+  {
+    "sha": "dffaace356399929aef20fa87a6b2bad91dd6c65",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-24T09:55:22Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-24T09:55:22Z"
+      },
+      "message": "Changed version to 1.0.0-SNAPSHOT",
+      "tree": {
+        "sha": "6a378dddc2433fed6a158d58d66258ae4536e533",
+        "url": "https://api.github.com/repos/google/agera/git/trees/6a378dddc2433fed6a158d58d66258ae4536e533"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/dffaace356399929aef20fa87a6b2bad91dd6c65",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/dffaace356399929aef20fa87a6b2bad91dd6c65",
+    "html_url": "https://github.com/google/agera/commit/dffaace356399929aef20fa87a6b2bad91dd6c65",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/dffaace356399929aef20fa87a6b2bad91dd6c65/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3570c4167388fcd7b70bfb25e098b96cefca6db7",
+        "url": "https://api.github.com/repos/google/agera/commits/3570c4167388fcd7b70bfb25e098b96cefca6db7",
+        "html_url": "https://github.com/google/agera/commit/3570c4167388fcd7b70bfb25e098b96cefca6db7"
+      }
+    ]
+  },
+  {
+    "sha": "3570c4167388fcd7b70bfb25e098b96cefca6db7",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-24T09:15:44Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-24T09:33:58Z"
+      },
+      "message": "Bumped version to rc2",
+      "tree": {
+        "sha": "3830e8d2dae3fdfbaf9e581424f49716274f344e",
+        "url": "https://api.github.com/repos/google/agera/git/trees/3830e8d2dae3fdfbaf9e581424f49716274f344e"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/3570c4167388fcd7b70bfb25e098b96cefca6db7",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/3570c4167388fcd7b70bfb25e098b96cefca6db7",
+    "html_url": "https://github.com/google/agera/commit/3570c4167388fcd7b70bfb25e098b96cefca6db7",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/3570c4167388fcd7b70bfb25e098b96cefca6db7/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ae73aa176981096a17fd9efbd5a3f994ff48830c",
+        "url": "https://api.github.com/repos/google/agera/commits/ae73aa176981096a17fd9efbd5a3f994ff48830c",
+        "html_url": "https://github.com/google/agera/commit/ae73aa176981096a17fd9efbd5a3f994ff48830c"
+      }
+    ]
+  },
+  {
+    "sha": "ae73aa176981096a17fd9efbd5a3f994ff48830c",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-24T08:17:39Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-24T08:17:39Z"
+      },
+      "message": "Revert \"Turned on no longer flaky concurrency interrupt test\"\n\nThis reverts commit 77fee57c2b5f8d6cab41a8103dc8d2c34f0f6cfa.",
+      "tree": {
+        "sha": "3930620b679470f1f73c540d51db132ea1b6e41d",
+        "url": "https://api.github.com/repos/google/agera/git/trees/3930620b679470f1f73c540d51db132ea1b6e41d"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/ae73aa176981096a17fd9efbd5a3f994ff48830c",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/ae73aa176981096a17fd9efbd5a3f994ff48830c",
+    "html_url": "https://github.com/google/agera/commit/ae73aa176981096a17fd9efbd5a3f994ff48830c",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/ae73aa176981096a17fd9efbd5a3f994ff48830c/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "77fee57c2b5f8d6cab41a8103dc8d2c34f0f6cfa",
+        "url": "https://api.github.com/repos/google/agera/commits/77fee57c2b5f8d6cab41a8103dc8d2c34f0f6cfa",
+        "html_url": "https://github.com/google/agera/commit/77fee57c2b5f8d6cab41a8103dc8d2c34f0f6cfa"
+      }
+    ]
+  },
+  {
+    "sha": "77fee57c2b5f8d6cab41a8103dc8d2c34f0f6cfa",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-24T07:56:45Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-24T08:05:50Z"
+      },
+      "message": "Turned on no longer flaky concurrency interrupt test",
+      "tree": {
+        "sha": "00f74a6618aeaeb5f5e11e0bc88eeacc9e0bb299",
+        "url": "https://api.github.com/repos/google/agera/git/trees/00f74a6618aeaeb5f5e11e0bc88eeacc9e0bb299"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/77fee57c2b5f8d6cab41a8103dc8d2c34f0f6cfa",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/77fee57c2b5f8d6cab41a8103dc8d2c34f0f6cfa",
+    "html_url": "https://github.com/google/agera/commit/77fee57c2b5f8d6cab41a8103dc8d2c34f0f6cfa",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/77fee57c2b5f8d6cab41a8103dc8d2c34f0f6cfa/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0749198b3a81b9845a52cc1f245945eaf99e91eb",
+        "url": "https://api.github.com/repos/google/agera/commits/0749198b3a81b9845a52cc1f245945eaf99e91eb",
+        "html_url": "https://github.com/google/agera/commit/0749198b3a81b9845a52cc1f245945eaf99e91eb"
+      }
+    ]
+  },
+  {
+    "sha": "0749198b3a81b9845a52cc1f245945eaf99e91eb",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-23T13:24:28Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-24T07:45:49Z"
+      },
+      "message": "Bumped external dependencies",
+      "tree": {
+        "sha": "3930620b679470f1f73c540d51db132ea1b6e41d",
+        "url": "https://api.github.com/repos/google/agera/git/trees/3930620b679470f1f73c540d51db132ea1b6e41d"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/0749198b3a81b9845a52cc1f245945eaf99e91eb",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/0749198b3a81b9845a52cc1f245945eaf99e91eb",
+    "html_url": "https://github.com/google/agera/commit/0749198b3a81b9845a52cc1f245945eaf99e91eb",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/0749198b3a81b9845a52cc1f245945eaf99e91eb/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f2d0ad71031c4ab4b0af4ee956fa36a6e7f63f22",
+        "url": "https://api.github.com/repos/google/agera/commits/f2d0ad71031c4ab4b0af4ee956fa36a6e7f63f22",
+        "html_url": "https://github.com/google/agera/commit/f2d0ad71031c4ab4b0af4ee956fa36a6e7f63f22"
+      }
+    ]
+  },
+  {
+    "sha": "f2d0ad71031c4ab4b0af4ee956fa36a6e7f63f22",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-23T12:48:12Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-23T12:48:12Z"
+      },
+      "message": "Optimised imports",
+      "tree": {
+        "sha": "85ea088ee6b00392792e5760e94d3de05a941459",
+        "url": "https://api.github.com/repos/google/agera/git/trees/85ea088ee6b00392792e5760e94d3de05a941459"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/f2d0ad71031c4ab4b0af4ee956fa36a6e7f63f22",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/f2d0ad71031c4ab4b0af4ee956fa36a6e7f63f22",
+    "html_url": "https://github.com/google/agera/commit/f2d0ad71031c4ab4b0af4ee956fa36a6e7f63f22",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/f2d0ad71031c4ab4b0af4ee956fa36a6e7f63f22/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6efcdb17aa6a1c4dc0dc47821554598b86a936e1",
+        "url": "https://api.github.com/repos/google/agera/commits/6efcdb17aa6a1c4dc0dc47821554598b86a936e1",
+        "html_url": "https://github.com/google/agera/commit/6efcdb17aa6a1c4dc0dc47821554598b86a936e1"
+      }
+    ]
+  },
+  {
+    "sha": "6efcdb17aa6a1c4dc0dc47821554598b86a936e1",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-21T21:14:37Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-21T21:14:37Z"
+      },
+      "message": "Disabled flaky thread interrupt test",
+      "tree": {
+        "sha": "442901641f85dfcc32862193de24a5000adeaef0",
+        "url": "https://api.github.com/repos/google/agera/git/trees/442901641f85dfcc32862193de24a5000adeaef0"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/6efcdb17aa6a1c4dc0dc47821554598b86a936e1",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/6efcdb17aa6a1c4dc0dc47821554598b86a936e1",
+    "html_url": "https://github.com/google/agera/commit/6efcdb17aa6a1c4dc0dc47821554598b86a936e1",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/6efcdb17aa6a1c4dc0dc47821554598b86a936e1/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e0313d4b82413bd39b6a6c763a0d3abaa24f824b",
+        "url": "https://api.github.com/repos/google/agera/commits/e0313d4b82413bd39b6a6c763a0d3abaa24f824b",
+        "html_url": "https://github.com/google/agera/commit/e0313d4b82413bd39b6a6c763a0d3abaa24f824b"
+      }
+    ]
+  },
+  {
+    "sha": "e0313d4b82413bd39b6a6c763a0d3abaa24f824b",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-21T19:21:30Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-21T21:03:56Z"
+      },
+      "message": "Improved performance by reducing redundant updates\n\nResolves #31",
+      "tree": {
+        "sha": "85c79ffaf6023a3aec0921a55200c89e48f668c4",
+        "url": "https://api.github.com/repos/google/agera/git/trees/85c79ffaf6023a3aec0921a55200c89e48f668c4"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/e0313d4b82413bd39b6a6c763a0d3abaa24f824b",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/e0313d4b82413bd39b6a6c763a0d3abaa24f824b",
+    "html_url": "https://github.com/google/agera/commit/e0313d4b82413bd39b6a6c763a0d3abaa24f824b",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/e0313d4b82413bd39b6a6c763a0d3abaa24f824b/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "424282a62bf39c725fa3cefe55ff903be48f657b",
+        "url": "https://api.github.com/repos/google/agera/commits/424282a62bf39c725fa3cefe55ff903be48f657b",
+        "html_url": "https://github.com/google/agera/commit/424282a62bf39c725fa3cefe55ff903be48f657b"
+      }
+    ]
+  },
+  {
+    "sha": "424282a62bf39c725fa3cefe55ff903be48f657b",
+    "commit": {
+      "author": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-21T07:33:45Z"
+      },
+      "committer": {
+        "name": "Magnus Ernstsson",
+        "email": "magnus@ernstsson.net",
+        "date": "2016-04-21T08:42:55Z"
+      },
+      "message": "Added travis build config",
+      "tree": {
+        "sha": "8280b80a110f2d447a0e85ffc00bd1cff73a168e",
+        "url": "https://api.github.com/repos/google/agera/git/trees/8280b80a110f2d447a0e85ffc00bd1cff73a168e"
+      },
+      "url": "https://api.github.com/repos/google/agera/git/commits/424282a62bf39c725fa3cefe55ff903be48f657b",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/google/agera/commits/424282a62bf39c725fa3cefe55ff903be48f657b",
+    "html_url": "https://github.com/google/agera/commit/424282a62bf39c725fa3cefe55ff903be48f657b",
+    "comments_url": "https://api.github.com/repos/google/agera/commits/424282a62bf39c725fa3cefe55ff903be48f657b/comments",
+    "author": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ernstsson",
+      "id": 378389,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/378389?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ernstsson",
+      "html_url": "https://github.com/ernstsson",
+      "followers_url": "https://api.github.com/users/ernstsson/followers",
+      "following_url": "https://api.github.com/users/ernstsson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ernstsson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ernstsson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ernstsson/subscriptions",
+      "organizations_url": "https://api.github.com/users/ernstsson/orgs",
+      "repos_url": "https://api.github.com/users/ernstsson/repos",
+      "events_url": "https://api.github.com/users/ernstsson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ernstsson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ebee157c0606cbb0e09041212ecbc9bff40426c0",
+        "url": "https://api.github.com/repos/google/agera/commits/ebee157c0606cbb0e09041212ecbc9bff40426c0",
+        "html_url": "https://github.com/google/agera/commit/ebee157c0606cbb0e09041212ecbc9bff40426c0"
+      }
+    ]
+  }
+]
