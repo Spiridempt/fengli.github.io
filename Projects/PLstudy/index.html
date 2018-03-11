@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Homepage</title>
+	</head>
+	</body>
+		<h2>Welcome to the homepage of paper "How Does Bug-Handling Effort Differ Among Different Programming Languages?".</h2>
+		<h3>1. Abstract:</h3>
+		<p>
+			This paper presents the first large-scale empirical study to investigate the relationship between programming languages and bug-handling effort. 600 projects (70,816,938 SLOC, 3,096,009 commits) of 10 programming languages in GitHub were gathered and analyzed. There are several interesting results:
+		</p>
+		<ul>
+			<li>Different programming languages have different bug-handling effort. For example, Java tends to require more line/file modification than other languages but less bug-handling time, while Ruby tends to require more bug-handling time as well as more line/file modification.</li>
+			<li>Weak/dynamic languages tend to need more time than strong/static languages, while static languages tend to need more absolute line/file modification.</li>
+			<li>A toy predictive model is proposed to proof that the consideration of programming languages can improve the effectiveness when predicting bug-handling effort.</li>
+		</ul>
+		<h3>2. Domain classification details</h3>
+		<p>
+			We manully classifying projects into Application, Database, CodeAnalyser, Middleware, Library, and Framework. The classification results are <a href="category_information.csv" download="category_information.csv">here</a>.
+		</p>
+		<h3>3. Questionnaire link and results</h3>
+		<p>
+			The online questionnaire and results in Section 2.1 are listed below:
+		</p>
+		<ul>
+			<li><a href = "https://www.surveymonkey.co.uk/r/RM593B3">Questionnaire</a></li>
+			<li><a href = "QuestionnaireResults.zip" download = "QuestionnaireResults.zip">Results</a></li>
+		</ul>
+		<h3>4. Data and code</h3>
+		<p>
+			Our data and code for analysis could be divided into two parts.
+		</p>
+		<ol>
+			<li>
+			PartI: In the first part, we get the basic bug-handlig effort for each project. Particularly, we analyse each commit and issue report of a project, and record the useful information, such as the number of changed lines/files and the commit message information. We then find the median line/file modification and time to represent each project's bug-handling effort, and generate csv files for language comparison in the second part. The origina json files are too big to upload (add size), thus we only upload the processed data extracted from these files.
+			The data (after extracted), code, and their corresponding explanation for PartI analysis could be found <a href="https://drive.google.com/file/d/1Zn5OrP6aD0LB-yanYBmxwT94yiKINawA/view?usp=sharing">here</a>.
+			</li>
+			<li>
+			PartII: In the second part, we analyse the bug-handling effort of each project within different languages and make comparison. We make median-value analysis, KnottScott analysis, and multiple regression.
+			The data, code, and their corresponding explanation for PartII analysis could be found <a href="PartII.zip" download="PartII.zip">here</a>.
+			</li>
+		</ol>
+	</body>
+</html>
