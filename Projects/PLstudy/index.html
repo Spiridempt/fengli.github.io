@@ -15,12 +15,12 @@
 		<h2>Welcome to the homepage of paper "A Large Scale Study of Programming Languages and Their Bug Resolution Characteristics".</h2>
 		<h3>1. Abstract:</h3>
 		<p>
-			This paper presents the first large-scale empirical study to investigate the relationship between programming languages and bug-handling effort. 600 projects (70,816,938 SLOC, 3,096,009 commits) of 10 programming languages in GitHub were gathered and analyzed. There are several interesting results:
+			This paper presents the first large-scale empirical study to investigate the relationship between programming languages and bug resolution characteristics. 600 projects (70,816,938 SLOC, 3,096,009 commits) of 10 programming languages in GitHub were gathered and analyzed. There are several interesting results:
 		</p>
 		<ul>
-			<li>Different programming languages have different bug-handling effort. For example, Java tends to require more line/file modification than other languages but less bug-handling time, while Ruby tends to require more bug-handling time as well as more line/file modification.</li>
-			<li>Weak/dynamic languages tend to need more time than strong/static languages, while static languages tend to need more absolute line/file modification.</li>
-			<li>A toy predictive model is proposed to proof that the consideration of programming languages can improve the effectiveness when predicting bug-handling effort.</li>
+			<li>Different programming languages have different bug resolution time and patch size. For example, Java tends to require less bug resolution time, while Ruby tends to require more.</li>
+			<li>Patches tend to touch significantly more files for strongly typed and for static languages. However, we found evidence for a significantly lower elapsed resolution time for bug resolution committed to projects constructed from statically typed languages.</li>
+			<li>we found no evidence for any correlation between bug-resolution time and size (lines or files touched), nor any evidence for correlation with other potential confounding factors, such as problem features (e.g., size, age, and commit number) and target domain.</li>
 		</ul>
 		<h3>2. Domain classification details</h3>
 		<p>
