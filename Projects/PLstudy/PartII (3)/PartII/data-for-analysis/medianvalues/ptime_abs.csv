@@ -1,0 +1,11 @@
+language,medianabs,type,strongweak,ooandnoo,total,paradigm,all
+Java,57.71638889,static,strong,oo,static-strong-oo,procedural,static-strong
+Go,64.53152778,static,strong,noo,static-strong-noo,procedural,static-strong
+PHP,68.02527778,dynamic,weak,oo,dynamic-weak-oo,scripting,dynamic-weak
+Python,73.53152778,dynamic,strong,oo,dynamic-strong-oo,scripting,dynamic-strong
+C++,103.5411111,static,weak,oo,static-weak-oo,procedural,static-weak
+C#,113.7302778,static,strong,oo,static-strong-oo,procedural,static-strong
+C,140.4661111,static,weak,noo,static-weak-noo,procedural,static-weak
+Obj-C,217.6572222,static,weak,oo,static-weak-oo,procedural,static-weak
+JS,229.1836111,dynamic,weak,noo,dynamic-weak-noo,scripting,dynamic-weak
+Ruby,334.3297222,dynamic,strong,oo,dynamic-strong-oo,scripting,dynamic-strong

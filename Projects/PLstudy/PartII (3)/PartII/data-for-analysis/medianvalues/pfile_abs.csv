@@ -1,0 +1,11 @@
+language,medianabs,type,strongweak,ooandnoo,total,all
+C,1,static,weak,noo,static-weak-noo,static-weak
+C++,1,static,weak,oo,static-weak-oo,static-weak
+Obj-C,1,static,weak,oo,static-weak-oo,static-weak
+PHP,1,dynamic,weak,oo,dynamic-strong-oo,dynamic-weak
+Python,1,dynamic,strong,oo,dynamic-strong-oo,dynamic-strong
+Ruby,1,dynamic,strong,oo,dynamic-strong-oo,dynamic-strong
+JS,1.5,dynamic,weak,noo,dynamic-weak-noo,dynamic-weak
+C#,2,dynamic,strong,oo,dynamic-strong-oo,dynamic-strong
+Go,2,static,strong,noo,static-strong-noo,static-strong
+Java,2,static,strong,oo,static-strong-oo,static-strong
