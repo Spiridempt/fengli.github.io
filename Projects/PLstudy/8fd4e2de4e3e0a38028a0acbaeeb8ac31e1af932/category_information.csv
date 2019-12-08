@@ -494,7 +494,6 @@ carrierwaveuploader,carrierwave,l
 mperham,sidekiq,o
 elastic,logstash,f
 activeadmin,activeadmin,f
-Homebrew,brew,a
 plataformatec,simple_form,l
 tmuxinator,tmuxinator,a
 sferik,rails_admin,l
@@ -518,7 +517,6 @@ mislav,will_paginate,l
 cucumber,cucumber-ruby,l
 tensorflow,tensorflow,l
 electron,electron,f
-apple,swift,c
 nwjs,nw.js,a
 rethinkdb,rethinkdb,d
 BVLC,caffe,f
@@ -573,11 +571,7 @@ sandstorm-io,capnproto,o
 draios,sysdig,l
 ideawu,ssdb,d
 miloyip,rapidjson,c
-openalpr,openalpr,l
-dropbox,lepton,a
-notepad-plus-plus,notepad-plus-plus,a
 jaredpar,VsVim,f
-icsharpcode,ILSpy,c
 joewalnes,websocketd,l
 kubernetes,kubernetes,f
 lodash,lodash,l
@@ -587,3 +581,6 @@ ansible,ansible,f
 mitchellh,vagrant,f
 javan,whenever,l
 b4winckler,macvim,a
+donnemartin,system-design-primer,o
+thoughtbot,guides,o
+barryvdh,laravel-ide-helper,o

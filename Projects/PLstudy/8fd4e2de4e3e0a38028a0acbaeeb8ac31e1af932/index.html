@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>PLStudy-Homepage</title>
+	</head>
+	</body>
+		<h2>Welcome to the homepage of paper "A Study of Bug Resolution Characteristics in Popular Programming Languages".</h2>
+		<h3>1. Abstract:</h3>
+		<p>
+			This paper presents a large-scale study that investigates the bug resolution characteristics among popular Github projects written in different programming languages. We explore correlations but, of course, we cannot infer causation. Specifically, we analyse bug resolution data from approximately 70 million Source Line of Code, drawn from 3 million commits to 600 GitHub projects, primarily written in 10 programming languages. There are several interesting results:
+		</p>
+		<ul>
+			<li>We find notable variations in apparent bug resolution time and patch (fix) size. For example, in our corpus, the median apparent bug resolution time (elapsed time from raise to resolve) for Ruby was 4X that for Go and 2.5X for Java.</li>
+			<li>We also found that patches tend to touch more files for the corpus of strongly typed and for statically typed programs.</li>
+			<li>We also found evidence for a lower elapsed resolution time for bug resolution committed to projects constructed from statically typed languages.</li>
+		</ul>
+		<h3>2. Scatter plots</h3>
+		<p>
+			As we say in the paper, we manually analysed scatter plots for each language and each treatment (size in lines of code and files, and duration). All 30 resulting scatter plots can be downloaded <a href="scatter-large.zip" download="scatter-large.zip">here</a>.
+		</p>
+		<h3>3. Domain classification details</h3>
+		<p>
+			We manully classify projects into Application, Database, CodeAnalyser, Middleware, Library, and Framework. The classification results are <a href="category_information.csv" download="category_information.csv">here</a>.
+		</p>
+		<h3>4. Commits checking results</h3>
+		<p>
+			We manully check 585 commits from our projects and the checking results are <a href="check_commit.csv" download="check_commit.csv">here</a>. In this file, the first two columns represent the UserName and RepositoryName, while the last two columns represent the commit ID and its checking result (0 for normal and 1 for abnormal).
+		</p>
+		<!--
+		<h3>3. Questionnaire link and results</h3>
+		<p>
+			The online questionnaire and results in Section 2.1 are listed below:
+		</p>
+		<ul>
+			<li><a href = "https://www.surveymonkey.co.uk/r/RM593B3">Questionnaire</a></li>
+			<li><a href = "QuestionnaireResults.zip" download = "QuestionnaireResults.zip">Results</a></li>
+		</ul>
+		
+		<h3>3. Data and code</h3>
+		<p>
+			Our data and code for analysis could be divided into two parts.
+		</p>
+		<ol>
+			<li>
+			PartI: In the first part, we get the basic bug-handlig effort for each project. Particularly, we analyse each commit and issue report of a project, and record the useful information, such as the number of changed lines/files and the commit message information. We then find the median line/file modification and time to represent each project's bug-handling effort, and generate csv files for language comparison in the second part. The origina json files are too big to upload (add size), thus we only upload the processed data extracted from these files.
+			The data (after extracted), code, and their corresponding explanation for PartI analysis could be found <a href="https://drive.google.com/file/d/1Zn5OrP6aD0LB-yanYBmxwT94yiKINawA/view?usp=sharing">here</a>.
+			</li>
+			<li>
+			PartII: In the second part, we analyse the bug-handling effort of each project within different languages and make comparison. We make median-value analysis, KnottScott analysis, and multiple regression.
+			The data, code, and their corresponding explanation for PartII analysis could be found <a href="PartII.zip" download="PartII.zip">here</a>.
+			</li>
+		</ol>
+		-->
+		<h3>5. Data and code</h3>
+		<p>
+			First, we get the basic bug-resolution characteristics for each project. Particularly, we analyse each commit and issue report of a project, and record the useful information, such as the number of changed lines/files and the commit message information. We then find the median line/file modification and time to represent each project's bug-resolution characteristics, and generate csv files for language comparison. The data, code, and their corresponding explanation could be found <a href="Data+Code.zip" download="Data+Code.zip">here</a>.
+		</p>
+	</body>
+</html>

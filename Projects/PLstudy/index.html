@@ -1,72 +1,11 @@
 <html>
 	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116848681-1"></script>
-		<script>
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-				gtag('config', 'UA-116848681-1');
-		</script>
 		<meta charset="UTF-8">
 		<title>PLStudy-Homepage</title>
 	</head>
 	</body>
-		<h2>Welcome to the homepage of paper "A Study of Programming Languages and Their Bug Resolution Characteristics".</h2>
-		<h3>1. Abstract:</h3>
-		<p>
-			This paper presents the first large-scale empirical study to investigate the relationship between programming languages and bug resolution characteristics. 600 projects (70,816,938 SLOC, 3,096,009 commits) of 10 programming languages in GitHub were gathered and analyzed. There are several interesting results:
-		</p>
-		<ul>
-			<li>Different programming languages have different bug resolution time and patch size. For example, Java tends to require less bug resolution time, while Ruby tends to require more.</li>
-			<li>Patches tend to touch significantly more files for strongly typed and for static languages. However, we found evidence for a significantly lower elapsed resolution time for bug resolution committed to projects constructed from statically typed languages.</li>
-			<li>We found no evidence for any correlation between bug-resolution time and size (lines or files touched), nor any evidence for correlation with other potential confounding factors, such as problem features (e.g., size, age, and commit number) and target domain.</li>
-		</ul>
-		<h3>2. Domain classification details</h3>
-		<p>
-			We manully classify projects into Application, Database, CodeAnalyser, Middleware, Library, and Framework. The classification results are <a href="category_information.csv" download="category_information.csv">here</a>.
-		</p>
-		<!--
-		<h3>3. Questionnaire link and results</h3>
-		<p>
-			The online questionnaire and results in Section 2.1 are listed below:
-		</p>
-		<ul>
-			<li><a href = "https://www.surveymonkey.co.uk/r/RM593B3">Questionnaire</a></li>
-			<li><a href = "QuestionnaireResults.zip" download = "QuestionnaireResults.zip">Results</a></li>
-		</ul>
-		
-		<h3>3. Data and code</h3>
-		<p>
-			Our data and code for analysis could be divided into two parts.
-		</p>
-		<ol>
-			<li>
-			PartI: In the first part, we get the basic bug-handlig effort for each project. Particularly, we analyse each commit and issue report of a project, and record the useful information, such as the number of changed lines/files and the commit message information. We then find the median line/file modification and time to represent each project's bug-handling effort, and generate csv files for language comparison in the second part. The origina json files are too big to upload (add size), thus we only upload the processed data extracted from these files.
-			The data (after extracted), code, and their corresponding explanation for PartI analysis could be found <a href="https://drive.google.com/file/d/1Zn5OrP6aD0LB-yanYBmxwT94yiKINawA/view?usp=sharing">here</a>.
-			</li>
-			<li>
-			PartII: In the second part, we analyse the bug-handling effort of each project within different languages and make comparison. We make median-value analysis, KnottScott analysis, and multiple regression.
-			The data, code, and their corresponding explanation for PartII analysis could be found <a href="PartII.zip" download="PartII.zip">here</a>.
-			</li>
-		</ol>
-		-->
-		<h3>3. Domain results</h3>
-		<p>
-			We present the regression results with different domains. <a href="domainresults" download="domainresults">Here</a> are the results for changed-file number and resolution time. 
-		</p>
-		<h3>4. Data and code</h3>
-		<p>
-			Our data and code for analysis could be divided into two parts.
-		</p>
-		<ol>
-			<li>
-			PartI: In the first part, we get the basic bug-resolution characteristics for each project. Particularly, we analyse each commit and issue report of a project, and record the useful information, such as the number of changed lines/files and the commit message information. We then find the median line/file modification and time to represent each project's bug-resolution characteristics, and generate csv files for language comparison in the second part. The data, code, and their corresponding explanation for PartI analysis could be found <a href="https://drive.google.com/file/d/1KFdVe1PDVBOv26fA7viBLbKFJhTkhR_u/view?usp=sharing">here</a>.
-			</li>
-			<li>
-			PartII: In the second part, we analyse the bug-resolution characteristics of each project within different languages and make comparison. We make median-value analysis, KnottScott analysis, and multiple regression.
-			The data, code, and their corresponding explanation for PartII analysis could be found <a href="PartII.zip" download="PartII.zip">here</a>.
-			</li>
-		</ol>
+		<h2>Welcome to the homepage of paper "A Study of Bug Resolution Characteristics in Popular Programming Languages".</h2>
+		<h3>Before you get access the data, you are supposed to fill in this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeL4Cs5GnMcIl-DpAqXan3kLMTuDStXBw3-hkWO__csrj_TYQ/viewform?usp=sf_link">Google Form</a> to help us collect the necessary information.</h3>
+
 	</body>
 </html>
